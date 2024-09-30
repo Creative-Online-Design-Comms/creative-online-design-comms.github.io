@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {box-sizing:border-box;}
+
+body {
+    background-image: linear-gradient(to bottom right,black, rgb(0, 0, 121), black, rgb(114, 10, 117),black,rgb(93, 122, 93));
+    overflow-x: hidden;
+    margin: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 160px; 
+    font-size: 28px; 
+    padding: 0px 10px;
+}
+
+h1{
+    font-weight: 700;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 120vw;
+    height: 20vh;
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    background-color: #bacdff3b;
+
+}
+
+header h1 {
+    padding: 16px;
+    width: 50%;
+    margin: auto;
+    background-color: #d6e1ff;
+    color: #fff;
+    border-color:#9db4ff;
+    border-style:inset;
+    border-width: 30px;
+    font-size: 72pt;
+    border-radius: 100px;
+    
+}
+header h1 span{
+    color: #003cff;
+    
+}
+
+nav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;    
+    background-color: #a7bcff;
+    border-radius: 50px;
+    border: #0028aa;
+    border-width: 10px;
+    border-style: solid;
+    padding-right: 322px;
+
+}
+ .nav-title {
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #003cff;
+    display: block;
+    width: 30vw;
+    margin-top: -20px;
+
+ }
+
+.navi{
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    width: 30vw;
+
+}
+
+.navi:hover {
+    color: #f1f1f1;
+    background-color: #7583b3;
+
+
+}
+
+.coding{
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #818181;
+    background-color: #9db4ff;
+    padding: 10px;
+    border-style:solid;
+    border: #2a5bff;
+    border-radius: 10px;
+    border-width: 50px;
+    display: flex;
+    text-align: center;
+    
+   
+}
+
+.coding:hover {
+    color: #f1f1f1;
+}
+
+hr {
+    margin: 10px 0px 0px;
+    color: #bacdff3b;
+    width: 1000%;
+    height: 10000px;
+    background-color: #bacdff3b;
+    border-style: none;
+   
+
+}
+
+.two-column-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    text-align: left;
+    margin: 25px 0px;
+    padding-right: 25px;
+}
+
+.img-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    background-color: #9db4ff;
+    padding: 40px;
+    border-color: #9db4ff;
+    border-style:solid;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.img-text-container p{
+    margin: 5px;
+}
+
+.Poem {
+    display: flex;
+    width: 854px;
+    height: 80vh;
+    margin-left: 160px;
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding: 10px;
+    color: #FFF500;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section img{
+    background-color: #9db4ff81;
+    border-style:solid;
+    border: #2a5bff;
+    border-radius: 10px;
+    
+}
+
+section{
+    background-color: #ffffff57;
+    border-radius: 60px;
+    width: 80%;
+    padding: 50px 0px; 
+margin: auto;
+}
+
+.youtube{
+    size: 100;
+    background: none;
+    font-family: 'Zen Dots';
+
+}
+
+footer {
+    display: flex;
+    padding: 50px 250px 16px;
+    background-color: #bacdff3b;
+    text-align: right;
+    font-weight: 600;
+    margin-left: 160px;
+    width: 120vw;
+}
+
+footer a {
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #818181;
+    width: 30vw;
+    background-color: #9db4ff;
+    border-radius: 50px;
+    margin: 10px;
+
+}
+
+footer a:hover{
+    color: #fff;
+    background-color: #7583b3;
+}
+
+footer img{
+    border-color: #ffffff;
+    border-style:inset;
+    border-width: 10px;
+    border-radius: 100%;
+}
+
+.footer-grid {
+    width: 100%;
+    margin: auto; 
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    text-align: left;
+}
+
+.footer-grid-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav{
+    display: inline-flex;
+
+}
+

@@ -1,0 +1,326 @@
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* For variables like colors */
+    /* :root{
+        Makes it easier to change them later
+    } */
+
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        font-family: 'piratoa one';
+        font-weight: 400;
+        overflow-x: hidden;
+        
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2  {
+        font-weight: 700;
+        font-size: 50pt;
+        text-align: center;
+    }
+    h3 {
+        font-weight:700;
+        font-size: 20pt;
+        text-align: center;
+    }
+    h4 { 
+        font-weight: 700;
+        font-size: 15pt;
+        text-align: center;
+    }
+
+/* Page title area */
+    header {
+        align-items: center;
+        width: 500px;
+        height: 100px;
+    }
+
+/* Page title words */
+    header h1 {
+        padding: 80px;
+        width: 100%;
+        margin: center;
+        background-color: #3F4E50;
+        color: #fff;
+        font-size: 100pt;
+        border-radius: 100px;
+    }
+    header h1 span{
+        color: #000;
+        font-size: 50pt;
+    }
+
+    header image{
+        width: 100%;
+        margin: center;
+        justify-items: center;
+    }
+
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0;
+        text-align: center;
+        background-color: #000;
+        font-size: 20pt;
+        font-weight: 600;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+
+
+/* Nav link adjustments*/
+    nav a {
+        margin: 16px 2vw;
+        text-decoration: none;
+        color: #fff;
+        padding: 16px 26px;
+        border-radius: 70% 50% / 5% 200%;
+    }
+    nav a:hover {
+        color: #0D6FBA ;
+        background-color: #9191a0 ;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+/* Link hover */
+    a:hover {
+        color: #000;
+    }
+
+    .back-to-top-btn:hover{
+        color: #000000;
+        background-color: #fff;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #000; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 50px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      
+      #myBtn:hover {
+        background-color: #0D6FBA  ; /* Add a dark-grey background on hover */
+      }
+
+/* Applies to each section */
+    section {
+        width: 100%;
+        padding: 50px 0px; 
+        margin: auto;
+    }
+    hr {
+        margin: 100px 0px 0px;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 50pt;
+    }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+   .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   }
+    
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+/* Clear floats after image containers*/
+.row::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+#more {display: none;}
+
+/* Collaboration */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        z-index: 0;
+    }
+    .mySlides {
+        display: none;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #0D6FBA ;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .text {
+        color: #000;
+        font-size: 15px;
+        padding: 0px 0px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .numbertext {
+        color: #000;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #0D6FBA ;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+/* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+/* Gallery Thumnail style */
+    .thumbnail-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-content: center;
+        justify-content: center;
+        max-width: 1300px;
+        margin:0 auto;
+        padding:0px;
+    }
+    .thumbnail-container img {
+        padding: 0px 2px;
+    }
+
+/* iframe Map styling */
+    iframe{
+        width: 80%;
+        height: 50%;
+        border: 0;
+    }
+  
+/* Form Styling */
+    .contact-container {
+        padding: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* iframe Map styling */
+    iframe{
+        width: 80%;
+        height: 35vh;
+        border: 0;
+    }
+  
+  /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+        width: 50%;
+        padding: 12px;
+        margin: 16px auto;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+  /* Style the submit button */
+    input[type=submit] {
+        width: 25%;
+        color: #FDAC96;
+        background-color: #3F4E50;
+        border: none;
+        font-weight: 600;
+    }
+  
+    input[type=submit]:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    } 
+
+/* Applies to footer */
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.center img{
+    margin-right: 20px;
+}
+

@@ -1,0 +1,213 @@
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+/* For variables like colors */
+    :root{
+       --primary-color: #2EA8A8;
+       
+    }
+
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        font-family: 'Gowun Batang', serif;
+        font-weight: 400;
+        overflow-x: hidden;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        text-align: center;
+    }
+
+/* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        background-image: url(images/logo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        background-color: #000;
+    }
+
+/* Page title words */
+    header h1 {
+        padding: 16px;
+        width: 50%;
+        margin: auto;
+        background-color: var(--primary-color );
+        color: #fff;
+        font-size: 72pt;
+        border-radius: 100px;
+    }
+    header h1 span{
+        color: #41bfb3;
+    }
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0;
+        text-align: center;
+        background-color: #70a6ad;
+        font-size: 20pt;
+        font-weight: 600;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+
+/* Nav link adjustments*/
+    nav a {
+        margin: 16px 2vw;
+        text-decoration: none;
+        color: #fff;
+        padding: 16px 26px;
+        border-radius: 50px;
+    }
+    nav a:hover {
+        color: #000000;
+        background-color: #d0edf3;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+/* Link hover */
+    a:hover {
+        color: #FD9578;
+    }
+
+/* Back to top Button */
+    .back-to-top-btn {
+        padding: 16px;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;  
+        background-color: #2EA8A8;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24pt;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 16px 26px;
+        z-index: 2;
+    }
+    .back-to-top-btn:hover{
+        color: #000000;
+        background-color: #d0edf3;
+    }
+
+/* Applies to each section */
+    section {
+        width: 80%;
+        padding: 50px 0px; 
+        margin: auto;
+    }
+    hr {
+        margin: 100px 0px 0px;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 48pt;
+    }
+
+/* Basic element css. Simple 2 column grid with the image attribute displaed on hover */
+    .two-column-container {
+        display: inline-grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        text-align: left;
+        margin: 25px 0px;
+    }
+    .img-text {
+        display: flex;
+        align-items: center;
+    }
+    .img-attribution {
+        width: auto;
+        max-height: 60vh;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    .attribution {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .fig-hover-attribution:hover .attribution {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    .centered-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 85%;
+        text-align: center;
+        font-size: 16pt;
+    }
+
+
+/* Gallery Thumnail style */
+    .thumbnail-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 32px;
+        align-content: center;
+        justify-content: center;
+        max-width: 600px;
+        margin:0 auto;
+        padding:0px;
+    }
+    .thumbnail-container img {
+        padding: 0px 2px;
+    }
+
+
+/* Applies to footer */
+    footer {
+        padding: 50px 250px 16px;
+        background-color: #60bf89;
+        text-align: right;
+        font-weight: 600;
+    }
+    footer a {
+        color: #000;
+    }
+    footer a:hover{
+        color: #fff;
+    }
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+        text-align: left;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }

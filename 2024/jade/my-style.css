@@ -1,0 +1,417 @@
+/* Add your fontkit here */
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lakki+Reddy&family=Lily+Script+One&family=Mansalva&family=Nanum+Pen+Script&display=swap');
+/* For variables like colors */
+    :root{
+       --background-color:#2B0609;
+       --secondary-color:#D49343;
+       --third-color: #E6BE46;
+       --forth-color: #F7DBA5;
+       --firth-color:#726817;
+       --font-color:#FFEECC;
+       --white-color:#ffffff;
+       --black-color:#000000;
+       --title-font:"Irish Grover", system-ui;
+       --subtitle: "Lily Script One", system-ui;
+       --body-font:"Nanum Pen Script",cursive;
+    }
+                  
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        font-family: var(--body-font);
+        font-weight: 400;
+        overflow-x: hidden;
+        color:var(--font-color);
+        background-color: var(--background-color);
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    text-align: center;
+}
+
+h3{
+    font-size:35px;
+}
+
+/* Page title area */
+header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(image-for-project/souffles-flavours.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    
+}
+
+/* Page title words */
+header h1 {
+    padding: 16px;
+    width: 50%;
+    margin: auto;
+    background-color: var(--background-color);
+    color:var(--font-color);
+    font-size: 72pt;
+    border-radius: 100px;
+}
+header h1 span{
+    color:#E6BE46;
+}
+h2 span{color:#D49343}
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    text-align: center;
+    background-color:var(--third-color);
+    font-family: var(--subtitle-font);
+    font-size: 28pt;
+    font-weight: 600;
+    /* z-index brings items forward or backward in relation to other content */
+    z-index: 2;
+}
+
+
+
+/* Nav link adjustments*/
+nav a {
+    margin: 16px 2vw;
+    text-decoration: none;
+    color:var(--font-color);
+    padding: 16px 26px;
+    border-radius: 50px;
+}
+nav a:hover {
+    color: var(--white-color);
+    background-color: var(--background-color);
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+nav img {
+    width: 3vw;
+}
+
+
+
+/* Link hover */
+a:hover {
+    color:#2B0609;
+}
+
+/* Back to top Button */
+.back-to-top-btn {
+    padding: 16px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;  
+    background-color: #D49343;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 16px 26px;
+    z-index: 2;
+}
+.back-to-top-btn:hover{
+    color: #E6BE46;
+    background-color:#2B0609;
+}
+
+/* Applies to each section */
+section {
+    width: 90%;
+    padding: 50px 0px 0px; 
+    margin: auto;
+}
+
+
+#section-three p{
+    width: 90%;
+    font-size: 40pt;
+    font-weight:400;
+}
+.p1{
+    font-size: 10pt;
+    font-weight:400;
+    text-align: center;
+}
+.p2{
+    font-size: 30pt;
+    font-weight:400;
+    
+
+}
+
+hr {
+    margin: 100px 0px 0px;
+    color: #F7DBA5;
+}
+
+/* Section title heading size */
+section h2 {
+    width: 90%;
+    font-size: 48pt;
+}
+
+/* Basic element css. Simple 2 column grid with the image attribute displaed on hover */
+.two-column-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    text-align: left;
+    margin: 25px 0px;
+}
+.img-text {
+    display: flex;
+    align-items: center;
+}
+.img-attribution {
+    width: auto;
+    max-height: 60vh;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.attribution {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.fig-hover-attribution:hover .attribution {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.fig-hover-attribution{
+    width: auto;
+}
+
+/* Card display Css*/
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 50px;
+    background-color: var(--third-color);
+    font-size: 30pt;
+} 
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}  
+.card img {
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+}
+.card-container {
+    padding: 2px 16px 26px;
+    text-align: center;
+}
+.card-button {
+    background-color:#F7DBA5; 
+    color: black; 
+    border: 2px solid #000000;
+    border-radius: 50px;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+.card-button:hover {
+    background-color:#2B0609;
+    color:#F7DBA5;
+}
+
+
+
+/* Carousel */
+.slideshow-container {
+    max-width: 1000px;
+    width: 60%;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color:#F7DBA5;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:#D49343;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color:#F7DBA5;
+}
+
+.fig-hover-attribution
+ {
+    font-size:25px;
+
+}
+
+/* iframe Map styling */
+iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Form Styling */
+.contact-container {
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* iframe Map styling */
+iframe{
+    width: 100%;
+    height: 50vh;
+    border: 0;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 16px auto;
+    display: inline-block;
+    border: 1px solid #F7DBA5;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    width: 25%;
+    color: #FFEECC;
+    background-color:#E6BE46;
+    border: none;
+    font-weight: 600;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+    cursor: pointer;
+} 
+
+/* Applies to footer */
+footer {
+    padding: 50px 250px 16px;
+    background-color:#E6BE46;
+    text-align: right;
+    font-weight: 600;
+    font-size:30px;
+}
+.footer-grid-items img{
+ width: 32px;
+ color:#F7DBA5;
+}
+   
+footer a {
+    color: #2B0609;
+}
+footer a:hover{
+    color: #FFEECC;
+}
+.footer-grid {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    text-align: left;
+  
+}
+.footer-grid-items{
+    display: flex;
+    flex-direction: column;
+    color: var(--background-color);
+  
+}
+
+#footer-legal{
+    font-size: 18pt;
+}
+
+
+

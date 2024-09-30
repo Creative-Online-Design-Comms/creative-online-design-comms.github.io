@@ -1,0 +1,390 @@
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* For variables like colors */
+    /* :root{
+        Makes it easier to change them later
+    } */
+
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        font-family: 'Garamond', Garamond;
+        font-weight: 3000;
+        overflow-x: hidden;
+        background-color: #f5f3f3db;
+    }
+    
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+        text-align: center;
+    }
+
+/* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        background-image: url(images/water.JPG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+/* Page title words */
+    header h1 {
+        padding: 12px;
+        width: 35%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.25);
+        color: #405E8E;
+        font-size: 50pt;
+        border-radius: 100px;
+    }
+    header h1 span{
+        color: #ffffff;
+    }
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0;
+        text-align: center;
+        background-color: #23395B;
+        font-size: 20pt;
+        font-weight: 600;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+      
+/* Nav link adjustments*/
+    nav a {
+        margin: 16px 2vw;
+        text-decoration: none;
+        color: #fff;
+        padding: 16px 26px;
+        border-radius: 50px;
+    }
+    nav a:hover {
+        color: #ffffff;
+        background-color: #406E8E;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+/* Link hover */
+    a:hover {
+        color: #ffffff;
+    }
+
+/* Back to top Button */
+    .back-to-top-btn {
+        padding: 16px;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;  
+        background-color: #161925;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18pt;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 16px 26px;
+        z-index: 2;
+    }
+    .back-to-top-btn:hover{
+        color: #BFD1E5;
+        background-color: #406E8E;
+    }
+
+/* Applies to each section */
+    section {
+        width: 80%;
+        padding: 50px 0px; 
+        margin: auto;
+    }
+    hr {
+        margin: 100px 0px 0px;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 48pt;
+    }
+
+/* Basic element css. Simple 2 column grid with the image attribute displaed on hover */
+    .two-column-container {
+        display: inline-grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        text-align: left;
+        margin: 25px 0px;
+    }
+    .img-text {
+        display: flex;
+        align-items: center;
+    }
+    .img-attribution {
+        width: auto;
+        max-height: 60vh;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    .attribution {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .fig-hover-attribution:hover .attribution {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+/* Large text section */
+    .large-text{
+        margin: 25px 0px;
+        text-align: center;
+        font-size: 32pt;
+    }
+    .large-text a {
+        padding: 16px 26px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #000000;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+    .large-text a:hover {
+        color: #ffffff;
+        background-color: #3F4E50;
+    }
+
+/* Table Styling */
+   
+
+/* Card display Css*/
+    .card-grid{
+        
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 100px;
+    }
+    .card {
+        box-shadow: 0 7px 7px 0 #23395B;
+        transition: 0.3s;
+        border-radius: 100px;
+    } 
+    .card a {
+        text-decoration: none;
+        color: #000000;
+    }
+    .card:hover {
+        box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2);
+    }  
+    .card img {
+        width: 100%;
+        border-radius: 50px 50px 0px 0px;
+    }
+    .card-container {
+        padding: 2px 20px 30px;
+        text-align: center;
+    }
+    .card-button {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #406E8E;
+        border-radius: 70px;
+        padding: 16px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+        margin: 7px 7px;
+        transition-duration: 0.4s;
+    }
+    .card-button:hover {
+        background-color: #BFD1E5;
+        color: white;
+    }
+    
+
+/* Carousel */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        z-index: 0;
+    }
+    .mySlides {
+        display: none;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .text {
+        color: #000000;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .numbertext {
+        color: #000000;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+/* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+/* Gallery Thumnail style */
+    .thumbnail-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-content: center;
+        justify-content: center;
+        max-width: 1300px;
+        margin:0 auto;
+        padding:0px;
+    }
+    .thumbnail-container img {
+        padding: 0px 2px;
+    }
+
+/* iframe Map styling */
+    iframe{
+        width: 80%;
+        height: 50%;
+        border: 0;
+    }
+  
+/* Form Styling */
+    .contact-container {
+        padding: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* iframe Map styling */
+    iframe{
+        width: 80%;
+        height: 35vh;
+        border: 0;
+    }
+  
+  /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+        width: 50%;
+        padding: 12px;
+        margin: 16px auto;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+  /* Style the submit button */
+    input[type=submit] {
+        width: 25%;
+        color: #FDAC96;
+        background-color: #3F4E50;
+        border: none;
+        font-weight: 600;
+    }
+  
+    input[type=submit]:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    } 
+
+/* Applies to footer */
+    footer {
+        padding: 50px 250px 16px;
+        background-color: #23395B;
+        text-align: right;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    footer a {
+        color: #ffffff;
+    }
+    footer a:hover{
+        color: #fff;
+    }
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+        text-align: middle;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }

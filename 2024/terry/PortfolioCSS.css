@@ -1,0 +1,279 @@
+/* Add your fontkit here */
+@font-face {
+    font-family: 'Brief Moment Between';
+    src: url(Fonts/Brief-Moment-Between.woff);
+    src:url(Fonts/Brief-Moment-Between.ttf);
+  }
+@font-face {
+    font-family: 'Sketchline';
+    src: url(Fonts/Sketchline.woff);
+    src:url(Fonts/Sketchline.ttf)
+}
+
+/* For variables like colors */
+    /* :root{
+        Makes it easier to change them later
+    } */
+
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        background-image: url(images/paper/rice_paper_texture_by_maplerose_stock_d2uelg7.jpg);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        margin: auto;
+        font-family: 'Sketchline', sans-serif;
+        font-weight: 100;
+        overflow-x: hidden;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 100;
+        text-align: center;
+        font-family: 'Sketchline', sans-serif;
+    }
+
+/* Page title area */
+    header {
+        display: flex;
+        width: 100vw;
+        height: 40vh;
+        margin-bottom: 10vh;
+    }
+
+/* Page title words */
+    header h1 {
+        padding: 16px;
+        width: 50%;
+        margin: auto;
+        color: #000000;
+        font-size: 85pt;
+        border-radius: 100px;
+    }
+
+/* Social Buttons */
+    .social-buttons{
+        display: flex;
+        justify-content: end;
+        margin-top: 3vw;
+        margin-right: 3vw;
+        color: #000000;
+    }
+    nav a:hover {
+        color: #ffffff;
+        transition: color 0.5s ease;
+    }
+    .social-buttons a{
+        margin: 16px;
+    }
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0;
+        text-align: center;
+        font-size: 40pt;
+        font-weight: 100;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+
+/* Nav link adjustments*/
+    nav a {
+        margin: 16px 2vw;
+        margin-bottom: 20vh;
+        text-decoration: none;
+        color: #000000;
+        padding: 16px 26px;
+        border-radius: 50px;
+        color: #000000;
+        background-color: #e0e0e0;
+        box-shadow: 0 0 15px #000000;
+    }
+    nav a:hover {
+        color: #ffffff;
+        background-color: #000000;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+
+/* Link hover */
+    a:hover {
+        color: #ffffff;
+    }
+
+/* Back to top Button */
+    .back-to-top-btn {
+        padding: 16px;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;  
+        text-decoration: none;
+        font-size: 20pt;
+        font-weight: 100;
+        border-radius: 50px;
+        padding: 16px 26px;
+        z-index: 2;
+        color: #000;
+        background-color: #e0e0e0;
+        box-shadow: 0 0 15px #000000;
+    }
+    .back-to-top-btn a:visited{
+        color: #000;
+    }
+    .back-to-top-btn:hover{
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 55pt;
+        margin-bottom: auto;
+    }
+
+/* Basic element css. Simple 2 column grid with the image attribute displaed on hover */
+    .two-column-container {
+        range: url(images/asdgfn.jpg); 
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        text-align: left;
+        margin: 0px 0px;
+        font-size: 26pt;
+        font-family: 'Brief Moment Between', sans-serif;
+        font-weight: 200;
+    }
+
+    .img-text {
+        display: flex;
+        align-items: center;
+    }
+    .img-attribution {
+        width: 400px;
+        height: 400px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        box-shadow: 0 0 15px #000000;
+    }
+    .attribution {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+/* Large text section */
+    .large-text{
+        margin: 25px 0px;
+        text-align: center;
+        font-size: 32pt;
+        
+    }
+    .large-text a {
+        padding: 16px 26px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+    .large-text a:hover {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+/* Gallery Thumnail style */
+    .thumbnail-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-content: center;
+        justify-content: center;
+        max-width: 1300px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .thumbnail-container img {
+        margin: 20px 20px;
+        box-shadow: 0 0 15px #000000;
+    }
+
+/* iframe Map styling */
+    iframe{
+        width: 80%;
+        height: 50%;
+        border: 0;
+        
+    }
+  
+/* Form Styling */
+    .contact-container {
+        padding: 16px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 36pt;
+        font-family: 'Brief Moment Between', sans-serif;
+    }
+    .contact-container ul {
+        list-style: none;
+        text-decoration: none;
+      }
+      
+/* iframe Map styling */
+    iframe{
+        width: 80%;
+        height: 35vh;
+        border: 0;
+    }
+  
+/* Applies to footer */
+    footer {
+        padding: 30px 20px 20px;
+        font-family: 'helvetica';
+        background-color: #ffffff;
+        text-align: column;
+        font-weight: 200;
+        box-shadow: 0 0 15px #000000;
+    }
+    footer a {
+        color: #000;
+    }
+    footer a:hover{
+        color: #8d8d8d;
+    }
+    .footer-grid {
+        width: 50%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 150px;
+        text-align: column;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    

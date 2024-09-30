@@ -1,0 +1,270 @@
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* For variables like colors */
+    :root{ 
+        --background-color: #FCFDE3;
+        --navbar-color: #704A2E;
+        --not-black: #312B27;
+    } 
+
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        background-color: var(--not-black);
+        margin: auto;
+        font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+        font-weight: 500;
+        overflow-x: hidden;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        text-align: center;
+    }
+
+/* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        background-image: url(images/dacademia2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+/* Page title words */
+    header h1 {
+        padding: 9px;
+        width: 40%;
+        border-radius: 3pt;
+        margin: auto;
+        background-color: var(--background-color);
+        color: #341F22;
+        font-size: 72pt;
+      
+    }
+    header h1 span{
+        color: #FDAC96;
+    }
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0;
+        text-align: center;
+        background-color: #704A2E;
+        font-size: 20pt;
+        font-weight: 600;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+
+/* Nav link adjustments*/
+    nav a {
+        margin: 16px 2vw;
+        text-decoration: none;
+        color: #faf2ee;
+        padding: 16px 26px;
+        border-radius: 50px;
+    }
+    nav a:hover {
+        color: #ee7554;
+        background-color: var(--not-black);
+        transition: color 0.7s ease;
+        transition: background-color 0.5s ease;
+    }
+
+/* Link hover */
+    a:hover {
+        color: #ee7554;
+    }
+
+/* Back to top Button */
+    .back-to-top-btn {
+        padding: 16px;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;  
+        background-color: var(--navbar-color);
+        text-decoration: none;
+        color: #fff;
+        font-size: 18pt;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 16px 26px;
+        z-index: 2;
+    }
+    .back-to-top-btn:hover{
+        color: #ee7554;
+        background-color: var(--not-black);
+    }
+
+/* Applies to each section */
+    section {
+        border-radius: 3pt;
+        align-content: center;
+        text-align: center;
+        width: 80%;
+        padding: 50px 0px; 
+        margin: 50px;
+        background-color: var(--background-color);
+        margin: 50px;
+    }
+
+    hr {
+        margin: 100px 0px 0px;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 48pt;
+    }
+
+/* Basic element css. Simple 2 column grid with the image attribute displaed on hover */
+    .two-column-container {
+        background-color: var(--navbar-color);
+        padding: 25px;
+        padding-right: 55px;
+        display: inline-grid;
+        grid-template-columns: 1fr 2fr;
+        border-radius: 3pt;
+        width: 100%;
+        text-align: left;
+        margin: 5px 0px;
+    }
+    .img-text {
+        background-color: var(--background-color);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 3pt;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .img-attribution {
+        width: auto;
+        max-height: 60vh;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    .attribution {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .fig-hover-attribution:hover .attribution {
+        opacity: 1;
+        color: var(--background-color);
+        transition: opacity 0.5s ease-out;
+    }
+
+#intro-section {
+    text-align: center;
+    align-content: center;
+    padding: 50px;
+    border-radius: 3pt;
+}
+
+#section-two {
+    text-align: center;
+    padding: 20pt;
+    border-radius: 3pt;
+}
+
+#section-two img{
+    text-align: center;
+    width: 100%;
+    border-radius: 3pt;
+}
+
+#section-one {
+    text-align: center;
+    width: 115%;
+    background-color: var(--navbar-color);
+    border-radius: 3pt;
+}
+#section-one img{
+    text-align: center;
+    border-radius: 3pt;
+}
+
+
+#section-three {
+    text-align: center;
+    padding: 26px;
+    border-radius: 3pt;
+    
+}
+
+#section-three h2{
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.float figure {
+    text-align: left;
+    float: left;
+    margin: 16px;
+    margin-top: 5px;
+    border-radius: 3pt;
+    width: 50%;
+}
+
+.float img{
+    width: 100%;
+    border-radius: 3pt;
+}
+
+.float {    
+    text-align: left;
+    border-radius: 3pt;
+}
+
+
+/* Applies to footer */
+    footer {
+        padding: 50px 250px 16px;
+        background-color: var(--navbar-color);
+        text-align: right;
+        font-weight: 600;
+    }
+    footer a {
+        color: #000;
+    }
+    footer a:hover{
+        color: #fff;
+    }
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+        text-align: left;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }

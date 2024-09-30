@@ -1,0 +1,582 @@
+/* Add your fontkit here */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Luxurious+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+
+  
+
+/* For variables like colors */
+/* --color-one:; */
+    :root{ 
+        --background:#FFFEF8;
+        --pink: #EAA0D6;
+        --green:#88AB7F;
+        --black:#505050;
+        --white:#FFFFFF;
+        --gray:#D9D9D9;
+    } 
+
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        font-family: 'Kadwa', sans-serif;
+        font-weight: 400;
+        overflow-x: hidden;
+        color:#505050;
+        text-align: center;
+        background-color: var(--background);
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1{
+        font-weight: 400;
+        text-align: center;
+        font-size: 72pt;
+    }
+
+    h2{
+        font-weight: 400;
+        text-align: center;
+        font-family: "Luxurious Script", cursive;
+        font-size: 100pt;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    h3{
+        font-weight: 400;
+        text-align: left;
+        font-family: "Luxurious Script", cursive;
+        font-size: 62pt;
+    }
+
+    h4{
+        font-weight: 400;
+        text-align: left;
+        font-family: "Kadwa", serif; 
+        color: var(--green);
+        font-size: 20pt;
+    }
+
+    h5{
+        font-weight: 400;
+        text-align: right;
+        font-family: "Luxurious Script", cursive;
+        font-size: 62pt;
+
+    }
+
+    h6{
+        font-weight: 400;
+        text-align: right;
+        font-family: "Kadwa", serif; 
+        color: var(--green);
+        font-size: 20pt;
+    }
+
+    
+    h7{
+        font-weight: 400;
+        text-align: center;
+        font-family: "Kadwa", serif; 
+        color: var(--green);
+        font-size: 20pt;
+    }
+
+      
+/* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        background-color:var(--background);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+/* Page title words */
+    header h1 {
+        padding: 10px;
+        width: 50%;
+        margin: auto;
+        font:'Kadwa', serif;
+        color: var(--black);
+        font-size: 72pt;
+        border-radius: 100px;
+        font-weight: 400;
+    }
+    header h1 span{
+        color:var(--black);
+    }
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0;
+        text-align: center;
+        background-color: var(--pink);
+        font:'Kadwa', serif;
+        font-size: 20pt;
+        font-weight: 600;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+
+/* Nav link adjustments*/
+    nav a {
+        margin: 16px 2vw;
+        text-decoration: none;
+        color: var(--background);
+        padding: 16px 26px;
+        border-radius: 50px;
+    }
+    nav a:hover {
+        color:var(--black);
+        background-color:var(--pink);
+        transition: color 0.5s ease;
+       
+    }
+
+/* Link hover */
+    a:hover {
+        color: var(--black);
+    }
+
+/* Back to top Button */
+    .back-to-top-btn {
+        padding: 16px;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;  
+        background-color:var(--pink);
+        text-decoration: none;
+        color:var(--background);
+        font-size: 18pt;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 16px 26px;
+        z-index: 2;
+    }
+    .back-to-top-btn:hover{
+        color: var(--white);
+        background-color: var(--green);
+    }
+
+/* Applies to each section */
+    section {
+        width: 80%;
+        padding: 50px 0px; 
+        margin: auto;
+        background-color: var(--background);
+    }
+
+    hr {
+        margin: 100px 0px 0px;
+        color:#505050;
+    }
+
+
+/* Section title heading size */
+    section h2 {
+       
+        font: 'Luxurious Script', sans-serif;
+        color:var(--pink);
+    }
+
+.meanings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0px;
+    padding: 2px;
+    max-width: 80%;
+}
+
+.flowerlinks{
+    nav {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        text-align: center;
+        background-color: var(--pink);
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+
+/* Nav link adjustments*/
+    nav a {
+        margin: 16px 2vw;
+        text-decoration: none;
+        color: var(--background);
+        padding: 16px 26px;
+        border-radius: 50px;
+    }
+    nav a:hover {
+        color:var(--black);
+        background-color:var(--pink);
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+    }
+    
+}
+
+.indexbox{
+    width:900px;
+    height: 70px;
+    background:var(--pink);
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+    margin-top:00px;
+    margin-bottom: 0px;
+    
+ }
+
+.flowerlink:hover{
+        color:var(--black);
+        transition: color 0.5s ease;
+}
+
+.flowerlink{
+        color: #FFFEF8;
+        font-weight: 600;
+        font:'Kadwa', serif;
+        font-size: 20pt;
+        text-decoration: none;
+        margin: 30px
+}
+
+.more{
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Kadwa", serif; 
+    color: var(--green);
+    font-size: 15pt;
+}
+
+.more:hover{
+    color:var(--black);
+    transition: color 0.5s ease;
+}
+
+.roseimg{
+float: right;
+width:100px;
+margin-top: 70px;
+margin-bottom: 200px;
+margin-left: 50px;
+}
+
+.lavenderimg{
+    float: left;
+    width:100px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    margin-right: 50px;
+}
+
+.daffodilimg{
+    float: right;
+    width:100px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+}
+
+.tulipimg{
+    float: left;
+    width:100px;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.lilyimg{
+    float: right;
+    width:100px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+}
+
+
+.meanings h5 {
+    margin:0px;
+    padding: px;
+}
+
+.meanings h3{
+    margin:0px;
+    margin-top:50px;
+}
+
+.meanings h6{
+    margin:0px;
+}
+
+.meanings h4{
+    margin:0px;
+}
+
+.p2{
+    text-align: left;
+}
+
+.p3{
+    text-align: right;
+}
+
+
+/* Gallery */
+
+.slideshow-container {
+    max-width: 1000px;
+    width: auto;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin-left: -250px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 250px;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* Resources */
+
+.resourcesimg1{
+    float: left;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    margin-right: 0px;
+}
+
+.resourcesimg2{
+    float: right;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    margin-left: 0px;
+}
+
+.resources{
+    color:#FFFEF8;
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: 600;
+    margin: 50px;
+}
+
+.resources:hover{
+    color:var(--black);
+    transition: color 0.5s ease;
+}
+
+.box1{
+    width:700px;
+    height: 70px;
+    background: var(--green);
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+    margin-top:0px;
+    margin-bottom: 100px;
+}
+    
+.local{
+    margin: 40px;
+}
+
+/* Cards */
+.card-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 50px;
+} 
+.card a {
+    text-decoration: none;
+    color:var(--black);
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}  
+.card img {
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+}
+.card-container {
+    padding: 2px 16px 26px;
+    text-align: center;
+}
+.card-button {
+    background-color:var(--pink); 
+    color:var(--background); 
+    border-radius: 50px;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Kadwa', serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+.card-button:hover {
+    background-color:var(--green);
+    color: white;
+}
+
+.sources{
+    font-weight: 400;
+    text-align: left;
+    font-family: "Kadwa", serif; 
+    color: var(--black);
+    font-size: 20pt;
+    margin-top: 200px;
+}
+
+.sourcebox{
+    width: 100%;
+    height: 550px;
+    background:var(--gray);
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content:left;
+    margin:0 auto;
+    margin-top:0px;
+    margin-bottom: 200px;
+    padding: 20px;
+ }
+
+.sorsec{
+    text-align: left;
+}
+
+ .source{
+    text-align: left;
+    font-family: "Kadwa", serif; 
+    color: #505050;
+    font-size: 10pt;
+    justify-content:left;
+ }
+
+/* Applies to footer */
+    footer {
+        padding: 50px 250px 16px;
+        background-color: var(--black);
+        text-align: right;
+        font-weight: 600;
+    }
+    footer a {
+        color:var(--green);
+    }
+    footer a:hover{
+        color: var(--background);
+    }
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+        text-align: left;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright{
+        font-family: 'Kadwa', serif;
+        color:var(--background)
+    }
