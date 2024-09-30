@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Gowun+Batang:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=League+Gothic&family=Luxurious+Script&family=Notable&family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Gowun+Batang:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=League+Gothic&family=Luxurious+Script&family=Notable&family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&family=Zen+Dots&display&family=IM+Fell+DW+Pica+SC&display=swap');
 @font-face {
     font-family: 'Sketchline';
     src: url('/2024/terry/Fonts/Sketchline.woff');
@@ -10,11 +10,146 @@
   background: linear-gradient(315deg, #f07d2b, #4EADF5)
 }
 
+/* Jessica */
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-  background: linear-gradient(315deg, #f07d2b, #4EADF5)
+  background: linear-gradient(315deg, #a3c8e2, #182a44)
 }
+
+/* Katarina */
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #59645a, #bed6c3)
+}
+
+/* Seth */
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #738d61, #684a39)
+}
+
+/* Natalie */
+.container .box:nth-child(4):before,
+.container .box:nth-child(4):after
+{
+  background: linear-gradient(315deg, #5a5a5a, #afafaf)
+}
+
+/* Gina */
+.container .box:nth-child(5):before,
+.container .box:nth-child(5):after
+{
+  background: linear-gradient(315deg, #b8b8b8, #660055)
+}
+
+/* V */
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after
+{
+  background: linear-gradient(315deg, #41240e, #dacf93)
+}
+
+/* Kelli */
+.container .box:nth-child(7):before,
+.container .box:nth-child(7):after
+{
+  background: linear-gradient(315deg, #d0edf3, #288f8f)
+}
+
+/* Amalya */
+.container .box:nth-child(8):before,
+.container .box:nth-child(8):after
+{
+  background: linear-gradient(315deg, #729e66, #dda7cf)
+}
+
+/* Leo */
+.container .box:nth-child(9):before,
+.container .box:nth-child(9):after
+{
+  background: linear-gradient(315deg, #ED64F5, #5e4e8c)
+}
+
+/* Terry */
+.container .box:nth-child(10):before,
+.container .box:nth-child(10):after
+{
+  background: linear-gradient(315deg, #242424, #bbbbbb)
+}
+
+/* Connor */
+.container .box:nth-child(11):before,
+.container .box:nth-child(11):after
+{
+  background: linear-gradient(315deg, #f17d17, #11bfe6)
+}
+
+/* Jade */
+.container .box:nth-child(12):before,
+.container .box:nth-child(12):after
+{
+  background: linear-gradient(315deg, #2B0609, #d4a643)
+}
+
+/* Riley */
+.container .box:nth-child(13):before,
+.container .box:nth-child(13):after
+{
+  background: linear-gradient(315deg, #751616, #1d1919)
+}
+
+/* Ruby */
+.container .box:nth-child(14):before,
+.container .box:nth-child(14):after
+{
+  background: linear-gradient(315deg, #022f7e, #e266c5)
+}
+
+/* Soyo */
+.container .box:nth-child(15):before,
+.container .box:nth-child(15):after
+{
+  background: linear-gradient(315deg, #929292, #222222)
+}
+
+/* Rajh */
+.container .box:nth-child(16):before,
+.container .box:nth-child(16):after
+{
+  background: linear-gradient(315deg, #5C82F2, #D98BC4)
+}
+
+/* Brooke */
+.container .box:nth-child(17):before,
+.container .box:nth-child(17):after
+{
+  background: linear-gradient(315deg, #cccacc, #2d9625)
+}
+
+/* Ellison */
+.container .box:nth-child(18):before,
+.container .box:nth-child(18):after
+{
+  background: linear-gradient(315deg, #2a5bff, #9db4ff)
+}
+
+/* Rocko */
+.container .box:nth-child(19):before,
+.container .box:nth-child(19):after
+{
+  background: linear-gradient(315deg, #f3c45d, #46c5d6)
+}
+
+/* Template */
+.container .box:nth-child(20):before,
+.container .box:nth-child(20):after
+{
+  background: linear-gradient(315deg, #418f99, #FDAC96)
+}
+
 
 /* Card Fonts */
 .jessica{
@@ -35,6 +170,7 @@
 
 .gina{
   font-family: "League Gothic", sans-serif;
+  text-shadow: 2px 2px #252525;
 }
 
 .v{
@@ -67,6 +203,23 @@
 
 .riley{
   font-family: "IM Fell DW Pica SC", serif;
+  text-shadow: 
+              -4px -4px 0 #000,  
+               4px -4px 0 #000,
+              -4px  4px 0 #000,
+               4px  4px 0 #000,
+              -4px  0px 0 #000,
+               4px  0px 0 #000,
+               0px -4px 0 #000,
+               0px  4px 0 #000,
+              -2px -2px 0 #000,  
+               2px -2px 0 #000,
+              -2px  2px 0 #000,
+               2px  2px 0 #000,
+              -2px  0px 0 #000,
+               2px  0px 0 #000,
+               0px -2px 0 #000,
+               0px  2px 0 #000; /* Thicker outline */
 }
 
 .ruby{
