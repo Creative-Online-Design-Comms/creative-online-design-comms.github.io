@@ -1,19 +1,98 @@
-@import url('');
-/* @font-face {
-    font-family: ;
-    src: ;
-  } */
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Gowun+Batang:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=League+Gothic&family=Luxurious+Script&family=Notable&family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&family=Zen+Dots&display=swap');
+@font-face {
+    font-family: 'Sketchline';
+    src: url('/2024/terry/Fonts/Sketchline.woff');
+  }
 
 /* Card Colors */
+.container .box::after,
+.container .box::before {
+  background: linear-gradient(315deg, #f07d2b, #4EADF5)
+}
+
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
   background: linear-gradient(315deg, #f07d2b, #4EADF5)
 }
 
-
 /* Card Fonts */
-/* .name{
-    font-family: ;
+.jessica{
+    font-family: 'Garamond', Garamond;
+}
+
+.katarina{
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.seth{
+  font-family: "Jost", sans-serif;
+}
+
+/* .natalie{
+  font-family: ;
 } */
 
+.gina{
+  font-family: "League Gothic", sans-serif;
+}
+
+.v{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.kelli{
+  font-family: 'Gowun Batang', serif;
+}
+
+.amalya{
+  font-family: "Luxurious Script", cursive;
+}
+
+.leo{
+  font-family: "VT323", monospace;
+}
+
+.terry{
+  font-family: 'Sketchline', sans-serif;;
+}
+
+.connor{
+  font-family: 'K2D', sans-serif;;
+}
+
+.jade{
+  font-family: "Irish Grover", system-ui;;
+}
+
+.riley{
+  font-family: "IM Fell DW Pica SC", serif;
+}
+
+.ruby{
+  font-family: "Inria serif", serif;
+}
+
+.soyo{
+  font-family: "Pirata One", system-ui;
+}
+
+.rajh{
+  font-family: 'Bevan', serif;
+}
+
+.brooke{
+  font-family: "Notable", sans-serif;
+}
+
+.ellison{
+  font-family: 'Zen Dots';
+}
+
+.rocko{
+  font-family: 'Playfair Display', serif;
+}
+
+.template{
+  font-family: 'Poppins', sans-serif;
+}
