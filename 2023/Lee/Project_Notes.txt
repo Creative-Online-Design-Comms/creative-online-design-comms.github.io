@@ -1,0 +1,243 @@
+
+
+: link to workbook :
+
+https://www.canva.com/design/DAFyzFhtBcE/e6XiBDBvtcvaMHc9qrc8Fg/view?utm_content=DAFyzFhtBcE&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
+
+: link to figma board :
+https://www.figma.com/file/kz3LcoMWCcj7CJbKuRnULz/Web-Design-Project?type=design&node-id=0%3A1&mode=design&t=JI1hcIpDoe9YLkhp-1
+
+
+obsidian notes 
+ L flexible note taking
+
+ : to do : 
+
++ auto resizes automatically, can use specified measurements
+  (example -> grid-template-columns: auto auto auto auto auto auto;)
++ media queries added to bottom of .css file
++ image outsourcing for project
+ L copyright 
++ size up body text to be more readable 
+  L nav bar
+  L fix body margin -> introduction
++ navbar grid spacing
++ categories
+  L new section
+   - flexbox
+   - grid
++ adding gradient to sticky nav
++ REMEMBER content before messing with boxes
++ remove existing carousel
++ add new carousel                              ( done )
++ change body text size
++ adjusting #section backrounds to fit
++ adding character sheet
+  
+: notes : 
+
++ adding new carousel clashed with existing categories flexbox
+ L changing to grid
++ ".container" from flexbox becomes ".container" for carousel
++ % need to reach 100% all the time 
+
+    ( example ->  grid-template-columns: 20% 60% 20%; )
+
++ flexbox vs grid
+  L flexbox 
+    - allows more fluidity in grid formats
+    - can sometimes need more work to get working
+  L grid
+    - more structured
+    - can take less steps
+  
++ using picrew djarn character creator for character portraits
+ L got some responses asking for art but not enought to add to content of website
+
++ wanting to add grid under carousel to showcase character portraits to have to potential to choose a specific item without having to scroll through entire gallery
+ L visual cues for easier navigation
+
++ handbook images taken from amazon listings and cropped
+ 
+
+: working examples  : 
+
++ background -> paralax scroll
++ carousel -> image gallery
++  -> fancybox
++ back to top button ->
++ sections - margin spacing
++ character sheet explanation -> hover
++ background gradient -> opacity settings
++ category -> flexbox
+ L max width = 4 tiles
++ gradient
+ L title page
+  - radial gradient, center 0%, outer 100%
+ L bacground
+  - linear gradient, center 0%, outer 100%
++ responsiveness -> media queries
+ L sizing 
+
+: colours : 
+
++ text -> #F8F6F1
++ background -> #271D1B
++ primary -> #585A44
++ secondary -> #FFF5D6
++ accent -> #E6E494
+
+: font :
+
++ title -> unifrakturCook
++ body -> noto serif
+
+
+: notes :
+[ content ]
++ classes 
+
+
+
+ L class 
+1 artificer
+2 blood hunter  
+3 Barbarian
+
+    > focus on brawn over brain
+    > for players who want to prioritise a battle ready build
+    > strength
+     L high hit dice
+     L 
+    > weakness
+     L lacks intelligence
+
+  4 bard 
+
+    > musicians and entertainers
+    > 
+  5 cleric 
+  6 druid 
+  7 fighter 
+  8 monk 
+  9 paladin
+  10 ranger
+  11 rogue
+  12 sorcerer
+  13 warlock
+  14 wizard
+  
+
+
+ L race 
+(core) 
+1 dragonborn
+2 dwarf
+3 elf
+4 gnome  
+5 halfling
+6 half-elf  
+7 half-orc  
+8 human  
+9 tiefling
+
+
+(additional) 
+1 arakocra
+2 aasimar
+3 bugbear
+4 centuar
+5 changeling 
+6 deep gnome 
+7 duergar 
+8 genasi 
+9 githyanki 
+10 githzerai 
+11 goliath 
+12 harengon 
+13 kenku  
+14 kobold 
+15 owlin 
+16 shifter
+17 tabaxi
+18 tortle 
+19 warforged
+
+
+ L background
+Acolyte 
+charlatan 
+criminal 
+entertainer
+folk hero  
+guild artisan  
+hermit 
+noble 
+outlander
+sage 
+sailor
+soldier
+
+
++ character sheets
+  - stats and roles
+  
+  - strength 
+  
+  - constitution
+  
+  - wisdom
+  
+  - charisma 
+  
+  - intelligence 
+  
+  - dexterity
+
+
++ handbook
+ L player's handbook
+ 
+ L DM handbook
+ 
+ L monster's handbook
+
+
++ spellcasting
+
++ insights
+
+
+: links : 
+
++ beginner's guide 
+https://cardgamebase.com/what-to-buy-dnd-beginner/
+
++ site reference 
+ L DnD Beyond 
+https://www.dndbeyon d.com/marketplace?utm_source=adwords&utm_campaign=10690194905&utm_term=113938293548&utm_content=452561258317&gsc=1&utm_medium=g_5651889&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzmRjBKwczQ6Js9ZO-pghSalSSppagdSIc9bQTQsD3tSME5wFckxW6saAik2EALw_wcB&wbraid=CjgKCAiA3aeqBhAREigA2aS9lasLUBFPtRXhSUSCILJ_bbNzM4zGw7uVxU6oIWjE4l4-775EGgKJtA&gsid=1ee7e878f79065f68a86da925fc36ade
+ L DnD Wizards
+
++ wargamer
+ L classes
+https://www.wargamer.com/dnd/classes
+ L races 
+https://www.wargamer.com/dnd/races
+ L background
+https://www.wargamer.com/dnd/backgrounds-5e
+
++ How to Add Gradient Overlay to Image in CSS
+https://www.youtube.com/watch?v=5CztcrXpfec
+
++ picrew character creator
+https://picrew.me/en/image_maker/708151
+
++ Tyler Jacobson (DnD Art)
+http://www.tylerjacobsonart.com/
+
+
+
+
+
+

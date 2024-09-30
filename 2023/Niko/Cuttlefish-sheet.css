@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+html{
+  overflow-x: hidden;
+}
+/* The sidebar menu */
+.sidenav {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 12.5vw; /* Set the width of the sidebar */
+    word-spacing: 200px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #4200FF;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  
+  .button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5vh 1vw;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 90%
+  }
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  main{
+    margin-left: 25vw;
+  }
+
+
+  /* Gallery Thumnail style */
+  .intro-image-container {
+    display:flex;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 50vw;
+    margin:0 auto;
+    padding:0px;
+}
+.intro-image-container img{
+    padding: 0px 2px;
+    max-width: 13.5vw;
+}
+
+
+.side-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  padding: 14px;
+  width: 300px;
+  height: 500px;
+background-color:#797078;
+border-radius: 20px;
+}
+.side-panel img{
+  border-radius: 20px;
+}
+
+.species-grid{
+  display: grid;
+  grid-template-columns:auto auto auto ;
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+  column-gap: 30px;
+  font-size: 18px;
+  }
+  .species-grid h3{
+    background-color:#000000;
+    padding: 10px;
+    font-size: 35px;
+    border-radius: 20px;
+    color: #fff;
+    width: 100%;
+    
+  }
+  
+  .species-grid img{
+   width: 50%;
+  }
+  .species-grid p{
+    margin-top: 100px;
+
+  }
+  .species-grid-item{
+    display: block;
+text-align: center;
+  }
+
+  .information-grid{
+    display: grid;
+    
+    grid-template-columns:auto auto auto auto ;
+    column-gap: 30px;
+    font-size: 18px;
+  }
+
+  .information-grid h3{
+    background-color:#000000;
+    color:#fff;
+    padding: 10px;
+    font-size: 35px;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .imformation-grid-item{
+    background-color: #797078;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .side-question{
+    width:40%;
+    margin:auto;
+    margin-top: 50px;
+    background-color:#797078;
+    color:#fff;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .habitat-grid{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 25px;
+    row-gap: 25px;
+    border-radius: 20px;
+     }
+
+     .habitat-grid-item{
+      background-color: #797078;
+      border-radius: 20px;
+      padding: 5px;
+      font-size: 18px;
+      color: rgb(255, 255, 255);
+     }
+
+     .item-1{
+      grid-column: 1 / span 2;
+     }
+   
+     .item-2{
+      grid-row: 2 / span 3;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+     }
+
+     .item-3{
+      grid-column: 2 / span 3;
+     }
+
+    .bottomright{ 
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+      font-size: 18px;
+    }
+
+    .side-panel-2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      float: right;
+      padding: 14px;
+      width: 300px;
+      height: 650px;
+    background-color:#797078;
+    border-radius: 20px;
+    top:-400px;
+    }
+
+    .border{
+      padding: 10px;
+      max-width: 40.5vw;
+      margin: auto;
+      margin-bottom: 50px;
+      background-color: #797078;
+      padding: 10px;
+      border-radius: 20px;
+
+    }
+
+    .small-text {
+      text-decoration: double;
+      background-color: #797078;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .diet{
+      margin-right: 40%;
+    }
+
+    .img-species{
+      height: 100px;
+      margin-bottom: -30px;
+    }

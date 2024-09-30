@@ -1,0 +1,484 @@
+/* Add your fontkit here */
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+    :root {
+        --main-color: #585A44;
+        --secondary-color: #FFF5D6;
+        --accent-color: #E6E494;
+        --background-color: #271D1B;
+        --text-color: #F8F6F1;
+        --title-font: 'UnifrakturCook', cursive;
+        --body-font: 'Noto-serif', serif;
+      }
+
+    * {box-sizing:border-box}
+
+    html{
+        overflow-x: hidden;
+    }
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        font-size: 20px;
+        font-family: var(--background-color);
+        font-weight: 400;
+        color: var(--accent-color);
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--title-font);
+        font-weight: 700;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+/* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        background: radial-gradient(61.09% 50% at 50% 43.54%, rgba(33, 11, 4, 0.00) 0%, rgba(33, 11, 4, 0.00) 0.01%, #210B04 93.23%), url(images/wallpaper/001.header.jpg), lightgray -2.11px -222.962px / 100% 142.884% no-repeat;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--background-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: auto;
+    }
+
+/* Page title words */
+    header h1 {
+        padding: 20px;
+        width: 70%;
+        margin: auto;
+        color: var(--text-color);
+        font-size: 5vw;
+    }
+
+/* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0%;
+        padding: .55%;
+        text-align: center;
+        font-size: 30pt;
+        background: linear-gradient(180deg, #585A44 0%, rgba(69, 62, 45, 0.60) 47.92%, rgba(33, 11, 4, 0.00) 100%);
+        z-index: 100;
+        justify-content: center;
+    }
+
+/* Nav link adjustments*/
+    nav a {
+        font-family: var(--body-font);
+        color: var(--secondary-color);
+        position: center;
+        font-size: 20px;
+        text-decoration: none;
+        width: 250px;
+        height: 30px;
+    }
+
+    .category-container a {
+        position: center;
+        font-size: 20px;
+        text-decoration: none;
+        width: 250px;
+        height: 30px;
+    }
+
+    .character-sheet-link{
+        font-family: var(--body-font);
+        color: var(--accent-color);
+        text-shadow: 2px 3px 4px #271D1B;
+    }
+
+/* Link hover */
+    a:hover {
+        font-family: var(--title-font);
+        color: var(--secondary-color);
+    }
+
+    .category-container a {
+        font-family: var(--body-font);
+        color: var(--accent-color);
+        text-shadow: 2px 3px 4px #271D1B ;
+    }
+
+    .character-sheet-link{
+        font-family: var(--body-font);
+        color: var(--accent-color);
+        text-shadow: 2px 3px 4px #271D1B;
+    }
+
+/* Back to top Button */
+    .back-to-top-btn {
+        padding: 10px;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+    }
+
+/* Applies to each section */
+    section {
+        padding: 50px 60px;
+        margin-top: -50px;
+        background-image: linear-gradient(90deg, #210B04 17.71%, #210b0400 50%, #210B04 80.21%), url(images/wallpaper/002.information.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    hr {
+        margin: 100px 0px 0px;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 48pt;
+    }
+
+/* : Categories : */
+
+    .category-container{
+        display: flex;
+        flex: wrap;
+        justify-content: flex-end;
+        justify-content: center;
+        margin: 200px;
+        padding: 70px;
+        height: 30vh;
+    }
+
+    .category-row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 5px;
+        height: 100px;
+        justify-content: center;
+    }
+
+ /* : category-introduction : */
+    .category-items-1{
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 250px;
+        height: 150px;
+        flex-shrink: 0;
+        background: linear-gradient(180deg, rgba(33, 11, 4, 0.00) 0%, #210B04 62.5%, #210B04 100%);
+        background: url(images/category/1_introduction.png), lightgray 50% / cover no-repeat;
+        justify-content: center;
+    }
+
+/* : category-class : */
+    .category-items-2{
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 250px;
+        height: 150px;
+        flex-shrink: 0;
+        background: url(images/category/2_class.png), lightgray 50% / cover no-repeat;
+        justify-content: center;
+    }
+
+
+/* : category-race : */
+    .category-items-3{
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 250px;
+        height: 150px;
+        flex-shrink: 0;
+        background: url(images/category/3_race.png), lightgray 50% / cover no-repeat;
+        justify-content: center;
+    }
+
+/* : category-character-sheet : */
+    .category-items-4{
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 250px;
+        height: 150px;
+        flex-shrink: 0;
+        background: url(images/category/4_character_sheet.png), lightgray 50% / cover no-repeat;
+        justify-content: center;
+    }
+
+/* : category-handbook : */
+    .category-items-5{
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 250px;
+        height: 150px;
+        flex-shrink: 0;
+        background: url(images/category/5_handboof.png), lightgray 50% / cover no-repeat;
+        justify-content: center;
+    }
+
+/* : category-spells : */
+    .category-items-6{
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 250px;
+        height: 150px;
+        flex-shrink: 0;
+        background: url(images/category/6_spellcasting.png), lightgray 50% / cover no-repeat;
+        justify-content: center;
+    }
+
+/* : category-insights :    */
+    .category-items-7{
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 250px;
+        height: 150px;
+        flex-shrink: 0;
+        background: url(images/category/7_insight.png), lightgray 50% / cover no-repeat;
+        justify-content: center;
+    }
+
+/* Carousel */
+    .mySlides1 {display: none}
+    .mySlides2 {display: none}
+
+    .card {
+        height: 90vh;
+        width: 30vw;
+        max-width: 400px;
+        margin: auto;
+        border:#f8f6f100 solid 3pt;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: var(--background-color);
+        border-radius: 500px;
+        overflow: hidden;
+        font-size: 20px;
+    }
+
+    .card-container {
+        padding: 2px 16px;
+        text-align: center;
+    }
+
+    .race-class-content {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        width: 60%;
+        margin: auto;
+        overflow: visible;
+    }
+
+    .carousel-nav {
+        margin: 30px
+    }
+
+    .prev-next {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: transparent;
+    }
+
+    .slide-number {
+        background-color: var(--background-color);
+        color: var(--acc);
+        border-radius: 100px;
+        height: 3vh;
+        font-family: var(--title-font);
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+/* : Handbook : */
+
+    section-five{
+        width: 250px;
+        height: 150px;
+    }
+
+    .row::after {
+        clear: both;
+        display: table;
+        }
+
+    .handbook-column{
+        float: left;
+        width: 33.33%;
+        margin: 0%;
+        padding-top: 4%;
+        padding-bottom: 10%;
+        box-shadow: var(--accent-color);
+    }
+
+    .handbook-column-image:hover {
+        box-shadow: 0px 1px 1px 0px var(--accent-color);
+        opacity: 0.1;
+        transition: opacity 0.5s ease;
+    }
+
+    .handbook-column-image{
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+/* : spellcasting : */
+
+    section-six{
+        margin: auto;
+        padding: auto;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .spellcast-button{
+        background-color: var(--background-color);
+        color: var(--acc);
+        margin:  10%;
+        width: 15vw;
+        height: 5vh;
+        font-family: var(--title-font);
+    }
+
+/* : insight : */
+
+    .insight-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        height: 50% 
+        
+    }
+
+    insight-img{
+        grid-area: insight-img;
+        justify-content: left;
+        padding-right: -50px;
+    }
+
+    .insight-text{
+        text-align: left;
+    }
+
+/* Applies to footer */
+    footer {
+        padding: 50px 10px 10px 10px;
+        background-color: var(--background-color);
+        text-align: left;
+        font-size: 20px;
+        background-image: linear-gradient(180deg, #585A44 0%, rgba(69, 62, 45, 0.60) 47.92%, rgba(33, 11, 4, 0.00) 100%);
+    }
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+        text-align: left;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 800px) {
+
+    body{
+        overflow: hidden;
+        text-align: center;
+    }
+
+    nav ul li {
+    display: box;
+    }
+
+    header {
+        display:flex;
+        align-items:start;
+        background: radial-gradient(61.09% 50% at 50% 43.54%, rgba(33, 11, 4, 0.00) 0%, rgba(33, 11, 4, 0.00) 0.01%, #210B04 93.23%), url(images/wallpaper/001.header.jpg), lightgray -2.11px -222.962px / 100% 142.884% no-repeat;
+        width: 100vw;
+        height: 30vh;
+        background-color: var(--background-color);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: top;
+        background-attachment: fixed;
+        padding: 33px 33px 33px;
+    }
+
+    .prev-next {
+        background-color: transparent;
+        color: var(--acc);
+        border-radius: 100px;
+        height: 3vh;
+        font-family: var(--title-font);
+        align-items: baseline;
+    }
+
+    header h1{
+        font-size: 25pt;
+        padding: 33px 33px 33px;
+    }
+
+    section h2 {
+        font-size: 30pt;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .category-container{
+        display: none;
+    }
+
+    .medium {
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .race-class-content{
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .handbook-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+
+    }

@@ -1,0 +1,292 @@
+
+<!doctype html>
+<html lang="en">
+    
+    <!-- *****************************
+         Author: George
+         Creation date: 08/11/2023
+         ***************************** -->
+    
+    <head>
+        <!-- Browser tab info -->
+        <title>Web Test</title>
+
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Links-->
+        <link href="my-style.css" rel="stylesheet">
+        <!-- Fancybox css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    </head>   
+    
+    <!-- Front-end content -->
+    <body>
+
+        <!-- Website title and heading -->  
+        <header id="page-top">
+            <h1>Shirts</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#section-one">Basic Elements</a>   
+            <a href="#section-two">Card Display</a>
+            <a href="#section-three">Carousel</a>
+            <a href="#section-four">Fancybox</a>
+        </nav>
+
+        <!-- Back to top button -->
+        <a class="back-to-top-btn" href="#page-top">Back to Top</a>
+      
+        <!-- Main Content -->
+        <main>
+
+            <!-- Section one of content -->
+            <section id="section-one">
+
+                <!-- h tag for headings -->
+                <h2>Basic Elements</h2>
+
+                <div class="two-column-container pre-wrap">
+                    <figure class="fig-hover-attribution">
+                        <!-- img for images with src being the source alt for alternative text -->
+                        <img class="img-attribution" src="images/example-img-1200x800.jpg" alt="Ocean Waves Crashing on Shore during Sunset">  
+                        <!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute--> 
+                        <figcaption class="attribution">Ocean Waves Crashing on Shore during Sunset, Jess Loiterton, sourced from <a href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/">Pexels</a>, <a href="https://www.pexels.com/license/">cc</a></figcaption> 
+                    </figure>
+                    <div class="pre-wrap img-text">        
+                        <!-- p for paragraphs-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Consequat ac felis donec et odio pellentesque diam volutpat. Nulla aliquet enim tortor at auctor. Egestas congue quisque egestas diam in arcu. Amet volutpat consequat mauris nunc congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris. Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices tincidunt arcu non. Quisque non tellus orci ac auctor augue mauris.</p>
+                        
+                    </div> 
+                </div>
+
+                <!-- a for links and href for the link source -->
+                <p class="large-text">Check out this <a href="https://lifejourney4two.com/road-trips/">roadtrip blog</a></p>
+                <!-- br is for page breaks -->
+                <br> 
+
+                <!-- The two list examples -->
+                <div class="two-column-container"> 
+                    <!-- Unordered list -->     
+                    <ul>
+                        <li>This</li>
+                        <li>list</li>
+                        <li>has</li>
+                        <li>bulletpoints</li>
+                    </ul>  
+                    <!-- Ordered list -->
+                    <ol>
+                        <li>This</li>
+                        <li>list</li>
+                        <li>is</li>
+                        <li>numbered</li>
+                    </ol> 
+                </div>  
+
+                <!-- this ia an example of a table --> 
+                <table id="famous-donkey"> 
+                    <tr>
+                        <th>Name</th>
+                        <th>Claim to Fame</th>
+                        <th>Country of Origin</th>
+                    </tr>
+                    <tr>
+                        <td>Eeyore</td>
+                        <td>Winnie the Pooh</td>
+                        <td>USA, 1926</td>
+                    </tr>
+                    <tr>
+                        <td>El Rucio, aka Dapple</td>
+                        <td>Don Quixote</td>
+                        <td>Spain, 1605</td>
+                    </tr>
+                    <tr>
+                        <td>Donkey</td>
+                        <td>Shrek</td>
+                        <td>USA, 2001</td>
+                    </tr>
+                </table> 
+
+                <!-- hr is for a horizantal line across the page -->
+                <hr>
+
+            </section>
+
+            <!-- Section two of content -->
+            <section id="section-two">
+
+                <!-- Section two Title -->
+                <h2>Card Display</h2>
+
+                <!-- Card display -->
+                <h3>Card Example</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="images/card-img-2-300x200.jpg" alt="Flowers" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>Card Title</b></h4> 
+                            <p>Card Info</p>
+                            <button class="card-button">Click Me!</button> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/card-img-1-300x200.jpg" alt="Leaves" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>Card Title</b></h4> 
+                            <p>Card Info</p>
+                            <button class="card-button">Click Me!</button> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/card-img-3-300x200.jpg" alt="flowers" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>Card Title</b></h4> 
+                            <p>Card Info</p>
+                            <button class="card-button">Click Me!</button> 
+                        </div>
+                    </div>
+                </div>
+                <hr>   
+            </section>
+
+            <!-- Section three of content -->
+            <section id="section-three">
+                
+                <!-- Section three title -->
+                <h2>Carousel</h2>
+
+                <!-- Image carousel -->
+                <h3>Carousel Example</h3>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/carousel-img-1-1200x800.jpg" style="width:100%">
+                        <div class="text">Caption One</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/carousel-img-2-1200x800.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/carousel-img-3-1200x800.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <hr>
+            </section>
+
+            <!-- Section four of content -->
+            <section id="section-four">
+
+                <!-- Section four title -->
+                <h2>FancyBox</h2>
+
+                <!-- Image gallery with fancybox -->
+                <div class="section-color" id="lightbox">
+                    <div class="content">
+                        <div class="container">		
+                            <div class="thumbnail-container">
+                                <a data-fancybox="gallery" href="images/gallery-01-800x1200.jpg" data-caption="River Canal">
+                                    <img src="images/gallery-thumbnail-01-300x300.jpg" alt="River Canal">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-02-800x1200.jpg" data-caption="Lyon One">
+                                    <img src="images/gallery-thumbnail-02-300x300.jpg" alt="Lyon One thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-03-800x1200.jpg" data-caption="Lyon Two">
+                                    <img src="images/gallery-thumbnail-03-300x300.jpg" alt="Lyon Two thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-04-800x1200.jpg" data-caption="Le Louvre">
+                                    <img src="images/gallery-thumbnail-04-300x300.jpg" alt="Le Louvre thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-05-800x1200.jpg" data-caption="Green and Brown Mountains Beside Blue Sea Under Blue Sky">
+                                    <img src="images/gallery-thumbnail-05-300x300.jpg" alt="Green and Brown Mountains Beside Blue Sea Under Blue Sky thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-06-800x1200.jpg" data-caption="White and Green High-rise Building">
+                                    <img src="images/gallery-thumbnail-06-300x300.jpg" alt="White and Green High-rise Building thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-07-800x1200.jpg" data-caption="Brown Wooden Lifeguard Tower on Brown Sand">
+                                    <img src="images/gallery-thumbnail-07-300x300.jpg" alt="Brown Wooden Lifeguard Tower on Brown Sand">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-08-800x1200.jpg" data-caption="Pick Up">
+                                    <img src="images/gallery-thumbnail-08-300x300.jpg" alt="Pick Up thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-09-800x1200.jpg" data-caption="Blue Lake">
+                                    <img src="images/gallery-thumbnail-09-300x300.jpg" alt="Blue Lake thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-10-800x1200.jpg" data-caption="Tree Rock">
+                                    <img src="images/gallery-thumbnail-10-300x300.jpg" alt="Tree Rock thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-11-800x1200.jpg" data-caption="Brown Rock Formation Near Body of Water">
+                                    <img src="images/gallery-thumbnail-11-300x300.jpg" alt="Brown Rock Formation Near Body of Water thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-12-800x1200.jpg" data-caption="White and Brown Concrete Building">
+                                    <img src="images/gallery-thumbnail-12-300x300.jpg" alt="White and Brown Concrete Building thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-13-800x1200.jpg" data-caption="White Concrete Building Under Blue Sky">
+                                    <img src="images/gallery-thumbnail-13-300x300.jpg" alt="White Concrete Building Under Blue Sky thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-14-800x1200.jpg" data-caption="Brown Wooden Railings Near Body of Water">
+                                    <img src="images/gallery-thumbnail-14-300x300.jpg" alt="Brown Wooden Railings Near Body of Water thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-15-800x1200.jpg" data-caption="Cinque Terre">
+                                    <img src="images/gallery-thumbnail-15-300x300.jpg" alt="Cinque Terre thumbnail">
+                                </a>
+                                <a data-fancybox="gallery" href="images/gallery-16-800x1200.jpg" data-caption="Lyon Three">
+                                    <img src="images/gallery-thumbnail-16-300x300.jpg" alt="Lyon Three thumbnail">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </section>
+   
+        </main>
+
+        <!-- Footer for extra links/socials and legal -->
+        <footer>
+            <div class="footer-grid">
+                <div id="footer-socials" class="footer-grid-items">
+                    Social Icons
+                </div>
+                <div id="footer-nav" class="footer-grid-items">
+                    <a href="#section-one">Basic Elements</a>   
+                    <a href="#section-two">Card Display</a>
+                    <a href="#section-three">Carousel</a>
+                    <a href="#section-four">Fancybox</a>
+                </div>
+                <div id="footer-legal" class="footer-grid-items">
+                    Legal
+                </div>
+            </div>
+            <small>&copy;Copyright George</small>
+        </footer>
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="my-javascript.js"></script> 
+
+        <!-- FancyBox Javascript -->
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    </body>
+</html>

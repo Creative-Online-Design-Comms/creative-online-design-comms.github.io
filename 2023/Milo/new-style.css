@@ -1,0 +1,213 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+  *{box-sizing:border-box}
+
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        padding: auto;
+        font-family: 'Livvic', sans-serif;
+        font-weight: 400;
+        
+    
+    }
+
+/* Adjusts all of your headings */
+    h1, h2 , h3, h4, h5, h6 {
+        font-weight: 300;
+        text-align: center;
+       clip: padding-box;
+}
+
+.body-title{
+font-size: 50px;
+}
+
+/* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .main-page-header{
+      background-image: url(my-images/back-gound.jpg);
+    }
+    .art-page-header{
+      background-color: #54788C;
+      height: 90vh;
+    }
+    
+    .art-page-header img {
+      position: absolute;
+      top: 12.5vw;
+      right: 12.5vw;
+      width: 48vw;
+      height: 55vw;
+      z-index: 5;
+    }
+
+    .overlay-text{
+      position: relative;
+      z-index: 10;
+    }
+    
+    .fie-page-header{
+      background-color: #59584E;
+    }
+    .oni-page-header{
+      background-color: #636F54;
+    }
+
+  
+
+  /* Navigation bar style */
+  
+  nav {
+    position: fixed;
+  width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 15;
+    background-color: #00000026;
+  }
+  
+  nav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    
+  
+  }
+  .nav-left{
+    float: left;
+  } 
+  
+ nav a:hover {
+    background-color: #111;
+  }
+  
+
+  /* Header Title style*/
+.head-title { padding: 16px;
+    width: 80%;
+    line-height: 0.5;
+    margin: auto;
+    color: #fff;
+   
+
+ }
+header h1 {
+    font-size: 10vw;
+    margin-bottom: 100px;
+    font-weight: 300px;
+   
+    
+}
+.new-page-title h1 {
+    text-align: left;
+    font-size: 14vw;   
+    
+   
+}
+header h3 {
+    font-size: 2.5vw;
+}
+
+#new-page-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin: auto;
+margin-top: 13vw;
+font-size: 15pt;
+margin-left: -50px;
+color: #54788C;
+}
+
+  
+.new-page-intro {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 2vw;
+  padding: 5vw;
+  font-size: 15pt;
+}
+
+.new-page-intro h2 {
+  font-size: 20vw;
+  line-height: 0%;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  font-weight: 100;
+  margin-left: 120px;
+}
+
+
+.new-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 40%;
+  margin: 100px auto;
+  
+  
+}
+
+.new-page-content-items {
+  width: 50%;
+  margin: 0px 16px;
+  padding: 2vw;
+}
+
+.new-page h1 {
+  font-size: medium;
+}
+
+.session-info ul{
+  list-style-type: none;
+}
+.session-info h3{
+  font-weight: 400;
+}
+.session-info-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.oni-page-text{
+color: #59584E;
+}
+
+.fie-page-text{
+color: #636F54;
+}
+
+
+/* make a new class to apply changes 
+and apply the class="new-class" to the opening tag of the html tag you want to change 
+eg <p class="new-class">
+eg
+.new-class{
+  make changes here
+  
+}*/
+
+/* div {
+ 
+  background: lightblue;
+  background-clip: padding-box;
+} */

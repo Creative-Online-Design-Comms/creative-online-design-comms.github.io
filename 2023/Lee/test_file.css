@@ -1,0 +1,106 @@
+/* : gradient :
+.container {
+    width: 30px;
+    height: 50px;
+    position: relative;
+}
+
+.gradient {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #271D1B, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+body{
+    background-image: linear-gradient(to top, #271D1B, transparent), url(images/sample_images/header-background.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+:root{
+    --secondary-color: #FFF5D6;
+    --accent-color: #E6E494;
+    --background-color: #271D1B;
+}
+
+* {box-sizing:border-box}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0 10;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--background-color);
+    background-color:var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+/* : flexbox : */
+
+    /* .container{
+        width: 80%;
+        height: 700px;
+        margin: 0 auto;
+        display: flex;
+        align-content: space-between;
+        gap: 1em;
+    }
+
+    .item{
+        width: 150px;
+        height: 100px;
+        background-color: var(--secondary-color);
+        padding: 1em;
+        font-weight: 700;
+        text-align: center;
+        border: 1px solid var(--background-color);
+        border-radius: 10px;
+    } */
+
+/* : grid : */
+    /* : my grid : */
+    /* .category-container{
+        display: grid;
+        border: 10px;
+        border-color: #271D1B;
+    }
+
+    .category-items{
+        align-content: left;
+    } */
+
+    /* : W3Schools Grid :  */
+
+    .grid-container{
+        display:grid;
+        grid-column: repeat(4, 1fr);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 10px;
+        background-color: #E6E494;
+        gap:1em;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
