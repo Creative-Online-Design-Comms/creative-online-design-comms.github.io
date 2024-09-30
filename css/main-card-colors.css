@@ -1,0 +1,12 @@
+/* Individual Card Colors */
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after
+{
+  background: linear-gradient(315deg, #003a41, #00bdd2)
+}
+
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #003e2c, #00cf94)
+}
