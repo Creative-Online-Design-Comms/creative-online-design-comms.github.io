@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Gowun+Batang:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=League+Gothic&family=Luxurious+Script&family=Notable&family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&family=Zen+Dots&display&family=IM+Fell+DW+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Gowun+Batang:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=League+Gothic&family=Luxurious+Script&family=Notable&family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&family=Zen+Dots&display&family=IM+Fell+DW+Pica+SC&display&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: 'Sketchline';
     src: url('/2024/terry/Fonts/Sketchline.woff');
@@ -35,7 +35,7 @@
 .container .box:nth-child(4):before,
 .container .box:nth-child(4):after
 {
-  background: linear-gradient(315deg, #5a5a5a, #afafaf)
+  background: linear-gradient(315deg, #c01f34, #afafaf)
 }
 
 /* Gina */
@@ -164,9 +164,9 @@
   font-family: "Jost", sans-serif;
 }
 
-/* .natalie{
-  font-family: ;
-} */
+.natalie{
+  font-family: "Inknut Antiqua", serif;
+}
 
 .gina{
   font-family: "League Gothic", sans-serif;

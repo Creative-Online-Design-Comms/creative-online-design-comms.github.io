@@ -1,0 +1,197 @@
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+/* For variables like colors */
+    :root{
+       
+    } 
+
+/* Universal tag used to give the border box style here */
+    * {
+        box-sizing:border-box
+    }
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        font-family: "Inknut Antiqua", serif;
+        font-weight: 400;
+        overflow-x: hidden;
+        background-image: url('project-images/background.png');
+        background-size: 112.5px;
+        background-position: -56.25px -56.25px;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p{
+        font-size: 12pt;
+    }
+
+    h3{
+        font-size: 22pt;
+    }
+
+/* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 50vh;
+    }
+
+    header img{
+        max-height: 50vh;
+    }
+
+
+/* Link hover */
+    a:hover {
+        color: #ff0000;
+    }
+
+/* Applies to each section */
+    section {
+        width: 80%;
+        padding: 50px 0px; 
+        margin: auto;
+    }
+    hr {
+        background-image: url('project-images/pattern.png');
+        background-size: 380px;
+        background-position: left;
+        height: 60px;
+        border-style: none;
+        width: 80%;
+        margin: 16px auto;
+        max-width: 1200px;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 52pt;
+        color: #000;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffff;
+        margin: 50px auto;
+    }
+
+
+
+/* Gallery Thumnail style */
+    #gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thumbnail-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 35px;
+        align-items: center;
+        justify-content: center;
+        max-width: 1300px;
+        width: 100%;
+        margin:0 auto;
+        padding:0px;
+    }
+    .thumbnail-container img {
+       border-style: solid;
+       border-width: 1px; 
+       border-color: #000;
+       margin: auto;
+       max-height: 225px;
+       background-color: #fff;
+    }
+
+    .last-thumbnail{
+        grid-column: 1 / 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+  /* About section */
+    #about p{
+        background-color: #fff;
+        padding: 16px;
+        border-style: solid;
+        border-width: 1px;
+        text-align: center;
+    }
+  
+/* Contact */
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-container div{
+    margin: 32px;
+    background-color: #fff;
+    padding: 16px;
+    width: 35%;
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.contact-container h3{
+    margin: 8px;
+}
+
+.contact-container i{
+    margin: 8px;
+    font-size: 22pt;
+}
+    
+
+/* Applies to footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 16px;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        border-style: solid;
+        border-width: 1px;
+        text-align: right;
+        font-weight: 600;
+        background-color: #fff;
+    }
+
+    footer a {
+        color: #000;
+        margin-left: 4px;
+    }
+    footer a:hover{
+        color: #ff0000;
+    }
