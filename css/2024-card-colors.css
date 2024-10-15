@@ -11,57 +11,57 @@
 }
 
 /* Jessica */
-.container .box:nth-child(1):before,
-.container .box:nth-child(1):after
+.container .box:nth-child(14):before,
+.container .box:nth-child(14):after
 {
   background: linear-gradient(315deg, #a3c8e2, #182a44)
 }
 
 /* Katarina */
-.container .box:nth-child(2):before,
-.container .box:nth-child(2):after
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after
 {
   background: linear-gradient(315deg, #59645a, #bed6c3)
 }
 
 /* Seth */
-.container .box:nth-child(3):before,
-.container .box:nth-child(3):after
+.container .box:nth-child(5):before,
+.container .box:nth-child(5):after
 {
   background: linear-gradient(315deg, #738d61, #684a39)
 }
 
 /* Natalie */
-.container .box:nth-child(4):before,
-.container .box:nth-child(4):after
+.container .box:nth-child(19):before,
+.container .box:nth-child(19):after
 {
   background: linear-gradient(315deg, #c01f34, #afafaf)
 }
 
 /* Gina */
-.container .box:nth-child(5):before,
-.container .box:nth-child(5):after
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
 {
   background: linear-gradient(315deg, #b8b8b8, #660055)
 }
 
 /* V */
-.container .box:nth-child(6):before,
-.container .box:nth-child(6):after
+.container .box:nth-child(12):before,
+.container .box:nth-child(12):after
 {
   background: linear-gradient(315deg, #41240e, #dacf93)
 }
 
 /* Kelli */
-.container .box:nth-child(7):before,
-.container .box:nth-child(7):after
+.container .box:nth-child(13):before,
+.container .box:nth-child(13):after
 {
-  background: linear-gradient(315deg, #d0edf3, #288f8f)
+  background: linear-gradient(315deg, #288f8f, #d0edf3)
 }
 
 /* Amalya */
-.container .box:nth-child(8):before,
-.container .box:nth-child(8):after
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after
 {
   background: linear-gradient(315deg, #729e66, #dda7cf)
 }
@@ -74,73 +74,73 @@
 }
 
 /* Terry */
-.container .box:nth-child(10):before,
-.container .box:nth-child(10):after
+.container .box:nth-child(4):before,
+.container .box:nth-child(4):after
 {
   background: linear-gradient(315deg, #242424, #bbbbbb)
 }
 
 /* Connor */
-.container .box:nth-child(11):before,
-.container .box:nth-child(11):after
+.container .box:nth-child(7):before,
+.container .box:nth-child(7):after
 {
   background: linear-gradient(315deg, #f17d17, #11bfe6)
 }
 
 /* Jade */
-.container .box:nth-child(12):before,
-.container .box:nth-child(12):after
+.container .box:nth-child(15):before,
+.container .box:nth-child(15):after
 {
   background: linear-gradient(315deg, #2B0609, #d4a643)
 }
 
 /* Riley */
-.container .box:nth-child(13):before,
-.container .box:nth-child(13):after
+.container .box:nth-child(11):before,
+.container .box:nth-child(11):after
 {
   background: linear-gradient(315deg, #751616, #1d1919)
 }
 
 /* Ruby */
-.container .box:nth-child(14):before,
-.container .box:nth-child(14):after
+.container .box:nth-child(10):before,
+.container .box:nth-child(10):after
 {
   background: linear-gradient(315deg, #022f7e, #e266c5)
 }
 
 /* Soyo */
-.container .box:nth-child(15):before,
-.container .box:nth-child(15):after
+.container .box:nth-child(16):before,
+.container .box:nth-child(16):after
 {
   background: linear-gradient(315deg, #929292, #222222)
 }
 
 /* Rajh */
-.container .box:nth-child(16):before,
-.container .box:nth-child(16):after
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
 {
   background: linear-gradient(315deg, #5C82F2, #D98BC4)
 }
 
 /* Brooke */
-.container .box:nth-child(17):before,
-.container .box:nth-child(17):after
+.container .box:nth-child(18):before,
+.container .box:nth-child(18):after
 {
   background: linear-gradient(315deg, #cccacc, #2d9625)
 }
 
 /* Ellison */
-.container .box:nth-child(18):before,
-.container .box:nth-child(18):after
+.container .box:nth-child(17):before,
+.container .box:nth-child(17):after
 {
   background: linear-gradient(315deg, #2a5bff, #9db4ff)
 }
 
 /* Rocko */
-.container .box:nth-child(19):before,
-.container .box:nth-child(19):after
+.container .box:nth-child(8):before,
+.container .box:nth-child(8):after
 {
-  background: linear-gradient(315deg, #f3c45d, #46c5d6)
+  background: linear-gradient(315deg, #46c5d6, #f3c45d)
 }
 
 /* Template */
