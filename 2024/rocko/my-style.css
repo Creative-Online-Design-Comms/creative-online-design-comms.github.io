@@ -196,20 +196,16 @@
 
 
 /* Basic element css. Simple 2 column grid with the image attribute displaed on hover */
-.two-column-container {
-    display: inline-grid;
-    grid-template-columns: 2fr 1fr;
-    width: 100%;
-    text-align: left;
-    margin: 25px 0px;
-}
-.img-text {
+
+.two-column-container{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .img-attribution {
-    width: auto;
-    max-height: 60vh;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
     opacity: 1;
     transition: opacity 0.5s ease;
 }

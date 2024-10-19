@@ -51,6 +51,12 @@
         width: 500px;
         height: 100px;
     }
+    .hero-video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #141414;
+    }
 
 /* Page title words */
     header h1 {

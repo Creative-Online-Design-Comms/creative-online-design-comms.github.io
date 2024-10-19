@@ -1,4 +1,4 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 :root {
   --dark-color: #1d1b29;
@@ -10,7 +10,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: consolas;
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
 }
 
 html {
@@ -35,6 +36,10 @@ header{
   font-size: 42pt;
   text-align: center;
   margin: 5vh;
+}
+
+h1{
+  font-weight: 900;
 }
 
 /* Cards */
@@ -201,6 +206,7 @@ header{
 .container .box .content h2
 {
   font-size: 2em;
+  font-weight: 800;
   color: var(--light-color);
   margin-bottom: 10px;
 }

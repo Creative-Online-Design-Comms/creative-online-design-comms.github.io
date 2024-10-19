@@ -186,6 +186,7 @@
         text-align: right;
         font-weight: 600;
         background-color: #fff;
+        max-width: 1200px;
     }
 
     footer a {

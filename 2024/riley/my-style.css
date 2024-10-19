@@ -150,6 +150,8 @@ figcaption{
         font-weight: 700;
         font-style: normal;
         align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
 /* Applies to footer */
