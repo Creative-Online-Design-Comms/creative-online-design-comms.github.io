@@ -2,11 +2,17 @@
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-  background: linear-gradient(315deg, #003a41, #00bdd2)
+  background: linear-gradient(315deg, #6a41ad, #48bfe3);
 }
 
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after
 {
-  background: linear-gradient(315deg, #003e2c, #00cf94)
+  background: linear-gradient(315deg, #2e529e, #84eeee);
+}
+
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #07bdda, #4aca57);
 }
