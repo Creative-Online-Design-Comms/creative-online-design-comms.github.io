@@ -1,0 +1,210 @@
+/*** Imports ***/ 
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*** Root ***/ 
+/* For variables like colors and fonts*/
+    :root{
+        /* colors */
+        --paynes-grey: #364849;
+        --moonstone-blue: #6AA5AF;
+        --light-cyan: #C8E7EA;
+        /* fonts */
+        --title-font: "Instrument Serif", serif;
+        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+/*** General Style ***/ 
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        color: var(--paynes-grey);
+        font-family: var(--body-font);
+        font-weight: 400;
+        overflow-x: hidden;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--title-font);
+        font-weight: 500;
+        text-align: center;
+        margin: 1em;
+    }
+
+/* Adjusts all of your anchor tags */
+    a{
+        color: var(--moonstone-blue);
+    }
+
+/* Link hover */
+    a:hover {
+        color: var(--paynes-grey);
+    }
+
+/*** Header ***/  
+    /* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--paynes-grey);
+    }
+    header a{
+        text-decoration: none;
+    }
+    header a:hover{
+        opacity: 0.6;
+    }
+    /* Page title words */
+    header h1 {
+        padding: 1rem;
+        width: 50%;
+        margin: auto;
+        color: #fff;
+        font-size: 6em;
+    }
+    /*Nav Gallery | Side scrolling */
+    .side-scrolling-nav-gallery{
+        width: 100%;
+        margin-left: 10vw;
+        overflow-x: scroll;
+        white-space: nowrap;
+        scrollbar-color: var(--moonstone-blue) #00000000;
+    }
+    
+
+/*** Back to top Button ***/
+.back-to-top-btn {
+    padding: 1em;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;  
+    background-color: var(--moonstone-blue);
+    text-decoration: none;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: 600;
+    border-radius: 2em;
+    padding: 1em 1.2em;
+    z-index: 2;
+}
+.back-to-top-btn:hover{
+    color: var(--light-cyan);
+    background-color: var(--paynes-grey);
+}
+
+/*** Applies to each section ***/
+section {
+    width: 80%;
+    padding: 2em; 
+    margin: auto;
+}
+hr {
+    margin: 6em 0px 0px;
+}
+
+/* Section title heading size */
+section h2 {
+    font-size: 4em;
+    margin: 0;
+}
+section h3 {
+    font-size: 2em;
+}
+
+/*** Section Template ***/
+/*Simple 2 column grid with the image attribute displaed on hover */
+.two-column-container {
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2em;
+    width: 100%;
+    text-align: left;
+    margin: 1em 0;
+}
+.two-column-container img{
+    border-radius: 1em;
+}
+.img-text {
+    display: flex;
+    align-items: center;
+}
+.img-attribution {
+    width: auto;
+    max-height: 60vh;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.attribution {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.left-column:hover .attribution {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.external-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Side Scrolling Carousel */
+.side-scrolling-carousel{
+    overflow-x: scroll;
+        white-space: nowrap;
+        scrollbar-color: var(--moonstone-blue) #00000000;
+}
+
+
+
+/*** Footer ***/  
+    /* Applies to footer */
+    footer {
+        padding: 2em;
+        background-color: var(--light-cyan);
+        text-align: right;
+        font-weight: 600;
+    }
+    footer h3{
+        text-align: left;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    /* Footer anchor tag changes */
+    footer a {
+        color: var(--paynes-grey);
+    }
+    footer a:hover{
+        color: var(--moonstone-blue);
+    }
+    /* Simple grid to hold footer links and navigation*/
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2em;
+        text-align: left;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }
