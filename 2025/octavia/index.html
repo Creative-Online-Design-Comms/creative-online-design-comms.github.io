@@ -15,41 +15,229 @@
 
 		<!-- Links-->
 		<link href="my-style.css" rel="stylesheet" />
+
+		<!-- Fancybox css -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	</head>
 	<body>
 		<!-- Navigation Bar -->
 		<nav>
-			<a href="#section-one">Section One</a>
-			<a href="#section-two">Section Two</a>
-			<a href="#section-three">Section Three</a>
-			<a href="#section-four">Section Four</a>
-			<a href="#section-five">Section Five</a>
+			<a href="#section-one">Basic Elements</a>
+			<a href="#section-two">Card Display</a>
+			<a href="#section-three">Carousel</a>
+			<a href="#section-four">Fancybox</a>
+			<a href="#section-five">Contact</a>
 		</nav>
 
+		<!-- Website title and heading -->
+		<header id="page-top">
+			<h1>Project <span>Temp</span>late</h1>
+		</header>
+
+		<!-- Back to top button -->
+		<a class="back-to-top-btn" href="#page-top">Back to Top</a>
+
 		<!-- Main Content -->
-		<main></main>
+		<main>
+			<!-- Section one of content -->
+			<section id="section-one">
+				<!-- h tag for headings -->
+				<h2>Basic Elements</h2>
+
+				<div class="two-column-container">
+					<figure class="fig-hover-attribution">
+						<!-- img for images with src being the source alt for alternative text -->
+						<img
+							class="img-attribution"
+							src="images/template-images/example-img-1200x800.jpg"
+							alt="Ocean Waves Crashing on Shore during Sunset" />
+						<!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute-->
+						<figcaption class="attribution">
+							Ocean Waves Crashing on Shore during Sunset, Jess Loiterton,
+							sourced from
+							<a
+								href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/"
+								>Pexels</a
+							>, <a href="https://www.pexels.com/license/">cc</a>
+						</figcaption>
+					</figure>
+					<div class="pre-wrap img-text">
+						<!-- p for paragraphs-->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
+							dignissim. Consequat ac felis donec et odio pellentesque diam
+							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
+							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
+							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
+							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
+							tincidunt arcu non. Quisque non tellus orci ac auctor augue
+							mauris.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section two of content -->
+			<section id="section-two">
+				<!-- Section two Title -->
+				<h2>Card Display Grid</h2>
+
+				<!-- Card display -->
+				<h3>Card Example</h3>
+				<div class="card-grid">
+					<div class="card">
+						<a href="">
+							<img src="images/template-images/card-image-1.png" alt="Tower" />
+							<div class="card-container">
+								<h4><b>Card Title</b></h4>
+								<p>Card Info</p>
+								<div class="card-button">Click Me!</div>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="">
+							<img src="images/template-images/card-image-3.png" alt="Ocean" />
+							<div class="card-container">
+								<h4><b>Card Title</b></h4>
+								<p>Card Info</p>
+								<div class="card-button">Click Me!</div>
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="">
+							<img
+								src="images/template-images/card-image-2.png"
+								alt="Mountains" />
+							<div class="card-container">
+								<h4><b>Card Title</b></h4>
+								<p>Card Info</p>
+								<div class="card-button">Click Me!</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<hr />
+			</section>
+
+			<!-- Section four of content -->
+			<section id="section-four">
+				<!-- Section four title -->
+				<h2>FancyBox</h2>
+
+				<!-- Image gallery with fancybox -->
+				<div class="section-color" id="lightbox">
+					<div class="content">
+						<div class="container">
+							<div class="thumbnail-container">
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-01-800x1200.jpg"
+									data-caption="Lyon One">
+									<img
+										src="images/template-images/gallery-thumbnail-01-300x300.jpg"
+										alt="River Canal" />
+								</a>
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-02-800x1200.jpg"
+									data-caption="Lyon One">
+									<img
+										src="images/template-images/gallery-thumbnail-02-300x300.jpg"
+										alt="Lyon One thumbnail" />
+								</a>
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-03-800x1200.jpg"
+									data-caption="Lyon Two">
+									<img
+										src="images/template-images/gallery-thumbnail-03-300x300.jpg"
+										alt="Lyon Two thumbnail" />
+								</a>
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-04-800x1200.jpg"
+									data-caption="Le Louvre">
+									<img
+										src="images/template-images/gallery-thumbnail-04-300x300.jpg"
+										alt="Le Louvre thumbnail" />
+								</a>
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-05-800x1200.jpg"
+									data-caption="Green and Brown Mountains Beside Blue Sea Under Blue Sky">
+									<img
+										src="images/template-images/gallery-thumbnail-05-300x300.jpg"
+										alt="Green and Brown Mountains Beside Blue Sea Under Blue Sky thumbnail" />
+								</a>
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-06-800x1200.jpg"
+									data-caption="White and Green High-rise Building">
+									<img
+										src="images/template-images/gallery-thumbnail-06-300x300.jpg"
+										alt="White and Green High-rise Building thumbnail" />
+								</a>
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-07-800x1200.jpg"
+									data-caption="Brown Wooden Lifeguard Tower on Brown Sand">
+									<img
+										src="images/template-images/gallery-thumbnail-07-300x300.jpg"
+										alt="Brown Wooden Lifeguard Tower on Brown Sand" />
+								</a>
+								<a
+									data-fancybox="gallery"
+									href="images/template-images/gallery-09-800x1200.jpg"
+									data-caption="Blue Lake">
+									<img
+										src="images/template-images/gallery-thumbnail-09-300x300.jpg"
+										alt="Blue Lake thumbnail" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr />
+			</section>
+		</main>
 
 		<!-- Footer for extra links/socials and legal -->
 		<footer>
 			<div class="footer-grid">
-				<div id="footer-socials" class="footer-grid-items">
-					Social icons could go here.
-				</div>
 				<div id="footer-nav" class="footer-grid-items">
-					<a href="#section-one">Section One</a>
-					<a href="#section-two">Section Two</a>
-					<a href="#section-three">Section Three</a>
-					<a href="#section-four">Section Four</a>
-					<a href="#section-five">Section Five</a>
+					<h3>Page Links</h3>
+					<a href="#section-one">Basic Elements</a>
+					<a href="#section-two">Card Display</a>
+					<a href="#section-three">Carousel</a>
+					<a href="#section-four">Fancybox</a>
+					<a href="#section-five">Contact</a>
 				</div>
 				<div id="footer-legal" class="footer-grid-items">
+					<h3>Sources</h3>
 					Legal for any attribute or other privacy statements.
 				</div>
+				<div id="footer-socials" class="footer-grid-items">
+					<h3>Socials</h3>
+					Social icons could go here.
+				</div>
 			</div>
-			<small>Website by Your Name, licensed under &copy;Copyright</small>
+			<small>
+				Website by Your Name, licensed under
+				<a href="">&copy;Copyright</a>
+			</small>
 		</footer>
 
 		<!-- Javascript -->
 		<script src="my-javascript.js"></script>
+
+		<!-- FancyBox Javascript -->
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	</body>
 </html>

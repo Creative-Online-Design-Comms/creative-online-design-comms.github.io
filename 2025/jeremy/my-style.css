@@ -61,6 +61,7 @@
         display: flex;
         align-items: center;
         width: 100vw;
+        height: auto;
         background-color: var(--paynes-grey);
     }
     /* Page title words */
@@ -197,6 +198,7 @@
     header .two-column-container{
         grid-template-columns: 1fr 2fr;
         width: 80%;
+        height: 60vh;
         margin: 2em auto;
     }
 

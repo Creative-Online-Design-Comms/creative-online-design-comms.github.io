@@ -60,15 +60,11 @@
     nav {
         display: flex;
         justify-content: center;
-        position: sticky;
-        position: -webkit-sticky; /* Safari */
-        top: 0;
         text-align: center;
         background-color: var(--moonstone-blue);
         font-size: 1.6em;
         font-weight: 500;
-        /* z-index brings items forward or backward in relation to other content */
-        z-index: 2;
+        
     }
     /* Nav link adjustments*/
     nav a {
@@ -84,6 +80,24 @@
         /* This transition adds smoothness to the hover effect */
         transition: color 0.2s ease;
         transition: background-color 0.2s ease;
+    }
+
+    /* Side Nav */
+    .sticky{
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 40%;
+        height: 0;
+    }
+    .side-nav{
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0;
+        position: relative;
+        left: 75%;
+        width: 25vw;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
     }
 
 /*** Header ***/  
@@ -178,6 +192,26 @@
         transition: opacity 0.5s ease;
     }
 
+/*** Post it note ***/
+.post-it-container{
+    position: relative;
+    top: -52em;
+    left: -10em;
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+.post-it{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 176);
+    padding: 2em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+}
+.post-it h3{
+    margin: 0;
+}
+
 /*** Card display Section ***/
 .card-grid{
     display: grid;
@@ -230,6 +264,52 @@
     border-color: var(--moonstone-blue);
     color: white;
 }
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+} 
 
 /*** Footer ***/  
     /* Applies to footer */
