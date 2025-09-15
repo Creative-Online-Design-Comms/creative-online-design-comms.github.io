@@ -1,0 +1,151 @@
+/*** Imports ***/ 
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*** Root ***/ 
+/* For variables like colors and fonts*/
+    :root{
+        /* colors */
+        --paynes-grey: #364849;
+        --moonstone-blue: #6AA5AF;
+        --light-cyan: #C8E7EA;
+        /* fonts */
+        --title-font: "Instrument Serif", serif;
+        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+    /* General section styling */
+    #section-six{
+        margin-bottom: 4em;
+    }
+    #section-six h2{
+        margin-bottom: 0.5em;
+    }
+
+    /* Container with image */
+    .map-container{
+        width: 768px;
+        height: 530px;
+        margin: auto;
+        background-image: url(images/australia-map-1280x853.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1%;
+    }
+    /* Basic Icon Styling */
+    .map-container i{
+        color: rgb(224, 224, 224);
+        font-size: 2em;
+        filter: drop-shadow(#00000080 0.2em 0.2em 0.2em);
+    }
+    .map-container i:hover{
+        color: rgb(221, 69, 23);
+        cursor: pointer;
+    }
+    /* Specific Icon Placement */
+    .map-marker-one{
+        position: relative;
+        top: 220px;
+        left: 300px;
+    }
+    .map-marker-two{
+        position: relative;
+        top: 105px;
+        left: 630px;
+    }
+    .map-marker-three{
+        position: relative;
+        top: 240px;
+        left: 260px;
+    }
+    .map-marker-four{
+        position: relative;
+        top: 220px;
+        left: 650px;
+    }
+    .map-marker-five{
+        position: relative;
+        top: 130px;
+        left: 530px;
+    }
+    .map-marker-six {
+        position: relative;
+        top: 50px;
+        left: 700px;
+    }
+
+    /* Pop-up on hover Basic */
+    .map-pop-up-content {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: -109px;
+        top: 55px;
+        transform: translate(0, 10px);
+        background-color: var(--light-cyan);
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        width: auto;
+    }
+    .map-pop-up-text {
+        text-align: center;
+    }
+    /*This is just the pointy bit of the popo-up box*/
+    .map-pop-up-content:before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        right: calc(50% - 10px);
+        top: -8px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent var(--light-cyan) transparent;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+
+    /* Pop-ups for each marker*/
+    .map-marker-one:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-two:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-three:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-four:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-five:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-six:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    
