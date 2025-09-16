@@ -1,0 +1,28 @@
+<!--Pop-up style-->
+<link rel="stylesheet" href="pop-up-style.css" />
+
+
+<!--Overlay for modals-->
+<div id="overlay"></div>
+
+<!--Visible Button to activate modal-->
+<div class="pop-up-button">
+    <button data-modal-target="#comming-soon-modal">
+        Pop-up Modal Example
+    </button>
+</div>
+
+<!--Comming soon modal-->
+<div>
+    <div class="modal" id="comming-soon-modal">
+        <div class="modal-close-bar">
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body" style="align-items: center; padding: 2em">
+            <h3>More project info is coming soon...</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script src="popup.js"></script>
