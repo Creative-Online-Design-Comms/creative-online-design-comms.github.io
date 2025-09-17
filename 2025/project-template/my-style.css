@@ -181,18 +181,22 @@
     .large-text{
         margin: 1em 0;
         text-align: center;
-        font-size: 2em;
+        font-size: 3em;
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-stroke: 2px var(--paynes-grey);
     }
     .large-text a {
         padding: 0.2em 0.6em;
         border-radius: 1em;
         text-decoration: none;
-        color: var(--moonstone-blue);
-        transition: color 0.5s ease;
-        transition: background-color 0.5s ease;
+        color: transparent;
+        -webkit-text-stroke: 2px var(--moonstone-blue);
+        transition: color 0.2s ease;
+        transition: background-color 0.2s ease;
     }
     .large-text a:hover {
-        color: var(--light-cyan);
+        -webkit-text-stroke: 2px var(--light-cyan);
         background-color: var(--paynes-grey);
     }
 

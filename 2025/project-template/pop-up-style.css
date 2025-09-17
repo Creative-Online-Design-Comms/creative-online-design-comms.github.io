@@ -18,10 +18,17 @@
 .pop-up-button{
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    align-items: center;
+    height: 20vw;
+    background-attachment: fixed;
+    background-image: url(images/header-background.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .pop-up-button button{
+    height: 3em;
     font-size: 2em;
     font-family: var(--title-font);
     padding: 0.5em 1em;

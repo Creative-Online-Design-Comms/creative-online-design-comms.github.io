@@ -1,0 +1,119 @@
+<!-- Javascript -->
+<script src="popup.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Splide</title>
+		<!--Splide style-->
+		<link
+			href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+			rel="stylesheet" />
+		<link rel="stylesheet" href="splide-style.css" />
+		<!--Bootstrap Icons-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+	</head>
+	<body>
+		<!-- Splide Example -->
+		<div
+			id="autoplay_slider"
+			class="splide splide_autoplay"
+			role="group"
+			aria-label="Splide Basic HTML Example">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img src="images/carousel-img-1-1200x800.jpg" alt="" />
+					</li>
+					<li class="splide__slide">
+						<img src="images/carousel-img-2-1200x800.jpg" alt="" />
+					</li>
+					<li class="splide__slide">
+						<img src="images/carousel-img-3-1200x800.jpg" alt="" />
+					</li>
+				</ul>
+			</div>
+			<button class="splide__toggle" type="button">
+				<span class="splide__toggle__play"
+					><i class="bi bi-play-circle-fill"></i
+				></span>
+				<span class="splide__toggle__pause"
+					><i class="bi bi-pause-circle-fill"></i
+				></span>
+			</button>
+			<div class="splide__progress">
+				<div class="splide__progress__bar"></div>
+			</div>
+		</div>
+		<!-- Splide Example -->
+		<div
+			id="autoplay_slider2"
+			class="splide splide_autoplay"
+			role="group"
+			aria-label="Splide Basic HTML Example">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img src="images/carousel-img-1-1200x800.jpg" alt="" />
+					</li>
+					<li class="splide__slide">
+						<img src="images/carousel-img-2-1200x800.jpg" alt="" />
+					</li>
+					<li class="splide__slide">
+						<img src="images/carousel-img-3-1200x800.jpg" alt="" />
+					</li>
+					<li class="splide__slide">
+						<img src="images/carousel-img-3-1200x800.jpg" alt="" />
+					</li>
+					<li class="splide__slide">
+						<img src="images/carousel-img-2-1200x800.jpg" alt="" />
+					</li>
+					<li class="splide__slide">
+						<img src="images/carousel-img-1-1200x800.jpg" alt="" />
+					</li>
+				</ul>
+			</div>
+			<button class="splide__toggle" type="button">
+				<span class="splide__toggle__play"
+					><i class="bi bi-play-circle-fill"></i
+				></span>
+				<span class="splide__toggle__pause"
+					><i class="bi bi-pause-circle-fill"></i
+				></span>
+			</button>
+			<div class="splide__progress">
+				<div class="splide__progress__bar"></div>
+			</div>
+		</div>
+		<!-- Splide Javascript -->
+		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var splide = new Splide("#autoplay_slider", {
+					type: "loop",
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					padding: "8rem",
+					width: "65rem",
+					height: "34.5rem",
+				}).mount();
+
+				var splide = new Splide("#autoplay_slider2", {
+					type: "loop",
+					perPage: 3,
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					width: "65rem",
+					height: "16.5rem",
+				}).mount();
+			});
+		</script>
+	</body>
+</html>

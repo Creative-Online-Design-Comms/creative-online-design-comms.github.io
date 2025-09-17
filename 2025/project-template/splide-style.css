@@ -1,0 +1,76 @@
+/*** Imports ***/ 
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*** Root ***/ 
+/* For variables like colors and fonts*/
+    :root{
+        /* colors */
+        --paynes-grey: #364849;
+        --moonstone-blue: #6AA5AF;
+        --light-cyan: #C8E7EA;
+        /* fonts */
+        --title-font: "Instrument Serif", serif;
+        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+/*** General ***/
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: var(--paynes-grey);
+        color: #fff;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4em;
+    }   
+
+/*** Splide ***/
+    .splide{
+        max-width: 1200px;
+        max-height: 800px;
+    }
+    .splide img{
+        width: 100%;
+        border-radius: 2em;
+        padding: 1em
+    }
+    /* Position of dots */
+    .splide__pagination{
+        position: relative;
+        top: -5.8rem;
+    }
+    .splide:not(.is-overflow) .splide__pagination{
+        display: show;
+    }
+    /* Play pause button */
+    .splide__toggle{
+        position: relative;
+        top: -2em;
+        left: 0.5em;
+        background-color: transparent;
+        border: none;
+        color: #cfcfcf;
+        font-size: 2em;
+    }
+    .splide__toggle:hover{
+        color: #fff;
+    }
+    /* Progress bar */
+    .splide__progress__bar {
+        height: 3px;
+        background: #ccc;
+        position: relative;
+        top: -6.8em;
+        border-radius: 1em;
+    }
+    /* Arrows */
+    .splide__arrow{
+        margin-top: -1.5rem;
+    }
