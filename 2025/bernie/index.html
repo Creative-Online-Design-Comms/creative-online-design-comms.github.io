@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 	<!-- *****************************
-         Author: Your Name
+         Author: Bernie Casey
          Creation date: DD/09/2025
          ***************************** -->
 	<head>
 		<!-- meta tags -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<!-- Browser tab title and favicon -->
-		<title>Template</title>
-		<link rel="icon" href="" />
+		<title>Portals of Port</title>
+		<link rel= "Icon" type="image/ icon" herf />
 
 		<!-- Links-->
 		<link href="my-style.css" rel="stylesheet" />
-
+		<!--Map style-->
+		<link rel="stylesheet" href="map-style.css" />
+		<!--Bootstrap Icons-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+		<!--Splide style-->
+		<link
+			href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+			rel="stylesheet" />
 		<!-- Fancybox css -->
 		<link
 		rel="stylesheet"
@@ -25,29 +34,74 @@
 	<body>
 		<!-- Landing Area -->
 		<header id="page-top">
+			<div>
 			<h1>
-				Page Title
+				<strong>Portals of Port</strong>
 			</h1>
-			<div class="side-scrolling-nav-gallery">
-				<a href="#section-one">
-					<img src="images/template-images/card-image-1.png" alt="">
-				</a>
-				<a href="#section-two">
-					<img src="images/template-images/card-image-2.png" alt="">
-				</a>
-				<a href="#section-two">
-					<img src="images/template-images/card-image-3.png" alt="">
-				</a>
-				<a href="#section-one">
-					<img src="images/template-images/card-image-1.png" alt="">
-				</a>
-				<a href="#section-two">
-					<img src="images/template-images/card-image-2.png" alt="">
-				</a>
-				<a href="#section-two">
-					<img src="images/template-images/card-image-3.png" alt="">
-				</a>
+			<p>Portals of Port, 
+				A glimpse into historical Port Chalmers...
+				Seek and you shall find.</p>
 			</div>
+			<!-- Splide -->
+		<div
+		id="autoplay_slider0"
+		class="splide splide_autoplay side-scrolling-nav-gallery"
+		role="group"
+		aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide">
+					<a href="#section-two">
+						<img src="images/mouth-of-the-otago-habour-thumbnail.jpg" alt="">
+					</a>
+				</li>
+				<li class="splide__slide">
+					<a href="#section-two">
+						<img src="images/chicks-front-door-thumbnail.jpg" alt="">
+					</a>
+				</li>
+				<li class="splide__slide">
+					<a href="#section-one">
+						<img src="images/Bank-of-NZ-front-door-thumbnail.jpg" alt="">
+					</a>
+				</li>
+				<li class="splide__slide">
+					<a href="#section-two">
+						<img src="images/green-foundry-door-thumbnail.jpg" alt="">
+					
+					</a>
+				</li>
+				<li class="splide__slide">
+					<a href="#section-two">
+						<img src="images/chicks-hotel-brown-front-door-thumbnail.jpg" alt="">
+					
+					</a>
+				</li>
+				<li class="splide__slide">
+					
+				<a href="#section-two">
+					<img src="images/mouth-of-oputae-walk-thumbnail.jpg" alt="">
+				</a>
+				</li>
+				<li class="splide__slide">
+					<a href="#section-two">
+						<img src="images/Ralphs-gate-thumbnail.jpg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<button class="splide__toggle" type="button">
+			<span class="splide__toggle__play"
+				><i class="bi bi-play-circle-fill"></i
+			></span>
+			<span class="splide__toggle__pause"
+				><i class="bi bi-pause-circle-fill"></i
+			></span>
+		</button>
+		<div class="splide__progress">
+			<div class="splide__progress__bar"></div>
+		</div>
+	</div>
 		</header>
 
 		<!-- Back to top button -->
@@ -55,200 +109,669 @@
 
 		<!-- Main Content -->
 		<main>
-			<!-- Section one of content -->
-			<section id="section-one">
+
+
+<!-- Section One of content -->
+			<section id="section-three">
 				<!-- h tag for headings -->
-				<h2>Section One</h2>
+				<h2>Rail Tunnel Number One</h2>
 
 				<div class="two-column-container">
 					<div class="left-column">
-						<div class="side-scrolling-carousel" id="lightbox">
-							<!-- Full-width images with number and caption text -->
-							<a data-fancybox="gallery"
-							data-caption="Lyon One"  
-							href="images/template-images/card-image-1.png">
-								<img
-									src="images/template-images/card-image-1.png"
-									alt="Pink Beach"
-									style="width: 100%" />
-							</a>
-							<a data-fancybox="gallery"
-								data-caption="Lyon One" 
-								href="images/template-images/card-image-2.png">
-									<img
-										src="images/template-images/card-image-2.png"
-										alt="Pink Beach"
-										style="width: 100%" />
-							</a>
-							<a data-fancybox="gallery"
-								data-caption="Lyon One"
-								href="images/template-images/card-image-3.png">
-								<img
-									src="images/template-images/card-image-3.png"
-									alt="Pink Beach"
-									style="width: 100%" />
-							</a>
-						</div>
-							
-						<!--Links to External Resources-->
-						<div class="external-links">
-							<a href="">Link</a>
-							<a href="">Link</a>
-							<a href="">Link</a>
-						</div>
-					</div>
-					<div class="pre-wrap img-text">
-						<!-- p for paragraphs-->
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-							dignissim. Consequat ac felis donec et odio pellentesque diam
-							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-							tincidunt arcu non. Quisque non tellus orci ac auctor augue
-							mauris.
-						</p>
-					</div>
-				</div>
-				<!-- hr is for a horizantal line across the page -->
-				<hr />
-			</section>
-
-			<!-- Section two of content -->
-			<section id="section-two">
-				<!-- h tag for headings -->
-				<h2>Section Two</h2>
-
-				<div class="two-column-container">
-					<div class="left-column">
-						<div class="side-scrolling-carousel" id="lightbox">
-							<!-- Full-width images with number and caption text -->
-							<a data-fancybox="gallery"
-							data-caption="Lyon One"  
-							href="images/template-images/card-image-1.png">
-								<img
-									src="images/template-images/card-image-1.png"
-									alt="Pink Beach"
-									style="width: 100%" />
-							</a>
-							<a data-fancybox="gallery"
-								data-caption="Lyon One" 
-								href="images/template-images/card-image-2.png">
-									<img
-										src="images/template-images/card-image-2.png"
-										alt="Pink Beach"
-										style="width: 100%" />
-							</a>
-							<a data-fancybox="gallery"
-								data-caption="Lyon One"
-								href="images/template-images/card-image-3.png">
-								<img
-									src="images/template-images/card-image-3.png"
-									alt="Pink Beach"
-									style="width: 100%" />
-							</a>
-						</div>
-							
-						<!--Links to External Resources-->
-						<div class="external-links">
-							<a href="">Link</a>
-							<a href="">Link</a>
-							<a href="">Link</a>
-						</div>
-					</div>
-					<div class="pre-wrap img-text">
-						<!-- p for paragraphs-->
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-							dignissim. Consequat ac felis donec et odio pellentesque diam
-							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-							tincidunt arcu non. Quisque non tellus orci ac auctor augue
-							mauris.
-						</p>
-					</div>
-				</div>
-				<!-- hr is for a horizantal line across the page -->
-				<hr />
-			</section>
-
-			<!-- Section five of content -->
-			<section id="section-five">
-				<!-- h tag for headings -->
-				<h2>About</h2>
-
-				<div class="two-column-container">
-					<figure class="left-column">
+					<figure >
 						<!-- img for images with src being the source alt for alternative text -->
 						<img
 							class="img-attribution"
-							src="images/template-images/example-img-1200x800.jpg"
-							alt="Ocean Waves Crashing on Shore during Sunset" />
+							src="images/Tunnel-number-one-thumbnail.jpg"
+							alt="Basalt rock tunnel with two rail lines intersecting to make one, faint light at the end of the tunnel" />
 						<!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute-->
 						<figcaption class="attribution">
-							Ocean Waves Crashing on Shore during Sunset, Jess Loiterton,
-							sourced from
+							Basalt rock tunnel, with two rail lines intersecting to make one, faint light at the end of the tunnel.
 							<a
-								href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/"
+								href="images/Tunnel-number-one-800.jpg/"
 								>Pexels</a
 							>, <a href="https://www.pexels.com/license/">cc</a>
 						</figcaption>
 					</figure>
+					
+					<!--Links to External Resources-->
+					<div class="external-links">
+						<a href="https://www.youtube.com/watch?v=jjq1b1Cb23M">Link</a>
+						
+					</div>
+				</div>
 					<div class="pre-wrap img-text">
 						<!-- p for paragraphs-->
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-							dignissim. Consequat ac felis donec et odio pellentesque diam
-							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-							tincidunt arcu non. Quisque non tellus orci ac auctor augue
-							mauris.
+							In the early 1870s construction began on the Port Chalmers Branch railway line 
+							linking Dunedin and Port Chalmers. Originally the contractors intended for the tracks
+							to pass down George Street to the port, but following objections from the Town Board
+							it was conveyed via a cutting and a tunnel to emerge on Beach Street before 
+							terminating on a new wharf. Soil excavated from the tunnel was used for the
+							reclamation of land for the new wharf on which the railway line terminated. 
+							   
+							When the railway line opened on 1 January 1873 it was the first 1,067 mm narrow
+							gauge railway in New Zealand. The tunnel is 176 metres long and was the first
+							railway tunnel in New Zealand to be built with a curve. The tunnel was enlarged
+							in 1910 to accommodate larger locomotives. The tunnel is still in use today.	
 						</p>
 					</div>
 				</div>
 				</section>
-		</main>
+	
+
+
+			
+
+			
+			<!-- Section two of content -->
+			<section id="section-two">
+				<!-- h tag for headings -->
+				<h2>Port Chalmers Foundry</h2>
+
+				<div class="two-column-container">
+					<div class="left-column">
+						
+				<!-- Splide -->
+		<div
+		id="autoplay_slider1"
+		class="splide splide_autoplay"
+		role="group"
+		aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+					data-caption="Side Sliding door"  
+					href="images/green-foundry-door-800.jpg">
+						<img
+							src="images/green-foundry-door-thumbnail.jpg"
+							alt="A bright green, door with red brick surround"
+							/>
+					</a>
+				</li>
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+					data-caption="Foundry rusted trolley in the Roof rafters" 
+					href="images/foundry-eqipment-800.jpg">
+						<img
+							src="images/foundry-eqipment-thumbnail.jpg"
+							alt="Rusted metal cart and wooden beams inside the roof cavity"
+							 />
+				</a>
+				</li>
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+					data-caption="Foundry hook"
+					href="images/foundry-hook-800.jpg">
+					<img
+						src="images/foundry-hook-thubnail.jpg"
+						alt="roof cavity rusty metal hook, for manuvering machinery"
+						 />
+				</a>
+				</li>
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+					data-caption="Huge green sliding doors for getting boats and machinery out of the foundry." 
+					href="images/foundry-big-green-sliding-door-800.jpg">
+						<img
+							src="images/foundry-big-green-sliding-door-thumbnail.jpg"
+							alt="Huge green sliding doors for getting boats and machinery out of the foundry."
+								>									
+					</a>
+				</li>
+			</ul>
+		</div>
+		<button class="splide__toggle" type="button">
+			<span class="splide__toggle__play"
+				><i class="bi bi-play-circle-fill"></i
+			></span>
+			<span class="splide__toggle__pause"
+				><i class="bi bi-pause-circle-fill"></i
+			></span>
+		</button>
+		<div class="splide__progress">
+			<div class="splide__progress__bar"></div>
+		</div>
+	</div>
+							
+						<!--Links to External Resources-->
+						<div class="external-links">
+							<a href="https://www.pcfoundrytrust.co.nz/">Link</a>
+							
+						</div>
+					</div>
+					<div class="pre-wrap img-text">
+						<!-- p for paragraphs-->
+						<p>
+							The Foundry, originally named the Maori Ironworks, was built
+							 in the early 1900s by Stevenson and Cook Engineering. 
+							 It quickly became a busy cluster of industry, with a dry dock,
+							 forge, moulding shop, boiler shop, smith’s shop, machine shop 
+							 and plateyard, as well as offices and stores.
+							 The Foundry produced a wide range of products, from ship’s
+							 fittings to agricultural and mining equipment, and from
+							 cast iron stoves to structural steel for buildings.	
+							Currently the foundry is being restored by the Port Chalmers Foundry Trust.
+							See the link for more information.
+						</p>
+					</div>
+				</div>
+				<!-- hr is for a horizantal line across the page -->
+				<hr />
+			</section>
+
+
+
+		<!-- Section Three of content -->
+			<section id="section-one">
+				<!-- h tag for headings -->
+				<h2>Chicks Hotel</h2>
+
+				<div class="two-column-container">
+					<div class="left-column">
+						<!-- Splide -->
+		<div
+		id="autoplay_slider2"
+		class="splide splide_autoplay"
+		role="group"
+		aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+							data-caption="Chicks Hotel Front Door"  
+							href="images/chicks-front-door-800.jpg">
+								<img
+									src="images/chicks-front-door-thumbnail.jpg"
+									alt="Chicks hotel brown front door, blackboard to the right of the door has a drawn sad face with the words sold out under the drawn face"
+									/>
+							</a>
+				</li>
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+								data-caption="Looking up to the top floor of chicks Hotel" 
+								href="images/Looking-up-to-the-top-floor-of-chicks-hotel-800.jpg">
+									<img
+										src="images/Looking-up-to-the-top-floor-of-chicks-hotel-thumbnail.jpg"
+										alt="Looking towards the sky, at the second story of Chicks Hoel with the sinage at the top of the building"
+										 />
+							</a>
+				</li>
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+								data-caption="Chicks hotel wodden front door"
+								href="images/chicks-hotel-brown-front-door-800.jpg">
+								<img
+									src="images/chicks-hotel-brown-front-door-thumbnail.jpg"
+									alt="brown wooden front door"
+									/>
+							</a>
+				</a>
+				</li>
+			</ul>
+		</div>
+		<button class="splide__toggle" type="button">
+			<span class="splide__toggle__play"
+				><i class="bi bi-play-circle-fill"></i
+			></span>
+			<span class="splide__toggle__pause"
+				><i class="bi bi-pause-circle-fill"></i
+			></span>
+		</button>
+		<div class="splide__progress">
+			<div class="splide__progress__bar"></div>
+		</div>
+	</div>
+							
+						<!--Links to External Resources-->
+						<div class="external-links">
+							<a href="https://www.rnz.co.nz/news/the-wireless/373815/farewell-to-chick-s-hotel">Link</a>
+							<a href="https://www.youtube.com/watch?v=ILpmi_DJIqg">Link</a>
+							
+						</div>
+					</div>
+					<div class="pre-wrap img-text">
+						<!-- p for paragraphs-->
+						<p>
+							Mount Street, Port Chalmers, Dunedin, early 1980s. 
+							The famous Hotel was built in 1877 and closed in 2016.
+							The history of this place is exciting and colourful,
+							see the links for more information. 
+							Local legend has it that the hotel is haunted.
+							Cast your mind into the past and imagine the stories 
+							that could be told within these walls.
+							See the link for the last days of Chicks Hotel.
+						</p>
+					</div>
+				</div>
+				<!-- hr is for a horizantal line across the page -->
+				<hr />
+			</section>	
+
+
+
+
+
+
+		<!-- Section Four of content -->
+			<section id="section-four">
+				<!-- h tag for headings -->
+				<h2> Former Bank of New Zealand Building</h2>
+
+				<div class="two-column-container">
+					<div class="left-column">
+						<!-- Splide -->
+		<div
+		id="autoplay_slider3"
+		class="splide splide_autoplay"
+		role="group"
+		aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+							data-caption="Front door"  
+							href="images/Bank-of-NZ-front-door-800.jpg">
+								<img
+									src="images/Bank-of-NZ-front-door-thumbnail.jpg"
+									alt="Front door of building, wood with stone surrounds"
+									 />
+							</a>
+				</li>
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+								data-caption="Ralph Hotere’s gate" 
+								href="images/Ralphs-gate-thumbnail.jpg">
+									<img
+										src="images/Ralphs-gate-thumbnail.jpg"
+										alt="A gate that has been made out of wood and metal, the side access to the building"
+										 />
+							</a>
+				</li>
+				<li class="splide__slide">
+					<a data-fancybox="gallery"
+								data-caption="View of Building from Grey street, Port Chalmers 2025."
+								href="images/Bank-of-New-Zealand-Grey-street-view-of-building-thumbnail.jpg">
+								<img
+									src="images/Bank-of-New-Zealand-Grey-street-view-of-building-thumbnail.jpg"
+									alt="A side view of the building, showing the slant of the building in conjuction with the street edge"
+									 />
+									 </a>
+				</a>
+				</li>
+			</ul>
+		</div>
+		<button class="splide__toggle" type="button">
+			<span class="splide__toggle__play"
+				><i class="bi bi-play-circle-fill"></i
+			></span>
+			<span class="splide__toggle__pause"
+				><i class="bi bi-pause-circle-fill"></i
+			></span>
+		</button>
+		<div class="splide__progress">
+			<div class="splide__progress__bar"></div>
+		</div>
+	</div>
+									<!--Links to External Resources-->
+						<div class="external-links">
+							<a href="https://www.heritage.org.nz/list-details/2317/Bank%20of%20New%20Zealand%20Building%20(Former)">Link</a>
+						
+							
+						</div>
+					
+					</div>
+					
+					<div class="pre-wrap img-text">
+						<!-- p for paragraphs-->
+						<p>The R. A. Lawson-designed former BNZ building at 1 George St, 
+							once artist Ralph Hotere’s studio, is a Heritage New Zealand 
+							category two historic place. Currently work seems to be, 
+							being done on the inside of the building if you can catch 
+							a glimpse through cracks in doors and windows...<a href=""></a></p>
+					</div>
+							
+					</div>
+				<hr>
+			</section>
+						
+
+
+						
+						<!-- Section Five of content -->
+			<section id="section-five">
+				<!-- h tag for headings -->
+				<h2>Oputae - Ralph Hotere Garden</h2>
+
+				<div class="two-column-container">
+					<div class="left-column">
+						<div
+						id="autoplay_slider4"
+						class="splide splide_autoplay"
+						role="group"
+						aria-label="Splide Basic HTML Example">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<a data-fancybox="gallery"
+							data-caption="Portal to te Oputae Scultpture Garden"  
+							href="images/mouth-of-oputae-walk-800.jpg">
+								<img
+									src="images/mouth-of-oputae-walk-thumbnail.jpg"
+									alt="The path to walk through to the Oputae sculpture garden"
+									/>
+							</a>
+								</li>
+								<li class="splide__slide">
+									<a data-fancybox="gallery"
+								data-caption="Oputae Sign" 
+								href="images/Oputae-sign-800.jpg">
+									<img
+										src="images/Oputae-sign-thumbnail.jpg"
+										alt="A metal sign, that explains why the Optutae garden exsis, Refrenceing Ralph Hotere Trust"
+										/>
+							</a>
+								</li>
+								<li class="splide__slide">
+									<a data-fancybox="gallery"
+								data-caption="View out to the Otago Harbour"
+								href="images/mouth-of-the-otago-habour-800.jpg">
+								<img
+									src="images/mouth-of-the-otago-habour-thumbnail.jpg"
+									alt="A landscape view of the mouth of the Otago habour looking towards Tairoa heads"
+									/>
+							</a>
+								</li>
+								<li class="splide__slide">
+								<a data-fancybox="gallery"
+								data-caption="Aramoana Post, Scultpture" 
+								href="images/Aramoana-post-800.jpg">
+									<img
+										src="images/Aramoana-post-thumbnail.jpg"
+										alt="A tall sculpture made out of a post with Aramoana carved in the side of the the post"
+										/>
+										</a>
+								</li>
+								<li class="splide__slide">
+										
+							<a data-fancybox="gallery"
+								data-caption="Chris Booth Artist Statement" 
+								href="images/chris-booth-aramoana-plark-800.jpg">
+									<img
+										src="images/chris-booth-aramoana-plark-thumbnail.jpg"
+										alt="Chris Booth Artist plaque, explaining about the artist"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+									
+							<a data-fancybox="gallery"
+								data-caption="Black phoenix, part of." 
+								href="images/black-phoenix-hull-with-Hotere-stainless-steele-panels-800.jpg">
+									<img
+										src="images/black-phoenix-hull-with-Hotere-stainless-steele-panels-thumbnail.jpg"
+										alt="The front quarter of a boat Hull the Black with Hotere desinged stainless steele panels"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+									
+							<a data-fancybox="gallery"
+								data-caption="Hull of the Black phonenix" 
+								href="images/hull-of-boat-800.jpg">
+									<img
+										src="images/hull-of-boat-thumbnail.jpg"
+										alt="Part hull of the Black phonenix"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+									<a data-fancybox="gallery"
+								data-caption="Black Phoenix, artist plaque" 
+								href="images/black-phonenix-artist-information-plaque-800.jpg">
+									<img
+										src="images/black-phonenix-artist-information-plaque-thumbnail.jpg"
+										alt="Black phonenix artist information"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+										<a data-fancybox="gallery"
+								data-caption="Brick Monument" 
+								href="images/brick-monument-800.jpg">
+									<img
+										src="images/brick-monument-thumbnail.jpg"
+										alt="A tall brick circular monument"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+										<a data-fancybox="gallery"
+								data-caption="Russel Moses, Artist plaque" 
+								href="images/Russel-Moses-colum-plark-800.jpg">
+									<img
+										src="images/Russel-Moses-colum-plark-thumbnail.jpg"
+										alt="Artist plaque Russel Moses"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+									
+							<a data-fancybox="gallery"
+								data-caption="Full Body Tane Mahuta Sculpture" 
+								href="images/full-body-tane-mahuta-sculpture-back-veiw-800.jpg">
+									<img
+										src="images/full-body-tane-mahuta-sculpture-back-veiw-thumbnail.jpg"
+										alt="Tane mahuta back view a black sculpture of a human male figure"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+										<a data-fancybox="gallery"
+								data-caption="Tane Mahuta head in the ground" 
+								href="images/tane-mahuta-mahunga-head-on-the-ground-thumbnail.jpg">
+								
+									<img
+										src="images/tane-mahuta-mahunga-head-on-the-ground-thumbnail.jpg"
+										alt="the head of a Tane Mahuta sculpture, with the head in the ground and is resting on tiles with maori words etched into the tiles"
+										style="width: 100%" />
+										</a>
+								</li>
+								<li class="splide__slide">
+										<a data-fancybox="gallery"
+								data-caption="Shona Ripara artist plaque" 
+								href="images/shona-ripara-artist-plark-800.jpg">
+									<img
+										src="images/shona-ripara-artist-plark-thumbnail.jpg"
+										alt="Artist information Shona Ripara"
+										style="width: 100%" />
+										</a>
+								</li>
+							</ul>
+						</div>
+						<button class="splide__toggle" type="button">
+							<span class="splide__toggle__play"
+								><i class="bi bi-play-circle-fill"></i
+							></span>
+							<span class="splide__toggle__pause"
+								><i class="bi bi-pause-circle-fill"></i
+							></span>
+						</button>
+						<div class="splide__progress">
+							<div class="splide__progress__bar"></div>
+						</div>
+					</div>
+							
+						<!--Links to External Resources-->
+						<div class="external-links">
+							<a href="https://www.odt.co.nz/lifestyle/magazine/artist-port">Link</a>
+						
+							<a href="https://www.nzonscreen.com/title/ralph-hotere-1974">Link></a>
+						</div>
+					</div>
+					<div class="pre-wrap img-text">
+						<!-- p for paragraphs-->
+						<p>
+							Artist Ralph Hōtere, has long made his home in Port Chalmers.
+							The garden is located on a headland overlooking the Otago Harbour.
+							The garden features a number of sculptures
+							by Hotere and other artists, including Chris Booth, Russell Moses,
+							and Shona Rapira. 	
+							The garden is a peaceful and contemplative space that offers
+							a unique perspective on the work of Ralph Hotere and other artists.	
+							It is a must-visit destination for anyone interested in art, nature,
+							or the history of Port Chalmers.
+
+							Ralph Hotere (1931-2013) was a New Zealand artist known for his
+							abstract paintings and sculptures.
+						</p>
+					</div>
+				</div>
+						
+				<!-- hr is for a horizantal line across the page -->
+				<hr />
+			</section>
+
+			<!-- Map with pins section -->
+			<section id="section-six">
+				<!-- Section Title-->
+				<h2>Portals of Port Map.</h2>
+				<!-- Map Container -->
+				<div class="map-container">
+					<!-- Map Marker -->
+					<div class="map-marker-one">
+						<!-- Marker Icon -->
+						<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+						<!-- Pop-up Content -->
+						<div class="map-pop-up-content">
+							<p class="map-pop-up-text"> Port Chalmers Foundry</p>
+						</div>
+					</div>
+					<div class="map-marker-two">
+						<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+						<div class="map-pop-up-content">
+							<p class="map-pop-up-text">Chicks Hotel</p>
+						</div>
+					</div>
+					<div class="map-marker-three">
+						<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+						<div class="map-pop-up-content">
+							<p class="map-pop-up-text">Tunnel Number One</p>
+						</div>
+					</div>
+					<div class="map-marker-four">
+						<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+						<div class="map-pop-up-content">
+							<p class="map-pop-up-text">Ex Bank of New Zealand Building</p>
+						</div>
+					</div>
+					<div class="map-marker-five">
+						<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+						<div class="map-pop-up-content">
+							<p class="map-pop-up-text">Oputae/Hotere Sculpture Garden</p>
+						</div>
+					</div>
+					
+						</div>
+					
+				
+			</section>
+			</main>
 
 				<!-- Footer for extra links/socials and legal -->
 				<footer>
 					<div class="footer-grid">
 						<div id="footer-nav" class="footer-grid-items">
-							<h3>Page Links</h3>
-							<a href="#section-one">Section One</a>
-							<a href="#section-two">Section Two</a>
-							<a href="#section-three">Section Three</a>
-							<a href="#section-four">Section Four</a>
-							<a href="#section-five">Section Five</a>
+							<h3>Page Links</h3> 
+							<a href="#section-one">Rail Tunnel One</a>
+							<a href="#section-two">Port Chalmers foundry</a>
+							<a href="#section-three">Chicks Hotel</a>
+							<a href="#section-four">Ex Bank of New Zealand Building</a>
+							<a href="#section-five">Ralph Hotere Scultpure Garden / Oputae</a>
 						</div>
 						<div id="footer-legal" class="footer-grid-items">
-							<h3>Sources</h3>
-							Legal for any attribute or other privacy statements.
-						</div>
-						<div id="footer-socials" class="footer-grid-items">
-							<h3>Socials</h3>
-							Social icons could go here.
+							<h3>Sources</h3> 
+							
+							<p>
+								Images byBernie Casey.
+								Links to external resources:
+								<a href="https://www.pcfoundrytrust.co.nz/">Port Chalmers Foundry Trust</a>,
+								<a href="https://www.heritage.org.nz/list-details/2317/Bank%20of%20New%20Zealand%20Building%20(Former)">Heritage New Zealand</a>,
+								<a href="https://www.odt.co.nz/lifestyle/magazine/artist-port">Otago Daily Times</a>,
+								<a href="https://www.rnz.co.nz/news/the-wireless/373815/farewell-to-chick-s-hotel">RNZ</a>,
+								<a href="https://teara.govt.nz/en/photograph/22753/hotere-garden-oputae">Te Ara</a>,
+								<a href="https://en.wikipedia.org/wiki/Port_Chalmers"> Wikipedia</a>,
+							
+
+						
 						</div>
 					</div>
 					<small>
-						Website by Your Name, licensed under
+						Website by Bernie Casey, licensed under
 						<a href="">&copy;Copyright</a>
 					</small>
-				</footer>
+				</footer> 
 			
-				<!-- FancyBox Javascript -->
-				<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-				<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-		
+		<!-- FancyBox Javascript -->
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<!-- Splide Javascript -->
+		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var splide = new Splide("#autoplay_slider0", {
+					type: "loop",
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					perPage: 3,
+					padding: "100px",
+					width: "1200px",
+					height: "900px",
+				}).mount();
+				var splide = new Splide("#autoplay_slider1", {
+					type: "loop",
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					padding: "100px",
+					width: "600px",
+					height: "900px",
+				}).mount();
+				var splide = new Splide("#autoplay_slider2", {
+					type: "loop",
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					padding: "100px",
+					width: "600px",
+					height: "900px",
+				}).mount();
+				var splide = new Splide("#autoplay_slider3", {
+					type: "loop",
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					padding: "100px",
+					width: "600px",
+					height: "900px",
+				}).mount();
+				var splide = new Splide("#autoplay_slider4", {
+					type: "loop",
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					padding: "100px",
+					width: "600px",
+					height: "900px",
+				}).mount();
+			});
+		</script>
 	</body>
 </html>

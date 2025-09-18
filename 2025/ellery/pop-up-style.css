@@ -6,11 +6,10 @@
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
+        --paynes-grey: #000;
+        --moonstone-blue: #fff;
         --light-cyan: #C8E7EA;
-        /* fonts */
-        --title-font: "Instrument Serif", serif;
+        --title-font: "Tan Meringue", serif;
         --body-font: "Atkinson Hyperlegible Next", sans-serif;
     }
 
@@ -27,7 +26,7 @@
     padding: 0.5em 1em;
     border: none;
     border-radius: 2em;
-    background-color: var(--light-cyan);
+    background-color: var(--moonstone-blue);
     color: var(--paynes-grey);
     filter: drop-shadow(#00000080 0.2em 0.2em 0.2em);
     cursor: pointer;

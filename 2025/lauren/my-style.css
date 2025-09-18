@@ -1,17 +1,21 @@
 /*** Imports ***/ 
 /* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Just+Me+Again+Down+Here&family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Mega:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*** Root ***/ 
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --navy: #08174A;
+        --White: #ffffff;
+        --White: #ffffff;
         /* fonts */
-        --title-font: "Instrument Serif", serif;
-        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+        --title-font: "Bevan", Bevan;
+        --body-font: "Lexend Mega", sans-serif;
+        --body-font-2: "Lexend Mega", sans-serif;
+        --sub-heading-font-1: "Just Me Again Down Here", cursive;
+        --sub-heading-font-2: "Lekton", monospace;
+        --stroke-font:"Poppins", sans-serif;
     }
 
 /*** General Style ***/ 
@@ -21,11 +25,15 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--navy);
         font-family: var(--body-font);
-        font-weight: 400;
+        font-weight: 300;
         overflow-x: hidden;
+        background-color: #F2EAE1;
+        cursor: url('images/template-images/sun.svg'), auto;
     }
+
+    
 
 /* Applies to whole main and stops content from getting too wide */
     main{
@@ -33,26 +41,26 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 1200px;
         margin: auto;
     }
 
 /* Adjusts all of your headings */
-    h1, h2, h3, h4, h5, h6 {
+    h1,h2,h3,h4,h5,h6{
         font-family: var(--title-font);
-        font-weight: 500;
+        font-weight: 300;
         text-align: center;
         margin: 1em;
     }
 
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: var(--navy);
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: #f3cae9;
+        cursor: url('images/template-images/sun-fill.svg'), pointer;
     }
 
 /*** Header ***/  
@@ -60,19 +68,123 @@
     header {
         display: flex;
         align-items: center;
+        height: 100vh;
         width: 100vw;
-        background-color: var(--paynes-grey);
+        background-color: var(--navy);
+        background-image: url(images/template-images/pexels-pixabay-164041.jpg);
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     /* Page title words */
     header h1 {
         padding: 1rem;
         width: 50%;
         margin: auto;
-        color: #fff;
-        font-size: 6em;
+        color: #ffffff;
+        font-size: 8em;
     }
     header h1 span{
         color: var(--light-cyan);
+    }
+
+    .body-font-2{
+       font-family: var(--body-font-2);
+       font-size: 2.5em;
+
+    }
+    .sub-heading-font-1{
+        font-family: var(--sub-heading-font-1);
+        font-size: 1.5em;
+    }
+    .sub-heading-font-2{
+        font-family: var(--sub-heading-font-2);
+        font-size: 1em;
+    }
+
+    .welcome-button-2{
+        font-family: var(--stroke-font);
+        color: #F1E1F2;
+        -webkit-text-stroke: 1px #FD97E3;
+    }
+
+    .WATER{
+        color: #fff;
+        font-family: var(--body-font);
+        font-weight: 200%;
+    }
+
+    .surf{
+        font-family: var(--stroke-font);
+        color: #90D0FE;
+        -webkit-text-stroke: 1px #12235C;
+    }
+
+    .snorkeling{
+        font-family: var(--stroke-font);
+        color: #90D0FE;
+        -webkit-text-stroke: 1px #12235C;
+    }
+
+    .boat-tour{
+        font-family: var(--stroke-font);
+        color: #90D0FE;
+        -webkit-text-stroke: 1px #12235C;
+    }
+
+    .HOME{
+        color: white;
+        font-family: var(--body-font);
+        font-weight: 200%;
+    }
+
+    .slipnslide{
+        font-family: var(--stroke-font);
+        color: #B9D9D5;
+        -webkit-text-stroke: 1px #5B9390;
+    }
+
+    .water-balloon{
+        font-family: var(--stroke-font);
+        color: #B9D9D5;
+        -webkit-text-stroke: 1px #5B9390;
+    }
+
+    .ice-cream{
+        font-family: var(--stroke-font);
+        color: #B9D9D5;
+        -webkit-text-stroke: 1px #5B9390;
+    }
+
+    .ADVENTUROUS{
+        color: white;
+        font-family: var(--body-font);
+        font-weight: 200%;
+        
+    }
+
+    .road-trip{
+        font-family: var(--stroke-font);
+        color: #DDEAF8;
+        -webkit-text-stroke: 1px #82B2C0;
+    }
+
+    .hike{
+        font-family: var(--stroke-font);
+        color: #DDEAF8;
+        -webkit-text-stroke: 1px #82B2C0;
+    }
+
+    .zipline{
+        font-family: var(--stroke-font);
+        color: #DDEAF8;
+        -webkit-text-stroke: 1px #82B2C0;
+    }
+
+    /* Text Stroke */
+    .text-stroke{
+        font-weight: 600;
     }
 
 
@@ -81,17 +193,17 @@
     nav {
         display: flex;
         justify-content: center;
-        position: sticky;
-        position: -webkit-sticky; /* Safari */
-        top: 0;
         text-align: center;
-        background-color: var(--moonstone-blue);
-        font-size: 1.6em;
+        background-color: var(--White);
+        font-size: 1.5em;
         font-weight: 500;
         /* z-index brings items forward or backward in relation to other content */
         z-index: 2;
+        margin-bottom: 4em;
     }
+
     /* Nav link adjustments*/
+
     nav a {
         margin: 0.4em;
         text-decoration: none;
@@ -100,21 +212,44 @@
         border-radius: 3em;
     }
     nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
+        color: white;
+        background-color: var(--navy);
         /* This transition adds smoothness to the hover effect */
         transition: color 0.2s ease;
         transition: background-color 0.2s ease;
     }
+
+    .intro-button{
+        color:#F1E1F2 ;
+        background-color: #ffffff;
+    }
+
+    .water-button{
+        color: #a6d7fa;
+        background-color: #ffffff;
+    }
+    
+    .home-button{
+        color: #B9D9D5;
+        background-color: #ffffff;
+    }
+
+    .adventurous-button{
+    
+        color:#96C1CE ;
+        background-color: #ffffff;
+    }
+
+  
 /*** Back to top Button ***/
 .back-to-top-btn {
     padding: 1em;
     position: fixed;
     right: 1em;
     bottom: 1em;  
-    background-color: var(--moonstone-blue);
+    background-color: #F1E1F2;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 18pt;
     font-weight: 600;
     border-radius: 2em;
@@ -122,15 +257,15 @@
     z-index: 2;
 }
 .back-to-top-btn:hover{
-    color: var(--light-cyan);
-    background-color: var(--paynes-grey);
+    color: #F1E1F2;
+    background-color: var(--navy);
 }
 
 
 /*** Applies to each section ***/
     section {
-        width: 80%;
-        padding: 2em; 
+        width: 100%;
+        padding: 0; 
         margin: auto;
     }
     hr {
@@ -140,31 +275,60 @@
     /* Section title heading size */
     section h2 {
         font-size: 4em;
-        margin: 0;
+        margin: 2em 0;
+        padding: 1em;
+        background-color: #f5f5f5;
+        width: 100vw;
     }
+
+    .WATER{
+        background-color: #a6d7fa;
+    }
+
+    .HOME{
+        background-color: #B9D9D5;
+    }
+
+    .ADVENTUROUS{
+        background-color: #96C1CE;
+    }
+
+
     section h3 {
         font-size: 2em;
     }
 
 /*** Basic element css ***/ 
     /*Simple 2 column grid with the image attribute displaed on hover */
+    
     .two-column-container {
-        display: inline-grid;
-        grid-template-columns: 2fr 1fr;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
         text-align: left;
-        margin: 1em 0;
+        margin: 1em;
+        width: 80%;
+        margin: auto;
+        max-width: 1200px;
+    }
+    .two-column-container a{
+        margin-top: 0;
+    }
+    .reverse{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
     .two-column-container img{
         border-radius: 1em;
     }
     .img-text {
+        font-size: 12pt;
         display: flex;
         align-items: center;
     }
     .img-attribution {
-        width: auto;
-        max-height: 60vh;
+        width: 100%;
+        max-height: 100vh;
         opacity: 1;
         transition: opacity 0.5s ease;
     }
@@ -178,11 +342,14 @@
         transition: opacity 0.5s ease;
     }
 
+    
 /*** Footer ***/  
     /* Applies to footer */
     footer {
+        width: 100vw;
+        margin: 0;
         padding: 2em;
-        background-color: var(--light-cyan);
+        background-color: white;
         text-align: right;
         font-weight: 600;
     }
@@ -193,15 +360,17 @@
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--navy);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: #F1E1F2;
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {
         width: 60%;
         margin: auto;
+        position: relative;
+        left: 15%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2em;
@@ -210,4 +379,8 @@
     .footer-grid-items{
         display: flex;
         flex-direction: column;
+    
+    }
+    .footer-grid-items h3{
+        margin: 0;
     }

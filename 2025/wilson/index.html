@@ -1,208 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- *****************************
-         Author: Your Name
-         Creation date: DD/09/2025
-         ***************************** -->
-	<head>
-		<!-- meta tags -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier Crown</title>
 
-		<!-- Browser tab title and favicon -->
-		<title>Template</title>
-		<link rel="icon" href="" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
-		<!-- Links-->
-		<link href="my-style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<!-- Navigation Bar -->
-		<nav>
-			<a href="#section-one">Basic Elements</a>
-			<a href="#section-two">Card Display</a>
-			<a href="#section-three">Carousel</a>
-			<a href="#section-four">Fancybox</a>
-			<a href="#section-five">Contact</a>
-		</nav>
+  <link rel="stylesheet" href="my-style.css" />
+</head>
+<body id="top">
 
-		<!-- Website title and heading -->
-		<header id="page-top">
-			<h1>Project <span>Temp</span>late</h1>
-		</header>
+  <!-- Top Nav -->
+  <nav class="top-nav">
+    <div class="nav-bar container">
+      <a href="#women">WOMEN</a>
+      <a href="#men">MEN</a>
+      <a href="#jewelery">JEWELRY</a>
+      <a href="#clothes">CLOTHES</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </nav>
 
-		<!-- Back to top button -->
-		<a class="back-to-top-btn" href="#page-top">Back to Top</a>
+  <!-- Title Page -->
+   <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="images/template-images/video.mp4" type="video/mp4">
+    </video>
+  <header class="hero">
+   
+    <div class="hero-badge">Atelier Crown</div>
+  </header>
 
-		<!-- Main Content -->
-		<main>
-			<!-- Section one of content -->
-			<section id="section-one">
-				<!-- h tag for headings -->
-				<h2>Basic Elements</h2>
+  <!-- Utility bar -->
+<div class="util-bar"></div>
+  <div class="util container">
+    <a href="javascript:void(0)">ACCOUNT</a>
+    <a href="javascript:void(0)">CART</a>
+    <a href="javascript:void(0)">DISCOVER</a>
+  </div>
 
-				<div class="two-column-container">
-					<figure class="fig-hover-attribution">
-						<!-- img for images with src being the source alt for alternative text -->
-						<img
-							class="img-attribution"
-							src="images/template-images/example-img-1200x800.jpg"
-							alt="Ocean Waves Crashing on Shore during Sunset" />
-						<!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute-->
-						<figcaption class="attribution">
-							Ocean Waves Crashing on Shore during Sunset, Jess Loiterton,
-							sourced from
-							<a
-								href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/"
-								>Pexels</a
-							>, <a href="https://www.pexels.com/license/">cc</a>
-						</figcaption>
-					</figure>
-					<div class="pre-wrap img-text">
-						<!-- p for paragraphs-->
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-							dignissim. Consequat ac felis donec et odio pellentesque diam
-							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-							tincidunt arcu non. Quisque non tellus orci ac auctor augue
-							mauris.
-						</p>
-					</div>
-				</div>
-			</section>
+  <main class="container">
 
-			<!-- Section two of content -->
-			<section id="section-two">
-				<!-- Section two Title -->
-				<h2>Card Display Grid</h2>
+    <!-- Collections -->
+    <section class="collections">
+      <article class="image-tile">
+        <img src="images/template-images/women.jpg" alt="Womens" />
+        <div class="tag">WOMENS COLLECTION</div>
+      </article>
 
-				<!-- Card display -->
-				<h3>Card Example</h3>
-				<div class="card-grid">
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-1.png" alt="Tower" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-3.png" alt="Ocean" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-2.png" alt="Mountains" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-1.png" alt="Tower" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-3.png" alt="Ocean" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-2.png" alt="Mountains" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-1.png" alt="Tower" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-3.png" alt="Ocean" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-2.png" alt="Mountains" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</section>
-			
-		</main>
+      <article class="image-tile">
+        <img src="images/template-images/men.jpg" alt="Mens" />
+        <div class="tag">MENS COLLECTION</div>
+      </article>
 
-		<!-- Footer for extra links/socials and legal -->
-		<footer>
-			<div class="footer-grid">
-				<div id="footer-nav" class="footer-grid-items">
-					<h3>Page Links</h3>
-					<a href="#section-one">Basic Elements</a>
-					<a href="#section-two">Card Display</a>
-					<a href="#section-three">Carousel</a>
-					<a href="#section-four">Fancybox</a>
-					<a href="#section-five">Contact</a>
-				</div>
-				<div id="footer-legal" class="footer-grid-items">
-					<h3>Sources</h3>
-					Legal for any attribute or other privacy statements.
-				</div>
-				<div id="footer-socials" class="footer-grid-items">
-					<h3>Socials</h3>
-					Social icons could go here.
-				</div>
-			</div>
-			<small>
-				Website by Your Name, licensed under
-				<a href="">&copy;Copyright</a>
-			</small>
-		</footer>
-	</body>
+      <!-- New Arrivals -->
+      <aside class="promo">
+        <div class="promo-inner">
+          <span class="pill">NEW ARRIVALS</span>
+          <h2>MODERN<br/>HERITAGE</h2>
+          <a class="pill" href="javascript:void(0)">SHOP NOW</a>
+        </div>
+      </aside>
+    </section>
+    <section id="clothes"></section>
+
+    <!-- Curated Selection -->
+    <section class="section">
+      <h3 class="section-title">CURATED SELECTION</h3>
+      <div class="grid curated">
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/the-new-street.jpg" alt=""><span>THE NEW STREET</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/retro-rev.jpg" alt=""><span>RETRO REVIVAL</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/regal-elegance.jpg" alt=""><span>REGAL ELEGANCE</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/modern-muse.jpg" alt="" class="focus-top"><span>MODERN MUSE</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/leather.jpg" alt=""><span>LEATHER</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/swimwear.jpg" alt=""><span>SWIMWEAR</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/accessories.jpg" alt=""><span>ACCESSORIES</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/footwear.jpg" alt=""><span>FOOTWEAR</span></a>
+      </div>
+    </section>
+    <section id="about"></section>
+
+    <!-- The Gazette / Our Story -->
+    <section class="split">
+      <div class="gazette">
+        <h3 class="section-title">THE GAZETTE</h3>
+        <div class="grid two">
+          <a class="tile" href="javascript:void(0)"><img src="images/template-images/inside-our-atelier.jpg" alt=""><span>INSIDE OUR ATELIER</span></a>
+          <a class="tile" href="javascript:void(0)"><img src="images/template-images/craftsmanship.jpg" alt=""><span>CRAFTSMANSHIP</span></a>
+        </div>
+      </div>
+
+      <div class="story">
+        <h3 class="section-title">OUR STORY</h3>
+        <!-- parchment-style background with text layered on top -->
+        <div class="story-card">
+          <div class="story-content">
+            <p>Atelier Crown</p>
+            <p>Founded in 1972 on the wild, windswept shores of New Zealand, Atelier Crown began as a humble atelier devoted to the art of handcrafted jewelery.</p>
+            <p>What started in a small workshop has grown into a regarded house of luxury.</p>
+            <p>Yet, our essence remains unchanged.</p>
+            <p>From Aotearoa to the world this is our story.</p>
+          </div>
+          <a class="pill pill-right" href="javascript:void(0)">CONTINUE READING</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual -->
+    <section class="full-bleed">
+      <img src="images/template-images/dress-water.jpg" alt="">
+    </section>
+
+    <!-- Crown Collection -->
+    <section class="section">
+      <h3 class="section-title">CROWN COLLECTION</h3>
+      <div class="grid crown">
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/timepieces.jpg" alt=""><span>TIMEPIECES</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/icon-series.jpg" alt=""><span>ICON SERIES</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/coastal-gold.jpg" alt=""><span>COASTAL GOLD</span></a>
+        <a class="tile" href="javascript:void(0)"><img src="images/template-images/executive-suite.jpg" alt=""><span>EXECUTIVE SUITE</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bars container">
+      <a href="#services.html">SERVICES+</a>
+      <a href="#orders.html">ORDERS+</a>
+      <a href="#financial.html">FINANCIAL+</a>
+      <a href="#legal.html">LEGAL+</a>
+    </div>
+
+    <div class="footer-grid container">
+      <div class="col">
+        <h4>CUSTOMER SERVICE</h4>
+        <p><strong>PHONE NUMBER</strong><br>+64 021 808 2727</p>
+        <p><strong>EMAIL</strong><br><a href="mailto:customerservice@atelier.co.nz">customerservice@atelier.co.nz</a></p>
+      </div>
+      <div class="col">
+        <h4>NEWSLETTER</h4>
+        <p>Receive our newsletter and discover new stories, collections, and surprises.</p>
+        <form class="newsletter" action="#" method="post">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email address" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+      <div class="col">
+        <h4>FOLLOW US</h4>
+        <div class="socials">
+          <a href="javascript:void(0)">Facebook</a><a href="javascript:void(0)">Instagram</a><a href="javascript:void(0)">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <small class="copy">© Atelier Crown. All rights reserved.</small>
+  </footer>
+
+  <a class="back-to-top" href="#top">Back to Top</a>
+  <section id="jewelery"></section>
+<section id="contact"></section>
+</body>
 </html>

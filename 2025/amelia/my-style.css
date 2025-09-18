@@ -6,9 +6,9 @@
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --ochre: #AA6C3A;
+        --red-grey: #BEA09E;
+        --vanilla: #FCE6D8;
         /* fonts */
         --title-font: "Instrument Serif", serif;
         --body-font: "Atkinson Hyperlegible Next", sans-serif;
@@ -21,7 +21,7 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--ochre);
         font-family: var(--body-font);
         font-weight: 400;
         overflow-x: hidden;
@@ -47,12 +47,12 @@
 
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: var(--red-grey);
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--ochre);
     }
 
 /*** Header ***/  
@@ -61,18 +61,18 @@
         display: flex;
         align-items: center;
         width: 100vw;
-        background-color: var(--paynes-grey);
+        background-color: var(--ochre);
     }
     /* Page title words */
     header h1 {
         padding: 1rem;
         width: 50%;
         margin: auto;
-        color: #fff;
+        color: #ffffff;
         font-size: 6em;
     }
     header h1 span{
-        color: var(--light-cyan);
+        color: var(--vanilla);
 }
 /*** Nav ***/    
     /* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
@@ -82,26 +82,27 @@
         text-align: center;
         font-size: 1.6em;
         font-weight: 500;
-        border-bottom: 1em solid var(--paynes-grey);
+        border-bottom: 1em solid var(--vanilla);
         /* z-index brings items forward or backward in relation to other content */
         z-index: 2;
         height: 4em;
+        background-color: var(--ochre);
     }
     /* Nav link adjustments*/
     nav a {
         margin: 0.4em;
         margin-bottom: 0;
         text-decoration: none;
-        color: #fff;
-        background-color: var(--paynes-grey);
+        color: var(--ochre);
+        background-color: var(--vanilla);
         padding: 0.4em 1em 0 1em;
         border-radius: 1em 1em 0 0;
         align-self: flex-end;
         
     }
     nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
+        color: var(--red-grey);
+        background-color: var(--vanilla);
         /* This transition adds smoothness to the hover effect */
         transition: color 0.2s ease;
         transition: background-color 0.2s ease;
@@ -134,7 +135,7 @@
     /*Simple 2 column grid with the image attribute displaed on hover */
     .two-column-container {
         display: inline-grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
         width: 100%;
         text-align: left;
         margin: 1em 0;
@@ -147,7 +148,7 @@
         align-items: center;
     }
     .img-attribution {
-        width: auto;
+        width: 100%;
         max-height: 60vh;
         opacity: 1;
         transition: opacity 0.5s ease;
@@ -162,7 +163,15 @@
         transition: opacity 0.5s ease;
     }
 
-/*** Contact Section ***/   
+
+/*** About Text ***/
+.text-block{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}  
+
+    /*** Contact Section ***/   
     
     /* Form Styling */
     .contact-container {
@@ -180,7 +189,7 @@
         padding: 12px;
         margin: 16px auto;
         display: inline-block;
-        border: 1px solid #ccc;
+        border: 1px solid #9b9494;
         border-radius: 50px;
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -189,8 +198,8 @@
     /* Style the submit button */
     input[type=submit] {
         width: 25%;
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
+        color: var(--vanilla);
+        background-color: var(--ochre);
         border: none;
         font-weight: 600;
     }
@@ -200,11 +209,24 @@
         cursor: pointer;
     } 
 
+/*** Work ***/
+.work-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.top-spacing{
+    margin-top: 4em;
+}
+
 /*** Footer ***/  
     /* Applies to footer */
     footer {
         padding: 2em;
-        background-color: var(--light-cyan);
+        background-color: var(--vanilla);
         text-align: right;
         font-weight: 600;
     }
@@ -215,10 +237,10 @@
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--ochre);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: var(--red-grey);
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {

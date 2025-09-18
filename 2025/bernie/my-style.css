@@ -1,18 +1,20 @@
 /*** Imports ***/ 
 /* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Noto+Sans+Mono:wght@100..900&display=swap');
 /*** Root ***/ 
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --midnightgreen: #272f23;
+        --sandyclay: #8D745A;
+        --light-clay: #caae8f;
+        --forest-green: #639355;
         /* fonts */
-        --title-font: "Instrument Serif", serif;
-        --body-font: "Atkinson Hyperlegible Next", sans-serif;
-    }
+        --title-font: "Arbutus", serif;
+        --body-font: "Noto Sans Mono", monospace;
+        }
+  
+          
 
 /*** General Style ***/ 
 /* Universal tag used to give the border box style here */
@@ -21,20 +23,21 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--light-clay);
         font-family: var(--body-font);
         font-weight: 400;
         overflow-x: hidden;
+        background-color: var(--midnightgreen);
     }
 
 /* Applies to whole main and stops content from getting too wide */
     main{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-width: 1200px;
+        align-items: left;
+        width: 80%;
         margin: auto;
+       
     }
 
 /* Adjusts all of your headings */
@@ -47,44 +50,53 @@
 
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: var(--forest-green);
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--light-clay);
     }
 
 /*** Header ***/  
     /* Page title area */
     header {
         display: flex;
-        align-items: center;
+        align-items: start;
+        padding-top: 20vh;
         width: 100vw;
         height: 100vh;
-        background-color: var(--paynes-grey);
+        background-color: #8d745ad0;
+        background-image: url(images/StockCake-Topographic-Elegance-Displayed_1757897992.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        color: var(--light-clay);
     }
     header a{
-        text-decoration: none;
+        text-decoration-color: var(--light-clay);
     }
     header a:hover{
         opacity: 0.6;
     }
     /* Page title words */
     header h1 {
+        
         padding: 1rem;
         width: 50%;
         margin: auto;
-        color: #fff;
+        color: var(--light-clay);
         font-size: 6em;
     }
-    /*Nav Gallery | Side scrolling */
-    .side-scrolling-nav-gallery{
-        width: 100%;
-        margin-left: 10vw;
-        overflow-x: scroll;
-        white-space: nowrap;
-        scrollbar-color: var(--moonstone-blue) #00000000;
+    header p{
+        padding: 1rem;
+        width: 50%;
+        margin: auto;
+    }
+
+    header img{
+        border-radius: 1em;
     }
     
 
@@ -94,9 +106,9 @@
     position: fixed;
     right: 1em;
     bottom: 1em;  
-    background-color: var(--moonstone-blue);
+    background-color: var(#1f382f);
     text-decoration: none;
-    color: #fff;
+    color: var(--forest-green);
     font-size: 18pt;
     font-weight: 600;
     border-radius: 2em;
@@ -104,13 +116,12 @@
     z-index: 2;
 }
 .back-to-top-btn:hover{
-    color: var(--light-cyan);
-    background-color: var(--paynes-grey);
+    color: var(--forest-green);
+    background-color: var(--sandyclay);
 }
 
 /*** Applies to each section ***/
-section {
-    width: 80%;
+section {    width: 80%;
     padding: 2em; 
     margin: auto;
 }
@@ -130,12 +141,13 @@ section h3 {
 /*** Section Template ***/
 /*Simple 2 column grid with the image attribute displaed on hover */
 .two-column-container {
-    display: inline-grid;
-    grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-template-columns: 600px 600px;
     column-gap: 2em;
     width: 100%;
+    max-width: 1200px;
     text-align: left;
-    margin: 1em 0;
+    margin: 1em auto;
 }
 .two-column-container img{
     border-radius: 1em;
@@ -145,8 +157,7 @@ section h3 {
     align-items: center;
 }
 .img-attribution {
-    width: auto;
-    max-height: 60vh;
+    width: 100%;
     opacity: 1;
     transition: opacity 0.5s ease;
 }
@@ -154,6 +165,9 @@ section h3 {
     position: relative;
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+.left-column{
+    width: 600px;
 }
 .left-column:hover .attribution {
     opacity: 1;
@@ -170,30 +184,93 @@ section h3 {
 .side-scrolling-carousel{
     overflow-x: scroll;
         white-space: nowrap;
-        scrollbar-color: var(--moonstone-blue) #00000000;
+        scrollbar-color: var(--forest-green) #00000000;
 }
 
+/*** Splide ***/
+.splide{
+    max-width: 1200px;
+    max-height: 800px;
+}
+.splide img{
+    width: 100%;
+    border-radius: 2em;
+    padding: 1em
+}
+/* Position of dots */
+.splide__pagination{
+    position: relative;
+    top: 35.8rem;
+}
+.splide:not(.is-overflow) .splide__pagination{
+    display: show;
+}
+.side-scrolling-nav-gallery .splide__pagination{
+    top: 20.5rem;
+}
+/* Play pause button */
+.splide__toggle{
+    position: relative;
+    top: -7.5em;
+    left: 0.5em;
+    background-color: transparent;
+    border: none;
+    color: #cfcfcf;
+    font-size: 2em;
+}
+.splide__toggle:hover{
+    color: #fff;
+}
+.side-scrolling-nav-gallery .splide__toggle{
+    top: -11em;
+}
+/* Progress bar */
+.splide__progress__bar {
+    height: 3px;
+    background: #ccc;
+    position: relative;
+    top: -18em;
+    border-radius: 1em;
+}
+.side-scrolling-nav-gallery .splide__progress__bar {
+    top: -25.5em;
+}
+/* Arrows */
+.splide__arrow{
+    margin-top: -6em;
+}
+
+.side-scrolling-nav-gallery .splide__arrow{
+    margin-top: -9em;
+}
 
 
 /*** Footer ***/  
     /* Applies to footer */
     footer {
         padding: 2em;
-        background-color: var(--light-cyan);
+        background-color: var(--midnightgreen);
         text-align: right;
         font-weight: 600;
+    
+        background-image: url(images/StockCake-Topographic-Elegance-Displayed_1757897992.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
     footer h3{
         text-align: left;
         font-size: 2em;
         margin-bottom: 0;
+        color: var(--midnightgreen);
+        
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--clay);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: var(--forest-green);
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {
@@ -201,7 +278,7 @@ section h3 {
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2em;
+        column-gap: 30em;
         text-align: left;
     }
     .footer-grid-items{

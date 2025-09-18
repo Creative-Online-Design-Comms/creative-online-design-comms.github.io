@@ -1,123 +1,169 @@
-/*** Imports ***/ 
-/* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Special+Elite&display=swap');
 
-/*** Root ***/ 
-/* For variables like colors and fonts*/
-    :root{
+:root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --black: #000000;
+        --grey: #6b6b6b;
+        --white: #ffffff;
         /* fonts */
-        --title-font: "Instrument Serif", serif;
-        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+        --title-font: "Special Elite";
+        --body-font: "Montserrat";
     }
 
-/*** General Style ***/ 
-/* Universal tag used to give the border box style here */
     * {box-sizing:border-box}
 
-/* Applies to all the body */
-    body {
+     body {
         margin: auto;
-        color: var(--paynes-grey);
+        background-color: var(--black);
         font-family: var(--body-font);
         font-weight: 400;
         overflow-x: hidden;
     }
 
-/* Applies to whole main and stops content from getting too wide */
-    main{
+     main{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         max-width: 1200px;
         margin: auto;
+        min-width: 1000px;
     }
 
-/* Adjusts all of your headings */
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--title-font);
         font-weight: 500;
-        text-align: center;
-        margin: 1em;
+        color: var(--white);
     }
 
-/* Adjusts all of your anchor tags */
+    p{
+        color:var(--white)
+    }
+
+    strong{
+        font-family: var(--title-font);
+        font-weight: 500;
+        font-size: 35pt;
+    }
+
+
+#page-top{
+    justify-content: center;
+}
+
     a{
-        color: var(--moonstone-blue);
+        color: var(--white);
     }
 
-/* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--grey);
     }
 
-/*** Nav ***/    
-    /* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
     nav {
         display: flex;
         justify-content: center;
-        position: sticky;
-        position: -webkit-sticky; /* Safari */
         top: 0;
         text-align: center;
-        background-color: var(--moonstone-blue);
+        background-color: var(--black);
         font-size: 1.6em;
         font-weight: 500;
         /* z-index brings items forward or backward in relation to other content */
         z-index: 2;
+        font-family: var(--title-font);
+        border-radius: 5px; /* Rounded corners */
     }
-    /* Nav link adjustments*/
+
     nav a {
         margin: 0.4em;
         text-decoration: none;
         color: #fff;
         padding: 0.4em 1em;
-        border-radius: 3em;
     }
     nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
+        color: var(--black);
+        background-color: red;
         /* This transition adds smoothness to the hover effect */
         transition: color 0.2s ease;
         transition: background-color 0.2s ease;
     }
 
-/*** Header ***/  
-    /* Page title area */
-    header {
+    .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-size: 1em;
+  margin: 0.4em;
+  padding: 0.4em 1em;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  color: var(--black);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  font-size: 0.6em;
+  font-family: var(--body-font);
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+     header {
         display: flex;
         align-items: center;
         width: 100vw;
-        background-color: var(--paynes-grey);
     }
-    /* Page title words */
-    header h1 {
+     header h1 {
         padding: 1rem;
-        width: 50%;
+        width: 100%;
         margin: auto;
-        color: #fff;
-        font-size: 6em;
-    }
-    header h1 span{
-        color: var(--light-cyan);
+        max-width: 100%; /* Ensures the image will not exceed its container's width */
+        height: auto;    /* Maintains the image's aspect ratio */
     }
 
-/*** Applies to each section ***/
-    section {
-        width: 80%;
-        padding: 2em; 
-        margin: auto;
+      header h1 span{
+        color: var(--white);
     }
+
     hr {
-        margin: 6em 0px 0px;
+        margin: 0em 0px 0px;
     }
 
-    /* Section title heading size */
-    section h2 {
+     section h2 {
         font-size: 4em;
         margin: 0;
     }
@@ -125,39 +171,149 @@
         font-size: 2em;
     }
 
-/*** Basic element css ***/ 
-    /*Simple 2 column grid with the image attribute displaed on hover */
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: #2b2b2b;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      #my.Btn{
+        background-color: #000000;
+        color: rgb(0, 0, 0); /* White text */
+        border: rgb(0, 0, 0) 30px;
+        cursor: pointer; /* Changes the mouse cursor to a hand on hover */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      .about-button {
+        display: inline-flexbox;
+        font-family: var(--body-font);
+        margin-top: 1.2em;
+        background-color: #000000;
+        color: rgb(255, 255, 255); /* White text */
+        border: rgb(0, 0, 0) 30px;
+        font-size: 20px; /* Text size */
+        cursor: pointer; /* Changes the mouse cursor to a hand on hover */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      .about-button:hover {
+        background-color: #acacac; 
+      }
+      
+      .about-button:active {
+        background-color: #850000; 
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+
+
     .two-column-container {
         display: inline-grid;
         grid-template-columns: 2fr 1fr;
         width: 100%;
         text-align: left;
-        margin: 1em 0;
+        margin: 0em 0;
     }
     .two-column-container img{
         border-radius: 1em;
     }
+
+    .section digital-handbook{
+        margin-left: 0%;
+    }
+
     .img-text {
         display: flex;
         align-items: center;
     }
-    .img-attribution {
-        width: auto;
-        max-height: 60vh;
-        opacity: 1;
-        transition: opacity 0.5s ease;
-    }
-    .attribution {
-        position: relative;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-    .fig-hover-attribution:hover .attribution {
-        opacity: 1;
-        transition: opacity 0.5s ease;
+
+    .about-text{
+    width: 55rem;
+    font-size: x-large;
+    height: auto;
+    min-width: 20rem;
+    text-overflow: wrap;
     }
 
-/*** Carousel Section ***/
+    .handbook-text{
+        width: 30rem;
+        font-size: x-large
+    }
+
+    .handbook-heading{
+        font-size: 64pt;
+    }
+
+    .radio-one{
+        margin-left: 10%;
+    }
+
+    .handbook-button {
+    display: inline-flexbox;
+    font-family: var(--title-font);
+    margin-top: 1.2em;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); /* White text */
+    border: white 30px;
+    width: 200px;
+    padding: 20px 20px; /* Padding around the text */
+    font-size: 30px; /* Text size */
+    cursor: pointer; /* Changes the mouse cursor to a hand on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.handbook-button:hover {
+  background-color: #acacac; 
+}
+
+.handbook-button:active {
+  background-color: #850000; 
+}
+
+
+
+    .handbook:hover{
+        width: 710px;
+        transition: 0.3s ease;
+    }
+
+    /*** Carousel Section ***/
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -176,8 +332,8 @@
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: white;
+    padding: 10px;
+    color: rgb(255, 0, 0);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -189,19 +345,11 @@
     border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255, 0, 0, 0.8);
 }
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
+
 .numbertext {
-    color: #f2f2f2;
+    color: #ff0000;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -224,20 +372,24 @@
 /* Fading animation on carousel change */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
 }
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
 
-/*** Contact Section ***/   
-    /* iframe Map styling */
-    iframe{
+.title{
+    margin-left:25%;
+}
+
+ iframe{
         width: 80%;
         height: 35vh;
         border: 0;
     }
+
+  
  
     /* Form Styling */
     .contact-container {
@@ -275,36 +427,266 @@
         cursor: pointer;
     } 
 
-/*** Footer ***/  
-    /* Applies to footer */
-    footer {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      #map h3{
+        align-content: center;
+      }
+
+
+      #map{
+        align-content: center;
+        padding: 3em;
+        border-radius: 4em;
+    }
+
+      
+      .map-container {
+        position: relative;
+        width: 1000px;
+        max-width: 1020px;
+        margin: 0 auto;
+      }
+      
+      .map-container:hover{
+        width: 1020px;
+        transition: 0.3s ease;
+
+    }
+
+      .map-image {
+        width: 100%;
+        display: block;
+      }
+
+      
+      .dot {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+      }
+
+      .dot .popup {
+        position: absolute;
+        top: -px; /* or whatever works */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border: 1px solid #ff0000;
+        border-radius: 8px;
+        width: 200px;
+        padding: 10px;
+        display: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+
+      /* Label text beside the dot */
+.dot .label {
+  position: absolute;
+  opacity: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 2px 2px;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-family: "Oswald";
+  font-weight: 100;
+}
+.bold{
+  font-weight: 400;
+  padding: 0;
+}
+
+/* Show labels when hovering over the whole map container */
+.map-container:hover .dot .label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0); /* Slide to original position */
+}
+
+/* Label to the RIGHT of the dot (default) */
+.dot .label.right {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%) translateX(50%);
+}
+
+/* Label to the LEFT of the dot */
+.dot .label.left {
+  top: 50%;
+  right: 20px;
+  left: auto;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Label ABOVE the dot */
+.dot .label.top {
+  bottom: -30%; /* places it just above the dot */
+  left: -150%;
+  top: auto;
+  transform: translateX(-50%);
+}
+
+/* Label BELOW the dot */
+.dot .label.bottom {
+  top: 250%; /* places it just below the dot */
+  left: -150%;
+  transform: translateX(-50%);
+}
+
+.dot .label.top-right{
+  bottom: -30%;
+}
+      
+      .popup {
+        position: absolute;
+        top: -250px; /* Adjust depending on content */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #ff0000;
+        border-radius: 8px;
+        width: 200px;
+        padding: 10px;
+        display: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        display: block;
+        pointer-events: none; /* prevent blocking hover */
+      }
+      
+      .popup img {
+        width: 100%;
+        border-radius: 4px;
+      }
+      
+      .popup .info {
+        margin-top: 5px;
+        max-height: 250px;
+        overflow-y: auto;
+      }
+
+      .popup .info::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      .popup .info::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 3px;
+      }
+      
+      .popup .info::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
+
+      .popup .pioneer-hall{
+        transform: translateY(200px);
+      }
+
+        .info{
+          color: black;
+        }
+      
+      .dot:hover .popup {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+    .info p{
+        color: black;
+      }
+
+      .dot-wrapper:hover{
+        z-index: 10;
+      }
+
+      .ash-text{
+        width: 650px;
+      }
+
+      #about-ash{
+        background-color: white;
+        border-radius: 12px;
+      }
+
+      #about-ash p{
+        color: black;
         padding: 2em;
-        background-color: var(--light-cyan);
-        text-align: right;
-        font-weight: 600;
-    }
-    footer h3{
-        text-align: left;
-        font-size: 2em;
-        margin-bottom: 0;
-    }
-    /* Footer anchor tag changes */
-    footer a {
-        color: var(--paynes-grey);
-    }
-    footer a:hover{
-        color: var(--moonstone-blue);
-    }
-    /* Simple grid to hold footer links and navigation*/
-    .footer-grid {
-        width: 60%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2em;
-        text-align: left;
-    }
-    .footer-grid-items{
+        width: 800px;
+      }
+
+      .ash-photo{
+        padding: 1.6em;
+        border-radius: 10px;
+        margin-top: 5%;
+        margin-left: 20%;
+      }
+
+      #site-footer {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+      
+      #site-footer .footer-content {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      .footer-nav {
+        margin-top: 10px;
+      }
+      
+      .footer-nav a {
+        color: #bbb;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      
+      .footer-nav a:hover {
+        color: #fff;
+      }
+  
+      h1 {
+        margin-bottom: 30px;
+      }
+  
+      .contact-links {
         display: flex;
-        flex-direction: column;
-    }
+        flex-direction: row;
+        gap: 20px;
+      }
+  
+      .contact-links a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 12px 20px;
+        border: 2px solid #333;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+  
+      .contact-links a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+    
+      

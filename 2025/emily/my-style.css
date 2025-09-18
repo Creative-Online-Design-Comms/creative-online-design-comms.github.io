@@ -1,17 +1,19 @@
 /*** Imports ***/ 
 /* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Mystery+Quest&display=swap');
 /*** Root ***/ 
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --moss-green: #979D42;
+        --misty-rose: #F1DEDE;
+        --lavender-floral: #A876C2;
+        --palatinate: #532458;
+        --drab-dark-brown: #313715;
         /* fonts */
-        --title-font: "Instrument Serif", serif;
-        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+        --title-font: "Mystery Quest", serif;
+        --second-font:"Delius Swash Caps", sans-serif;
+        --body-font: "Delius", sans-serif;
     }
 
 /*** General Style ***/ 
@@ -21,10 +23,11 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--palatinate);
         font-family: var(--body-font);
         font-weight: 400;
         overflow-x: hidden;
+        background-color: #F1DEDE;
     }
 
 /* Applies to whole main and stops content from getting too wide */
@@ -39,19 +42,33 @@
 
 /* Adjusts all of your headings */
     h1, h2, h3, h4, h5, h6 {
-        font-family: var(--title-font);
+        font-family: var(--second-font);
         font-weight: 500;
         text-align: center;
+        color: var(--palatinate);
     }
+
+    h1{
+        font-family: var(--title-font);
+        color: var(--palatinate);
+    }
+    p{
+        text-align: center;
+        background: var(--lavender-floral);
+        padding: 2em;
+        font-size: 1em;
+    }
+
 
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: var(--palatinate);
+        font-family: var(--second-font);
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--palatinate);
     }
 
 /*** Header ***/  
@@ -60,18 +77,18 @@
         display: flex;
         align-items: center;
         width: 100vw;
-        background-color: var(--paynes-grey);
+        
     }
     /* Page title words */
     header h1 {
         padding: 1rem;
         width: 50%;
         margin: auto;
-        color: #fff;
-        font-size: 6em;
+        color: var(--palatinate);
+        font-size: 8em;
     }
     header h1 span{
-        color: var(--light-cyan);
+        color: var(--palatinate);
     }
 
 /*** Nav ***/    
@@ -81,7 +98,7 @@
         justify-content: center;
         text-align: center;
         background-color: var(--moonstone-blue);
-        font-size: 1.6em;
+        font-size: 2em;
         font-weight: 500;
         /* z-index brings items forward or backward in relation to other content */
         z-index: 2;
@@ -90,41 +107,39 @@
     nav a {
         margin: 0.4em;
         text-decoration: none;
-        color: #fff;
+        color: var(--palatinate);
         padding: 0.4em 1em;
         border-radius: 3em;
-    }
-    nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
-        /* This transition adds smoothness to the hover effect */
-        transition: color 0.2s ease;
-        transition: background-color 0.2s ease;
     }
 
 /*** Sticky Elements ***/
     .sticky{
         position: sticky;
         position: -webkit-sticky; /* Safari */
-        top: -4em;
+        top: -16em;
         height: 0;
+        margin-bottom: 44vh;
     }
     /* Wisteria Banner */
     .banner{
-        height: 8em;
         background-color: var(--light-cyan);
         top: -4em;
+    }
+
+    .banner img{
+        width: 100%;
     }
 
     /* Side Nav */
     .side-nav{
         position: relative;
-        left: 5vw;
-        top: 25vh;
-        width: 25vw;
+        left: 8vw;
+        top: -10vh;
+        width: 15vw;
         display: flex;
         flex-direction: column;
         margin: 1em 0;
+        background-color:var(--lavender-floral);
     }
 
 /*** Applies to each section ***/
@@ -134,7 +149,8 @@
         margin: auto;
     }
     hr {
-        margin: 6em 0px 0px;
+        margin: 3em 0px 0px;
+        border: 1px solid var(--palatinate);
     }
 
     /* Section title heading size */
@@ -156,17 +172,23 @@
         margin: 1em 0;
     }
     .two-column-container img{
-        border-radius: 1em;
+        border-radius: 0.1em;
     }
     .img-text {
         display: flex;
         align-items: center;
+        background-color: var(--lavender-floral);
+        padding: 0.05em;
+        margin: -0.1em;
     }
     .img-attribution {
         width: auto;
-        max-height: 60vh;
+        max-height: 40vh;
         opacity: 1;
         transition: opacity 0.5s ease;
+        border: solid var(--drab-dark-brown);
+        border-width: 1em;
+        border-radius: 0.1em;
     }
     .attribution {
         position: relative;
@@ -176,6 +198,18 @@
     .fig-hover-attribution:hover .attribution {
         opacity: 1;
         transition: opacity 0.5s ease;
+    }
+
+    #collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+    #collection .img-text{
+        margin-left: 0.8em;
     }
 
 /*** Card display Section ***/
@@ -188,68 +222,76 @@
     .card {
         box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
         transition: 0.2s;
-        border-radius: 1em;
+        border: solid;
+        border-width: 1em;
+        border-radius: 0.1em;
+        border-color: var(--moss-green);
+        width: 360px;
     } 
     .card h4{
         font-size: 1.6em;
         font-weight: 300;
-        color: var(--paynes-grey);
+        color: var(--palatinate);
         margin: 1em 0 0;
     }
     .card a {
         text-decoration: none;
-        color: #000;
+        color: var(--palatinate);
     }
     .card:hover {
         box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
     }  
     .card img {
         width: 100%;
-        border-radius: 1em 1em 0 0;
+       
     }
     .card-container {
-        padding: 0.1em 1em 1.6em;
+        padding: 0.1em 0.1em 1.6em;
         text-align: center;
+        
+       
     }
-    .card-button {
-        background-color: white; 
-        color: black; 
-        border: 0.2em solid var(--light-cyan);
-        border-radius: 2em;
-        padding: 1em 2em;
-        text-decoration: none;
-        display: inline-block;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1em;
-        font-weight: 700;
-        margin: 0.2em 0.1em;
-        transition-duration: 0.2s;
-    }
-    .card-button:hover {
-        background-color: var(--moonstone-blue);
-        border-color: var(--moonstone-blue);
-        color: white;
-    }
+
+    /*** About Grid ***/
+    .about-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 386px 250px;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+        align-items: start;
+        }
+        
+        .about-grid1 { grid-area: 1 / 1 / 2 / 4; }
+        .about-grid2 p{
+            margin: 0;
+            padding: 1.79em;
+        }
+        .about-grid2 { grid-area: 1 / 4 / 2 / 6; }
+        .about-grid3 { grid-area: 2 / 1 / 3 / 6; }
+    
 
 /*** Footer ***/  
     /* Applies to footer */
     footer {
         padding: 2em;
-        background-color: var(--light-cyan);
+        background-color: var(--drab-dark-brown);
         text-align: right;
         font-weight: 600;
+        color: var(--moss-green);
     }
     footer h3{
         text-align: left;
         font-size: 2em;
         margin-bottom: 0;
+        color: var(--moss-green);
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--moss-green);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: var(--moss-green);
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {
@@ -259,10 +301,30 @@
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2em;
         text-align: left;
+        color: var(--moss-green);
     }
     .footer-grid-items{
         display: flex;
         flex-direction: column;
     }
 
+#icons{
+    font-size: 32px;
+ }
+    
+    @media (max-width: 1600px) {
+        .sticky{
+            top: -8em;
+        }
+        .side-nav{
+            top: 5vh;
+        }
+      }
 
+      @media (max-width: 800px) {
+        .sticky{
+            top: -4em;
+        }
+      }
+
+     

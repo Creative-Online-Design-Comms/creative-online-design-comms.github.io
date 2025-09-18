@@ -1,19 +1,26 @@
 /*** Imports ***/ 
 /* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Comic+Relief:wght@400;700&family=Jua&family=Pacifico&display=swap');
 
 /*** Root ***/ 
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --blue-black: #0e2f44;
+        --middle-blue: #4ac2fd;
+        --deep-blue: #02a2f2; 
+        --icy-blue: #c0eefe;
+        --light-yellow: #f7eebd;
+        --orange: #ffb963; 
+        --white: #ffffff; 
+        --off-white: #e9eef6; 
         /* fonts */
-        --title-font: "Instrument Serif", serif;
-        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+        --title-font: "Cherry Bomb One", serif;
+        --handwritten: "Pacifico", sans-serif;
+        --boring-body-font: "Comic Relief", serif;
+        --body-font: "Jua", sans-serif;
     }
-
+   
 /*** General Style ***/ 
 /* Universal tag used to give the border box style here */
     * {box-sizing:border-box}
@@ -21,10 +28,15 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--blue-black);
         font-family: var(--body-font);
         font-weight: 400;
         overflow-x: hidden;
+        background-color: var(--middle-blue); 
+         background-image: url("images/background/background-big-gradient.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
 /* Applies to whole main and stops content from getting too wide */
@@ -33,7 +45,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 1200px;
         margin: auto;
     }
 
@@ -45,100 +56,357 @@
         margin: 1em;
     }
 
+
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: var(--middle-blue);
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--blue-black);
     }
 
 /*** Nav ***/    
     /* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
     nav {
         display: flex;
+        padding: 0.3em 0 0;
         justify-content: center;
         text-align: center;
-        background-color: var(--moonstone-blue);
         font-size: 1.6em;
         font-weight: 500;
+        background-color: var(--middle-blue);
         
     }
     /* Nav link adjustments*/
     nav a {
-        margin: 0.4em;
+        margin: 0.04em;
         text-decoration: none;
         color: #fff;
-        padding: 0.4em 1em;
+        padding: 0.14em 1em;
         border-radius: 3em;
     }
-    nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
-        /* This transition adds smoothness to the hover effect */
-        transition: color 0.2s ease;
-        transition: background-color 0.2s ease;
+    nav a:hover{
+        opacity: 0.6;
+    }
+    nav img{
+        width: 38px;
+        height: 38px;
     }
 
     /* Side Nav */
     .sticky{
         position: sticky;
+        position: fixed;
         position: -webkit-sticky; /* Safari */
-        top: 40%;
+        top: 0;
         height: 0;
+        z-index: 4;
     }
     .side-nav{
+        background-color: transparent;
         display: flex;
         flex-direction: column;
-        margin: 1em 0;
+        align-items: center;
+        margin: 0;
         position: relative;
-        left: 75%;
-        width: 25vw;
-        /* z-index brings items forward or backward in relation to other content */
-        z-index: 2;
+        top: 10vh;
+        left: 85%;
+        width: 66px;
+    }
+    .side-nav .penguin-button{
+        width: 66px;
+        height: 110px;
     }
 
 /*** Header ***/  
     /* Page title area */
     header {
         display: flex;
+        justify-content: center;
         align-items: center;
         width: 100vw;
-        background-color: var(--paynes-grey);
+        height: 40vw;
+        background-color: var(--white);
+        background-image: url(images/background/landing.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
     }
     /* Page title words */
     header h1 {
         padding: 1rem;
-        width: 50%;
-        margin: auto;
-        color: #fff;
+        width: 80%;
+        margin: 1em auto;
+        color: var(--blue-black);
         font-size: 6em;
     }
-    header h1 span{
-        color: var(--light-cyan);
+    .spacer {
+        height: 10em; /* Sets the height to create vertical space */
+         /* Makes the space span the full width */
+      }
+/*** Pop-up ***/
+    /*--- Pop-up Button ---*/
+    .pop-up-button{
+        display: flex;
+        justify-content: center;
+        margin: 2em 0 0;
+    }
+    .pop-up-button button{
+        font-size: 2em;
+        font-family: var(--title-font);
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 2em;
+        background-color: var(--icy-blue);
+        color: var(--blue-black);
+        filter: drop-shadow(#00000080 0.2em 0.2em 0.2em);
+        cursor: pointer;
     }
 
+    /*--- Overlay ---*/
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        z-index: 3;
+    }
+    #overlay.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /*--- Modal ---*/
+    .flip-card-card6 {
+bottom: 0;
+    }
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 200ms ease-in-out;
+        z-index: 10;
+        max-width: 1200px;
+        width: 80%;
+    }
+    .modal.active {
+        transform: translate(-50%, -50%) scale(1);
+        transition: 200ms ease-in-out;
+        background-color: transparent;
+    }
+    .modal {
+        background-image: url('images/background/cave.PNG'); /* Replace with your image path */
+        background-size: cover; /* Or contain, auto, etc. */
+        background-repeat: no-repeat; /* Or repeat, round, etc. */
+        width: 100%;
+        height: 100%;
+        /* Other properties like position, background-color, padding, etc. */
+      }
+    .modal-close-bar {
+        padding: 3em 2em 0em 0em;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    }
+    .modal h3 {
+        font-family: var(--title-font);
+        font-size: 3em;
+        margin: 0;
+    }
+    .modal-close-bar .close-button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: none;
+        color: #fff;
+        font-size: 1.75em;
+        margin: 0;
+        top: 20em;
+    }
+    .modal-close-bar .close-button:hover {
+        color: var(--middle-blue);
+    }
+    .modal-body {
+        width: 90%;
+        margin: auto;
+        padding: 2em 2em 1em 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        border-radius: 60px;
+        background-color: var(--blue-black);
+        filter: drop-shadow(#000 1em 1em 2em);
+    }
+    .modal-body img {
+        width: 100%;
+        border-radius: 50px;
+    }
+    .modal-text {
+        margin: 2em 1.5em;
+    }
+    .modal-body button {
+        padding: 0.4em 1em;
+        margin: 0 1.2em 1.2em;
+        color: var(--icy-blue);
+        border: 2pt solid var(--middle-blue);
+        border-radius: 50px;
+        background-color: var(--blue-black);
+        font-family: var(--body-font);
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    .modal-body button:hover {
+        border-color: transparent;
+        background-color: var(--icy-blue);
+        color: var(--blue-black);
+    }
+    #cave-modal{
+        line-height: normal;
+        text-align: center;
+        color: #fff;
+    }
+
+
 /*** Back to top Button ***/
-.back-to-top-btn {
-    padding: 1em;
-    position: fixed;
-    right: 1em;
-    bottom: 1em;  
-    background-color: var(--moonstone-blue);
-    text-decoration: none;
-    color: #fff;
-    font-size: 18pt;
-    font-weight: 600;
-    border-radius: 2em;
-    padding: 1em 1.2em;
-    z-index: 2;
-}
-.back-to-top-btn:hover{
-    color: var(--light-cyan);
-    background-color: var(--paynes-grey);
-}
+    .back-to-top-btn {
+        padding: 1em;
+        position: fixed;
+        right: 1em;
+        bottom: 1em;  
+        background-color: var(--middle-blue);
+        text-decoration: none;
+        color: #fff;
+        font-size: 18pt;
+        font-weight: 600;
+        border-radius: 2em;
+        padding: 1em 1.2em;
+        z-index: 2;
+    }
+    .back-to-top-btn:hover{
+        color: var(--icy-blue);
+        background-color: var(--blue-black);
+    }
+
+/*** Post it note ***/
+    .post-it-container-1{
+        position: relative;
+        top: 80em;
+        left: 3em;
+        height: 0;
+        width: 0;
+        margin: 0;
+        z-index: 3;
+    }
+    .post-it-container-2{
+        position: relative;
+        top: 150em;
+        left: 80em;
+        height: 0;
+        width: 0;
+        margin: 0;
+        z-index: 3;
+    }
+    .post-it-container-3{
+        position: relative;
+        top: 200em;
+        left: 100em;
+        height: 0;
+        width: 0;
+        margin: 0;
+        z-index: 3;
+    }
+    .post-it-container-4{
+        position: relative;
+        top: 230em;
+        left: 5em;
+        height: 0;
+        width: 0;
+        margin: 0;
+        z-index: 3;
+    }
+    .post-it-container-4{
+        position: relative;
+        top: 230em;
+        left: 5em;
+        height: 0;
+        width: 0;
+        margin: 0;
+        z-index: 3;
+    }
+    .post-it{
+        width: 200px;
+        height: 160px;
+        background-color: rgb(245, 230, 165);
+        padding: 2em;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    }
+    .post-it-1{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(245, 230, 165);
+        padding: 2em;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    }
+    .post-it-2{
+        width: 200px;
+        height: 250px;
+        background-color: rgb(245, 230, 165);
+        padding: 2em;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    }
+    .post-it-3{
+        width: 200px;
+        height: 225px;
+        background-color: rgb(245, 230, 165);
+        padding: 2em;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    }
+    .post-it-4{
+        width: 200px;
+        height: 250px;
+        background-color: rgb(245, 230, 165);
+        padding: 2em;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    }
+    .post-it-5{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(165, 180, 189);
+        padding: 2em;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    }
+    .post-it-1 h3{
+        margin:0;
+    }
+    .post-it-2 h3{
+        margin:0;
+    }
+    .post-it-3 h3{
+        margin:0;
+    }
+    .post-it-4 h3{
+        margin:0;
+    }
+    .post-it-5 h3{
+        margin:0;
+        color: #0e2f44;
+    }
+    .post-it-5 p{
+color: #0e2f44;
+    }
+    .post-it h3{
+        margin:0;
+    }
+   
 
 
 /*** Applies to each section ***/
@@ -160,162 +428,393 @@
         font-size: 2em;
     }
 
-/*** Basic element css ***/ 
-    /*Simple 2 column grid with the image attribute displaed on hover */
+    #family-photo{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+
+/*** Section One ***/ 
+    #section-one{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+     .rounded-box {
+        border: 0.5em solid var(--icy-blue); /* Adds a border */
+        background-color: var(--off-white); /* Sets a background color */
+        padding: 1em; /* Adds space around the text */
+        width: 40em;
+        margin: 4em auto 0;
+        border-radius: 2em; /* Rounds the corners by 40 pixels */
+        display: inline-block; /* Makes the box only as wide as its content */
+        z-index: 2;
+    }
+    #section-one img{
+        margin-top: -8em;
+        z-index: 1;
+    }
+   
+
+/*** Card display Section ***/
+    #section-two{
+        width: 80%;
+        margin: 2em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 0px;
+        height: 1015px;
+        width: 790px;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2em;
+    }
+    /* Card Grid Organisation */
+    .card1 { grid-area: 2 / 1 / 4 / 2; }
+    .card2 { grid-area: 1 / 3 / 3 / 4; }
+    .card3 { grid-area: 4 / 2 / 6 / 3; }
+    .card4 { grid-area: 6 / 1 / 8 / 2; }
+    .card5 { grid-area: 5 / 3 / 7 / 4; } 
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+        width: 242px;
+        height: 290px;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+    /* This container is needed to position the front and back side */
+    .flip-card-face {
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    /* Do a horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover {
+        transform: rotateY(180deg);
+    }
+    /* Style the back side */
+    .flip-card-back {
+        transform: rotateY(180deg);
+    } 
+    /* Image size */
+    .flip-card img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .flip-card-card6 {
+        width: 323px;
+        height: 387px;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+    /* This container is needed to position the front and back side */
+    .flip-card-card6-face {
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    /* Do a horizontal flip when you move the mouse over the flip box container */
+    .flip-card-card6:hover {
+        transform: rotateY(180deg);
+    }
+    /* Style the back side */
+    .flip-card-card6-back {
+        transform: rotateY(180deg);
+    } 
+    /* Image size */
+    .flip-card-card6 img{
+        width: 100%;
+        height: 100%;
+    }
+
+/*** Section Three ***/ 
+     #section-three{
+        width: 80%;
+        margin: 2em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Simple 2 column grid*/
     .two-column-container {
-        display: inline-grid;
-        grid-template-columns: 2fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1em;
         width: 100%;
         text-align: left;
-        margin: 1em 0;
+        margin: 2em 0;
     }
-    .two-column-container img{
-        border-radius: 1em;
-    }
-    .img-text {
+    .text-column {
         display: flex;
         align-items: center;
     }
-    .img-attribution {
+    .text-column .rounded-box{
+        width: 100%;
+    }
+    .img-column {
         width: auto;
-        max-height: 60vh;
+        height: 801px;
         opacity: 1;
         transition: opacity 0.5s ease;
     }
-    .attribution {
+    .img-column img{
+        width: 100%;
+    }
+    /** Map **/
+    /* Container with image */
+    .map-container{
+        width: 801px;
+        height: 801px;
+        margin: auto;
+        background-image: url(images/background/IMG_2757.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* Basic Icon Styling */
+    .map-container i{
+        color: rgb(255, 162, 55);
+        font-size: 2em;
+        filter: drop-shadow(#00000080 0.2em 0.2em 0.2em);
+    }
+    .map-container i:hover{
+        color: rgb(247, 239, 198);
+        cursor: pointer;
+    }
+    .marker-width{
+        width: 1em;
+    }
+    /* Specific Icon Placement */
+    .map-marker-one{
         position: relative;
+        top: 380px;
+        left: 175px;
+    }
+    .map-marker-two{
+        position: relative;
+        top: 425px;
+        left: 220px;
+    }
+    .map-marker-three{
+        position: relative;
+        top: 450px;
+        left: 260px;
+    }
+    .map-marker-four{
+        position: relative;
+        top: 510px;
+        left: 280px;
+    }
+    .map-marker-five{
+        position: relative;
+        top: 500px;
+        left: 360px;
+    }
+    .map-marker-six {
+        position: relative;
+        top: 400px;
+        left: 425px;
+    }
+     .map-marker-seven {
+        position: relative;
+        top: 270px;
+        left: 420px;
+    }  
+    .map-marker-eight {
+        position: relative;
+        top: 370px;
+        left: 480px;
+    }
+    .map-marker-nine {
+        position: relative;
+        top: 330px;
+        left: 560px;
+    }
+    .map-marker-ten {
+        position: relative;
+        top: 260px;
+        left: 600px;
+    }
+    .map-marker-eleven {
+        position: relative;
+        top: 220px;
+        left: 625px;
+    }
+    .map-marker-twelve {
+        position: relative;
+        top: 185px;
+        left: 670px;
+    }
+    .map-marker-thirteen {
+        position: relative;
+        top: 110px;
+        left: 680px;
+    }
+    .map-marker-fourteen {
+        position: relative;
+        top: 60px;
+        left: 700px;
+    }
+    /* Pop-up on hover Basic */
+    .map-pop-up-content {
         opacity: 0;
-        transition: opacity 0.5s ease;
+        visibility: hidden;
+        position: absolute;
+        left: -50px;
+        top: 55px;
+        transform: translate(0, 10px);
+        background-color: var(--icy-blue);
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        width: auto;
     }
-    .fig-hover-attribution:hover .attribution {
+    .map-pop-up-text {
+        text-align: center;
+    }
+    /*This is just the pointy bit of the popo-up box*/
+    .map-pop-up-content:before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        right: calc(50% - 10px);
+        top: -8px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent var(--icy-blue) transparent;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+    /* Pop-ups for each marker*/
+    .map-marker-one:hover .map-pop-up-content {
+        z-index: 10;
         opacity: 1;
-        transition: opacity 0.5s ease;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-two:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-three:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-four:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-five:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-six:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-seven:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-eight:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-nine:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-ten:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-eleven:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-twelve:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-thirteen:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-fourteen:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
     }
 
-/*** Post it note ***/
-.post-it-container{
-    position: relative;
-    top: -52em;
-    left: -10em;
-    height: 0;
-    width: 0;
-    margin: 0;
-}
-.post-it{
-    width: 300px;
-    height: 300px;
-    background-color: rgb(255, 255, 176);
-    padding: 2em;
-    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
-}
-.post-it h3{
-    margin: 0;
-}
-
-/*** Card display Section ***/
-.card-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 2em;
-    row-gap: 2em;
-}
-.card {
-    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
-    transition: 0.2s;
-    border-radius: 1em;
-} 
-.card h4{
-    font-size: 1.6em;
-    font-weight: 300;
-    color: var(--paynes-grey);
-    margin: 1em 0 0;
-}
-.card a {
-    text-decoration: none;
-    color: #000;
-}
-.card:hover {
-    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
-}  
-.card img {
-    width: 100%;
-    border-radius: 1em 1em 0 0;
-}
-.card-container {
-    padding: 0.1em 1em 1.6em;
-    text-align: center;
-}
-.card-button {
-    background-color: white; 
-    color: black; 
-    border: 0.2em solid var(--light-cyan);
-    border-radius: 2em;
-    padding: 1em 2em;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    margin: 0.2em 0.1em;
-    transition-duration: 0.2s;
-}
-.card-button:hover {
-    background-color: var(--moonstone-blue);
-    border-color: var(--moonstone-blue);
-    color: white;
-}
-
- /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-} 
+/*** Section Four ***/
+    #section-four{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-four .rounded-box{
+        margin-bottom: 6em;
+    }
 
 /*** Footer ***/  
     /* Applies to footer */
     footer {
         padding: 2em;
-        background-color: var(--light-cyan);
+        background-color: var(--deep-blue);
         text-align: right;
         font-weight: 600;
     }
@@ -326,10 +825,10 @@
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--blue-black);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: var(--orange);
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {
@@ -343,4 +842,7 @@
     .footer-grid-items{
         display: flex;
         flex-direction: column;
+    }
+    .footer-grid h3{
+        margin: 0;
     }

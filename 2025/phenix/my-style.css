@@ -1,17 +1,22 @@
 /*** Imports ***/ 
 /* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 
 /*** Root ***/ 
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+      --light-off-white:#faf0e6;
+      --dirty-pink:#ac6d6d;
+        --Cream: #f0efe3;
+        --black: #030303;
+    
+    
         /* fonts */
-        --title-font: "Instrument Serif", serif;
-        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+        --title-font: "Alfa slab one", serif;
+        --body-font:  "Nunito Sans", sans-serif;
     }
 
 /*** General Style ***/ 
@@ -21,10 +26,11 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--black);
         font-family: var(--body-font);
-        font-weight: 400;
+        font-weight: 500;
         overflow-x: hidden;
+        background-color: var(--light-off-white)
     }
 
 /* Applies to whole main and stops content from getting too wide */
@@ -33,26 +39,27 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 1200px;
+        max-width: 1500px;
         margin: auto;
     }
 
 /* Adjusts all of your headings */
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2,h3,h4,h5, h6 {
         font-family: var(--title-font);
         font-weight: 500;
         text-align: center;
         margin: 1em;
     }
 
+
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: var(--dirty-pink);
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--black);
     }
 
 /*** Header ***/  
@@ -61,18 +68,24 @@
         display: flex;
         align-items: center;
         width: 100vw;
-        background-color: var(--paynes-grey);
+        height:100vh;
+        background-color: var(--black);
+        background-image:url(images/Tunnel+Beach+Sunrise.webp);
+        background-repeat: no-repeat;
+        background-position:top;
+        background-size:100%;
+        background-attachment: fixed;
     }
     /* Page title words */
     header h1 {
         padding: 1rem;
         width: 50%;
         margin: auto;
-        color: #fff;
-        font-size: 6em;
+        color: #ecdbdb;
+        font-size: 4em;
     }
     header h1 span{
-        color: var(--light-cyan);
+        color: var(--black);
     }
 
 
@@ -81,13 +94,11 @@
     nav {
         display: flex;
         justify-content: center;
-        position: sticky;
-        position: -webkit-sticky; /* Safari */
-        top: 0;
+      
         text-align: center;
-        background-color: var(--moonstone-blue);
-        font-size: 1.6em;
-        font-weight: 500;
+        background-color: var(--dirty-pink);
+        font-size: 1.8em;
+        font-weight: 600;
         /* z-index brings items forward or backward in relation to other content */
         z-index: 2;
     }
@@ -95,13 +106,13 @@
     nav a {
         margin: 0.4em;
         text-decoration: none;
-        color: #fff;
+        color: #ffffff;
         padding: 0.4em 1em;
         border-radius: 3em;
     }
     nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
+        color: var(--black);
+        background-color: var(--light-off-white);
         /* This transition adds smoothness to the hover effect */
         transition: color 0.2s ease;
         transition: background-color 0.2s ease;
@@ -112,24 +123,24 @@
     position: fixed;
     right: 1em;
     bottom: 1em;  
-    background-color: var(--moonstone-blue);
+    background-color: var(--dirty-pink);
     text-decoration: none;
-    color: #fff;
-    font-size: 18pt;
+    color: #ffffff;
+    font-size: 20pt;
     font-weight: 600;
-    border-radius: 2em;
-    padding: 1em 1.2em;
+    border-radius: 50px;
+    padding: 16px 16px;
     z-index: 2;
 }
 .back-to-top-btn:hover{
-    color: var(--light-cyan);
-    background-color: var(--paynes-grey);
+    color: var(--black);
+    background-color: var(--light-off-white);
 }
 
 
 /*** Applies to each section ***/
     section {
-        width: 80%;
+        width: 100%;
         padding: 2em; 
         margin: auto;
     }
@@ -141,16 +152,26 @@
     section h2 {
         font-size: 4em;
         margin: 0;
+        text-align: left;
     }
     section h3 {
         font-size: 2em;
     }
 
+    .sub-title{
+        font-size: 1.8em;
+        margin: 0;
+        font-weight: 500;
+        font-family: var(--title-font);
+    }
+
 /*** Basic element css ***/ 
     /*Simple 2 column grid with the image attribute displaed on hover */
     .two-column-container {
-        display: inline-grid;
-        grid-template-columns: 2fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         text-align: left;
         margin: 1em 0;
@@ -159,12 +180,23 @@
         border-radius: 1em;
     }
     .img-text {
+        font-size: 16pt;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        text-align: left;
+        margin: 0;
+    }
+    .img-text h2{
+        margin: 0;
+        font-size: 3em;
+    }
+    .img-text p{
+        margin: 0;
     }
     .img-attribution {
-        width: auto;
-        max-height: 60vh;
+        width: 100%;
         opacity: 1;
         transition: opacity 0.5s ease;
     }
@@ -178,25 +210,44 @@
         transition: opacity 0.5s ease;
     }
 
+/*** Map ***/  
+    #map-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    #map-section iframe{
+        width: 80%;
+        height: 60vh;
+        margin: 2em auto;
+        border: none;
+        border:var(--dirty-pink)
+    }
+
 /*** Footer ***/  
     /* Applies to footer */
     footer {
         padding: 2em;
-        background-color: var(--light-cyan);
+        background-color: var(--black);
         text-align: right;
         font-weight: 600;
     }
     footer h3{
         text-align: left;
-        font-size: 2em;
-        margin-bottom: 0;
+        font-size: 1.5em;
+        margin: 0;
+        color: var(--dirty-pink);
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--Cream);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: var(--Cream);
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {
@@ -204,8 +255,8 @@
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2em;
-        text-align: left;
+        column-gap: 3em;
+        text-align:left;
     }
     .footer-grid-items{
         display: flex;

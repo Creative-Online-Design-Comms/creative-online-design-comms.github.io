@@ -1,17 +1,19 @@
 /*** Imports ***/ 
 /* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Carattere+Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
 /*** Root ***/ 
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --maroon: #701524;
+        --Cream: #E2D4BD;
+        --gold: #A27C28;
+        --darkcream: #ecc99e;
         /* fonts */
-        --title-font: "Instrument Serif", serif;
+        --title-font: "Castoro", serif;
         --body-font: "Atkinson Hyperlegible Next", sans-serif;
+        --special-font:  "Carattere", cursive;
     }
 
 /*** General Style ***/ 
@@ -21,7 +23,8 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        background-color: var(--Cream);
+        color: var(--maroon);
         font-family: var(--body-font);
         font-weight: 400;
         overflow-x: hidden;
@@ -47,12 +50,12 @@
 
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: var(--cream);
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--maroon);
     }
 
 
@@ -62,27 +65,29 @@
     nav {
         display: flex;
         justify-content: center;
-        position: sticky;
-        position: -webkit-sticky; /* Safari */
+        position: fixed;
         top: 0;
+        width: 100vw;
         text-align: center;
-        background-color: var(--moonstone-blue);
-        font-size: 1.6em;
+        background-color: #e2d4bdc7;
+        font-size: 1.7em;
         font-weight: 500;
         /* z-index brings items forward or backward in relation to other content */
         z-index: 2;
+        box-shadow: 0 0.15em 0.15em 0 rgba(0,0,0,0.2);
+      
+    
     }
     /* Nav link adjustments*/
     nav a {
-        margin: 0.4em;
+        margin: 1em;
         text-decoration: none;
-        color: #fff;
+        color: #A27C28;
         padding: 0.4em 1em;
         border-radius: 3em;
     }
     nav a:hover {
         color: var(--light-cyan);
-        background-color: var(--paynes-grey);
         /* This transition adds smoothness to the hover effect */
         transition: color 0.2s ease;
         transition: background-color 0.2s ease;
@@ -92,20 +97,33 @@
     /* Page title area */
     header {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 100vw;
-        background-color: var(--paynes-grey);
+        height: 100vh;
+        background-color: #e2d4bd5d;
+        background-image: url(images/arch4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: lighten;
     }
     /* Page title words */
     header h1 {
         padding: 1rem;
-        width: 50%;
-        margin: auto;
-        color: #fff;
+        width: 70%;
+        margin: 0 auto;
+        color: #ECC99E;
         font-size: 6em;
+        text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.801);
     }
     header h1 span{
-        color: var(--light-cyan);
+        color: var(--gold);
+    }
+    header img{
+        margin: 0;
+        margin-bottom: -4em;
     }
 
 
@@ -115,18 +133,25 @@
     position: fixed;
     right: 1em;
     bottom: 1em;  
-    background-color: var(--moonstone-blue);
+    background-color: #e2d4bd5d;
+    background-image: url(images/rug2-thumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
     text-decoration: none;
-    color: #fff;
+    color: #f8e4cc;
     font-size: 18pt;
+    text-shadow: 1px 2px 1px rgba(8, 0, 0, 0.801);
     font-weight: 600;
     border-radius: 2em;
     padding: 1em 1.2em;
     z-index: 2;
+    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,0.2);
 }
 .back-to-top-btn:hover{
-    color: var(--light-cyan);
-    background-color: var(--paynes-grey);
+    color: var(--maroon);
+    background-color: var(--Cream);
 }
 
 
@@ -149,37 +174,6 @@
         font-size: 2em;
     }
 
-/*** Basic element css ***/ 
-    /*Simple 2 column grid with the image attribute displaed on hover */
-    .two-column-container {
-        display: inline-grid;
-        grid-template-columns: 2fr 1fr;
-        width: 100%;
-        text-align: left;
-        margin: 1em 0;
-    }
-    .two-column-container img{
-        border-radius: 1em;
-    }
-    .img-text {
-        display: flex;
-        align-items: center;
-    }
-    .img-attribution {
-        width: auto;
-        max-height: 60vh;
-        opacity: 1;
-        transition: opacity 0.5s ease;
-    }
-    .attribution {
-        position: relative;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-    .fig-hover-attribution:hover .attribution {
-        opacity: 1;
-        transition: opacity 0.5s ease;
-    }
 
 /*** Card display Section ***/
 .card-grid{
@@ -187,6 +181,7 @@
     grid-template-columns: auto auto auto;
     column-gap: 2em;
     row-gap: 2em;
+    align-items: end;
 }
 .card {
     box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
@@ -196,7 +191,7 @@
 .card h4{
     font-size: 1.6em;
     font-weight: 300;
-    color: var(--paynes-grey);
+    color: var(--maroon);
     margin: 1em 0 0;
 }
 .card a {
@@ -215,8 +210,8 @@
     text-align: center;
 }
 .card-button {
-    background-color: white; 
-    color: black; 
+    background-color: rgb(164, 113, 30); 
+    color: rgb(109, 18, 18); 
     border: 0.2em solid var(--light-cyan);
     border-radius: 2em;
     padding: 1em 2em;
@@ -231,7 +226,70 @@
 .card-button:hover {
     background-color: var(--moonstone-blue);
     border-color: var(--moonstone-blue);
-    color: white;
+    color: rgba(234, 164, 59, 0.76);
+}
+
+
+#section-one{
+    width: 100%;
+}
+
+#section-one span{
+    font-family: var(--special-font);
+    font-size: 2.5em;
+    color: var(--gold)
+}
+
+.fancy-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+}
+.fancy-card .card-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.fancy-card:hover{
+    box-shadow: none;
+}
+.fancy-card img{
+    display: flex;
+    border-radius: 0;
+    width: 60%;
+    margin: 3em auto 0;
+}
+.fancy-card-sides{
+    width: 100%;
+    background-image: url(images/vecrightarch.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.6));
+}
+.fancy-card-middle{
+    width: 100%;
+    background-image: url(images/vecmidarch.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.6));
+}
+.fancy-card-middle img{
+    margin-top: 2em;
+}
+.fancy-card .card-container{
+    color: var(--Cream);
+    margin-top: 0.5em;
+}
+.fancy-card h4{
+    color: var(--gold);
+    margin: 0;
+}
+.fancy-card p{
+    margin: 0 2em;
 }
 
 
@@ -248,40 +306,129 @@
     }
     .thumbnail-container img {
         padding: 0px 2px;
-        width: 200px;
+        width: 300px;
     }
 
+/*** Mosaic Grid ***/
+    .mosaic-grid{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .mosaic-grid1{
+        grid-area: 1 / 1 / 3 / 3; 
+    }
+    .mosaic-grid2{
+        grid-area: 1 / 6 / 3 / 8;
+        text-align: right;
+    }
+    .mosaic-grid3{
+        grid-area: 3 / 1 / 7 / 4;
+        padding-top: 1em;
+    }
+    .mosaic-grid4{
+        grid-area: 1 / 3 / 5 / 6;
+    }
+    .mosaic-grid5{
+        grid-area: 3 / 5 / 7 / 8;
+        padding-top: 1em;
+    }
+    .mosaic-grid-text{
+        font-size: 1emm;
+    }
+    .mosaic-grid img{
+        width: 100%;
+    }
+    .mosaic-title{
+        margin: 2em auto;
+        text-align: center;
+    }
+    .mosaic-title p{
+        margin-top: 0;
+        font-family: var(--title-font);
+        font-size: 2em;
+        color: var(--gold);
+    }
 
 /*** Footer ***/  
     /* Applies to footer */
     footer {
         padding: 2em;
-        background-color: var(--light-cyan);
-        text-align: right;
+        background-color: #e2d4bd5d;
+        background-image: url(images/desert.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: lighten;
+        text-align: center;
         font-weight: 600;
     }
     footer h3{
-        text-align: left;
+        text-align: center;
         font-size: 2em;
         margin-bottom: 0;
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--Cream);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: var(--maroon);
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {
         width: 60%;
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 2em;
-        text-align: left;
+        text-align: center;
     }
     .footer-grid-items{
         display: flex;
         flex-direction: column;
+    }
+
+    /*** Text Grid ***/
+    .text-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        .text-grid div{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .text-grid h3{
+            margin: 0;
+        }
+        
+    .text-grid1 { grid-area: 1 / 1 / 4 / 3; }
+    .text-grid2 { grid-area: 1 / 3 / 4 / 5; 
+    display: flex;
+margin: auto}
+    .text-grid3 { 
+        grid-area: 1 / 5 / 4 / 7; 
+        text-align: right;}
+    .text-grid3 h2{
+        align-self: end;
+        text-align: right;
+        }
+    .img-line{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        margin: 2em auto;
+        column-gap: 1em;
+    }
+    .img-line img{
+        width: 100%;
     }

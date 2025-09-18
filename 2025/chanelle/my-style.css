@@ -1,0 +1,590 @@
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Mystery+Quest&display=swap');
+
+/* For variables like colors */
+    :root{
+        --paynes-grey: #3F4E50;
+        --dark-blue: #216076;
+        --light-blue: #ADD9F5; 
+        --light-pink: #FFDEE3;
+        --white: #fff; 
+        --light-yellow: #FFF2E0;
+        --container-white: #F7FCFD;
+
+        --body-font: "Domine" , serif; 
+    }
+
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body{
+        background: linear-gradient(to bottom, #ADD9F5,#FFF2E0,#FFDEE3);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        color: var(--dark-blue);
+        font-family: var(--body-font);
+        font-size: 1.1em;
+        padding: 0;
+        margin: 0;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1800px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+     h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        text-align: center;
+        font-family:"Mystery Quest", system-ui;
+        color: var(--dark-blue);
+    }
+
+    /*** Clouds ***/
+.cloud-l{
+    background-image: url(images/cloud-695x479.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 695px;
+    height: 479px;
+}
+.cloud-ml{
+    background-image: url(images/cloud-485x430.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 485px;
+    height: 430px;
+}
+.cloud-m{
+    background-image: url(images/cloud-300x250.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 250px;
+}
+.cloud-s{
+    background-image: url(images/cloud-200x180.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 180px;
+}
+.cloud-xs{
+    background-image: url(images/cloud-130x110.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 130px;
+    height: 110px;
+}
+
+/*** Nav ***/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 5;
+    /* background: linear-gradient(to top, var(--light-blue) 0%, #ffffff), 100%; */
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    font-size: 12pt;
+    font-weight: 00;
+}
+nav h2{
+    font-size: 2.5em;
+    padding: 0;
+    margin: auto;
+    letter-spacing: 16px;
+    font-weight:normal;
+}
+nav a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    margin: 0 1em;
+    font-weight: 700;
+}
+a{ 
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+a:hover{
+    color: var(--light-blue);
+}
+
+/* Page title area */
+
+    /*** Hero ***/
+header{
+    width: 100vw;
+
+}
+.hero {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0px 0px;
+    margin: -4em auto;
+    width: 1400px;
+    height: 1050px;
+}
+.hero-cloud-1 {
+    grid-column: 1 / 6;
+    grid-row: 2 / 7;
+    z-index: 2;
+}
+.hero-cloud-2 {
+    grid-column: 4 / 6;
+    grid-row: 5 / 7;
+    z-index: 3;
+}
+.hero-cloud-3 {
+    grid-column: 5 / 6;
+    grid-row: 2 / 7;
+    z-index: 1;
+}
+header p{
+    padding: 10em 6em;
+    margin: auto;
+    font-size: 16pt;
+    text-align: center;
+    margin-left: -4em;
+}
+header h1{
+    font-family: var(--body-font);
+    padding: 3em;
+    letter-spacing: 14px;
+    margin: 1em auto;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-left: -1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rise-font {
+    font-family:"Mystery Quest", system-ui;
+    font-size: 1.5em;
+    letter-spacing: 20px;
+    font-weight: 800;
+}
+        
+
+/* Back to top Button */
+    .back-to-top-btn {
+        padding: 16px;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;  
+        background-color: #FFDEE3;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18pt;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 16px 26px;
+        z-index: 2;
+    }
+    .back-to-top-btn:hover{
+        color: #FFF2E0;
+        background-color: #ADD9F5;
+    }
+
+/* Applies to each section */
+    section {
+        width: 80%;
+        padding: 50px 20px; 
+        margin: au;
+    }
+    hr {
+        margin: 100px 0px 0px;
+    }
+
+/* Section title heading size */
+    section h2 {
+        font-size: 40pt;
+        color: var(--dark-blue);
+        }
+
+
+/* Section One headings and text postion */
+
+/*** Intro Section ***/
+#intro-section{
+    width: 100%;
+    margin: auto;
+    margin-bottom: -8em; 
+}
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0px 0px;
+    margin: 2em auto;
+    width: 1067px;
+    height: 860px;
+}
+.intro-cloud-1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 4;
+    z-index: 2;
+}
+.intro-cloud-2 {
+    grid-column: 5 / 10;
+    grid-row: 3 / 6;
+    z-index: 3;
+}
+.intro-cloud-3 {
+    grid-column: 8 / 12;
+    grid-row: 1 / 4;
+    z-index: 1;
+}
+#intro-section h3{
+    padding: 5em 2em 0;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    margin-left: -1em;
+}
+
+/* Card display Css*/
+    .section-two-title { 
+        text-align: left;
+    }
+    .section-two-title p{
+        display: flex;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card-grid{
+        max-width: 1200px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    .card {
+        background-color: var(--container-white) ;
+        box-shadow: 0 4px 8px 0 Var(--light-blue);
+        transition: 0.3s;
+        border-radius: 50px;
+        width: 300px;
+        margin: 20px;
+    } 
+    .card a {
+        text-decoration: none;
+        color: var(--dark-blue);
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 var(--light-pink);
+    }  
+    .card img {
+        display: flex;
+        width: 90%;
+        border-radius: 50px ;
+        margin: 1em auto;
+    }
+
+    .card-container {
+        color: var(--dark-blue);
+        padding: 2px 16px 26px;
+        text-align: center;
+    }
+
+    .card-container h4{
+       font-size: 1.5em;
+    }
+
+    .card-button {
+        background-color: var(--light-blue); 
+        color: var(--dark-blue); 
+        border: none;
+        border-radius: 50px;
+        padding: 16px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+    }
+    .card-button:hover {
+        background-color: var(--light-pink);
+        color: white;
+    }
+
+    /*trying out css for list shape element Our Services */
+
+    /*** About/services Section ***/
+#services-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2em;
+    margin: 4em auto;
+    width: 90%;
+    max-width: 1300px;
+}
+.list {
+    border:var(--white) solid 4px;
+    border-radius: 2em;
+    padding: 2em;
+}
+.list ul{
+    list-style: none;
+    padding: 0;
+}
+.list a{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 1em 1em 1em 0;
+    border-bottom: var(--white) 2px solid;
+}
+
+.list h3{
+    font-size: 3em;
+    margin: 0;
+}
+.list p{
+    display: inline;
+    margin: 0;
+    font-size: 2em;
+}
+.services-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2em;
+}
+.about-column{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.about-column h2{
+    padding: 0;
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+}
+
+.about-column :hover{
+    color: var(--light-blue);
+}
+
+.about-column h3{
+    padding: 2em 1em 0;
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.about-column img{
+    margin: 1em auto;
+}
+
+.list-circle-button {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Must be equal to width */
+    border-radius: 50%; /* Makes it circular */
+    background-color: var(--white);
+    color: rgb(33, 96, 118); /* Example text color */
+    border: rgb(33, 96, 118);
+    display: inline-block; /* For centering content */
+    place-items: center; /* For centering content */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+  }
+  .list-circle-button {
+    display: inline-block;
+    margin: 20px; /* Centers the button horizontally */
+  }
+
+
+.list-circle-button-two {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Must be equal to width */
+    border-radius: 50%; /* Makes it circular */
+    background-color: var(--white); /* Example background color */
+    color: rgb(33, 96, 118); /* Example text color */
+    border: rgb(33, 96, 118);
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+  }
+
+  .list-circle-button-two {
+    display: inline-block;
+    margin: 20px; /* Centers the button horizontally */
+  }
+
+  .list-circle-button-two :hover{
+    color: var(--light-blue);
+}
+
+  .list-circle-button :hover{
+    color: var(--light-blue);
+}
+
+
+
+      /* contact form card box */
+
+      /* Form Styling */
+    .contact-container {
+        background-color: var(--container-white) ;
+        box-shadow: 0 4px 8px 0 Var(--light-blue);
+        transition: 0.3s;
+        border-radius: 50px;
+        width: 100%;
+        margin: 20px;
+        padding: 3em;
+        margin-bottom: 50px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border:5px, #fff;
+    }
+
+  
+  /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+        width: 100%;
+        padding: 12px;
+        margin: 16px auto 0;
+        display: inline-block;
+        border: 1px solid var(--light-blue);
+        border-radius: 50px;
+        text-align: center;
+        font-family: Var(Domine);
+        background-color: Var(--white);
+    }
+    input[name=message]{
+        height: 16em;
+        border-radius: 20px;
+    }
+  
+  /* Style the submit button */
+    input[type=submit] {
+        width: 25%;
+        color: var(--dark-blue);
+        background-color: var(--light-pink);
+        border: var(--dark-blue);
+        font-weight: 600;
+        margin: right;
+    }
+  
+    input[type=submit]:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background-color: var(--light-blue);
+    } 
+
+    /*** Splide ***/
+    .splide{
+        max-width: 1200px;
+        max-height: 800px;
+        margin: auto;
+    }
+    .splide img{
+        width: 100%;
+        border-radius: 2em;
+        padding: 1em;
+    }
+    /* Position of dots */
+    .splide__pagination{
+        position: relative;
+        top: -5rem;
+    }
+    .splide:not(.is-overflow) .splide__pagination{
+        display: show;
+    }
+    /* Play pause button */
+    .splide__toggle{
+        position: relative;
+        top: -0.5em;
+        left: 0.5em;
+        background-color: transparent;
+        border: none;
+        color: #cfcfcf;
+        font-size: 2em;
+    }
+    .splide__toggle:hover{
+        color: #fff;
+    }
+    /* Progress bar */
+    .splide__progress__bar {
+        height: 3px;
+        background: #ccc;
+        position: relative;
+        top: -2em;
+        border-radius: 1em;
+    }
+    /* Arrows */
+    .splide__arrow{
+        margin-top: -1.5rem;
+    }
+      
+
+    /* footer illustration position*/
+    .footer-illustration {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 8em;
+ }
+
+
+/* Applies to footer */
+    footer {
+        padding: 50px 250px 16px;
+        background: linear-gradient(to top,#FFDEE3, #fff);
+        text-align: right;
+        font-weight: 600;
+    }
+    footer a {
+        color: var(--dark-blue);
+    }
+    footer a:hover{
+        color: var(#ADD9F5);
+    }
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+        text-align: left;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }

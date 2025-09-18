@@ -1,0 +1,451 @@
+/* Otago Food Forest CSS
+   Author: Jeremy Lemmens
+   Date: 16/09/2025
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* === Reset and base styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* === Page Title (Hero H1) === */
+.hero h1 {
+  font-family: 'Playfair Display', 'Georgia', serif; /* elegant standout font */
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #c6ff34, #f88ca5); /* ochre → pink gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2); /* subtle depth */
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  background: #8ce7f9;       /* soft aqua base */
+  color: #2e2e2e;
+}
+a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* === Two-column container === */
+.two-column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  width: 80%;
+  margin: 2em auto;
+  align-items: start;
+}
+.two-column-container .header-column-two,
+.two-column-container .image-column {
+  width: 100%;
+}
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
+}
+.header-column-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .two-column-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Skip link for accessibility === */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #2e7d32;
+  color: #e0f4ea; /* pale mint instead of pure white */
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* === Navigation === */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #3a563a;
+  padding: 1rem;
+}
+nav a {
+  color: #e0f4ea; /* softened white */
+  margin: 0 1rem;
+  font-weight: 600;
+}
+nav a:hover,
+nav a:focus {
+  color: #c8e6c9;
+}
+
+/* === Hero === */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #2e7d32;
+  color: #e0f4ea; /* softened white */
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* === Sections === */
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+section h2 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* === Biomes === */
+.biome {
+  margin-bottom: 3rem;
+  background: #eef6cefb; /* faint aqua-grey instead of pure white */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08); /* softened shadow */
+}
+.biome h3 {
+  color: #1b5e20;
+  margin-bottom: 0.5rem;
+}
+.biome figure {
+  margin: 1rem 0;
+}
+.biome img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.biome figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+/* === Feature Wrappers (Carousel + Fun Facts) === */
+.feature-wrap {
+  background: #eef6cefb;  /* same as .biome */
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 80%;             /* wider than .biome */
+  max-width: 1050px;      /* cap for big screens */
+}
+.feature-wrap h2 {
+  margin-bottom: 1rem;
+  color: #1b5e20;
+  text-align: center;
+}
+
+/* === Flip card base styles === */
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.fact-card {
+  width: 200px;
+  height: 130px;
+  perspective: 1000px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.fact-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.fact-card[aria-expanded="true"] .fact-inner,
+.fact-card.flipped .fact-inner {
+  transform: rotateY(180deg);
+}
+.fact-front,
+.fact-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+.fact-front {
+  background: #d0f591;
+  color: #0c7c11;
+}
+.fact-back {
+  background: #1c8f14;
+  color: #e6ffb7; /* pale mint text instead of pure white */
+  transform: rotateY(180deg);
+}
+
+/* === Carousel Styles (Layers Section) === */
+#layers-carousel .slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+#layers-carousel .carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  padding: 20px 0;
+}
+#layers-carousel .mySlides {
+  flex: 0 0 calc(33.333% - 20px);
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+#layers-carousel .mySlides:not(.active) {
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+#layers-carousel .mySlides .fact-card {
+  margin: auto;
+}
+
+/* Nav arrows */
+#layers-carousel .prev,
+#layers-carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 12px;
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgba(115, 234, 104, 0.975); /* pale aqua overlay instead of white */
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+}
+#layers-carousel .next { right: 10px; }
+#layers-carousel .prev { left: 10px; }
+#layers-carousel .prev:hover,
+#layers-carousel .next:hover {
+  background-color: rgba(0,0,0,0.08);
+}
+
+/* Dots */
+#layers-carousel .dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #0774da; /* muted blue-grey instead of #bbb */
+  border-radius: 50%;
+  display: inline-block;
+}
+#layers-carousel .dot.active,
+#layers-carousel .dot:hover {
+  background-color: #2e7d32;
+}
+
+/* Carousel Flip Cards */
+#layers-carousel .fact-card {
+  width: 220px;
+  height: 140px;
+}
+#layers-carousel .fact-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+#layers-carousel .fact-front,
+#layers-carousel .fact-back {
+  border-radius: 8px;
+  padding: 1rem;
+  font-weight: bold;
+}
+/* === Flip card base styles === */
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* center cards horizontally */
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* === Calendar === */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.calendar div {
+  background: #64e9d5; /* faint mint instead of white */
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* === Resources Horizontal Boxes === */
+#resources {
+  max-width: 1100px;  /* match biomes width */
+  margin: auto;
+}
+
+.resources-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.resource-card {
+  background: #aeeb45;    /* teal background */
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  color: #1b5e20;         /* deep green text */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.resource-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  color: #0d3c10;
+}
+/* === Guild Suggestions (Orange Variant) === */
+.biome h4 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #e65100; /* strong orange for heading */
+  border-bottom: 2px solid #e65100;
+  padding-bottom: 0.25rem;
+}
+
+.biome .two-column-container .column.guild {
+  background: #fff3e0;        /* soft orange background */
+  border-left: 4px solid #e65100;
+}
+
+.biome .two-column-container .column.guild p strong {
+  color: #e65100;             /* bold orange for guild names */
+}
+
+.resource-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  columns: 2;              /* <— makes list items side by side */
+  column-gap: 2rem;
+}
+
+.resource-card li {
+  margin-bottom: 0.4rem;
+  break-inside: avoid;
+}
+/* === Biome Layer Lists in Two Columns === */
+.biome .two-column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.biome .two-column-container .column {
+  background: #eef6cefb;   /* soft pastel (same as biome box) */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Style the collapsible <details> */
+.biome details {
+  background: #a6e9f6;    /* aqua background, matches global palette */
+  border: 2px solid #2e7d32;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.biome details[open] {
+  background: #fdd07e;   /* ochre when expanded, contrasts aqua */
+}
+
+.biome details summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #0c7c11;
+}
+
+.biome details p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #2e2e2e;
+}
+
+/* === Footer === */
+footer {
+  background: #3a563a;
+  color: #b3fdd8; /* softened white */
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+footer p {
+  margin: 0.3rem 0;
+}
+
+/* === Shared Flip Rules for Facts + Carousel === */
+.facts .fact-inner,
+#layers-carousel .fact-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.facts .fact-front,
+.facts .fact-back,
+#layers-carousel .fact-front,
+#layers-carousel .fact-back {
+  backface-visibility: hidden;
+}
+.facts .fact-card.flipped .fact-inner,
+.facts .fact-card[aria-expanded="true"] .fact-inner,
+#layers-carousel .fact-card.flipped .fact-inner,
+#layers-carousel .fact-card[aria-expanded="true"] .fact-inner {
+  transform: rotateY(180deg);
+}
+#layers-carousel .fact-back,
+.facts .fact-back {
+  transform: rotateY(180deg);
+}

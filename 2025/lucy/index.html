@@ -10,67 +10,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Browser tab title and favicon -->
-		<title>Template</title>
-		<link rel="icon" href="" />
+		<title>THE ROAMING LENSE</title>
+		<link rel="icon" href="images/favicon.ico" />
 
 		<!-- Links-->
 		<link href="my-style.css" rel="stylesheet" />
+		<!--Bootstrap Icons-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 	</head>
 	<body>
 		<!-- Website title and heading -->
 		<header id="page-top">
-			<h1>Project <span>Temp</span>late</h1>
+			<h1>THE ROAMING LENSE</h1>
 		</header>
 
 		<!-- Navigation Bar -->
 		<nav>
-			<a href="#section-one">Basic Elements</a>
-			<a href="#section-two">Card Display</a>
-			<a href="#section-three">Carousel</a>
-			<a href="#section-four">Fancybox</a>
-			<a href="#section-five">Contact</a>
+			<a href="#section-one">ABOUT</a>
+			<a href="#section-two">PLACES</a>
+			<a href="#section-three">MAP</a>
+			<a href="#section-four">GALLERY</a>
+			<a href="#section-five">REVIEWS</a>
+			<a href="#section-six">FAQS</a>
 		</nav>
 
 		<!-- Back to top button -->
 		<a class="back-to-top-btn" href="#page-top">Back to Top</a>
+
+		<!--Overlay for modals-->
+		<div id="overlay"></div>
+
+		<!--Comming soon modal-->
+		<div>
+			<div class="modal" id="comming-soon-modal">
+				<div class="modal-close-bar">
+					<button data-close-button class="close-button">&times;</button>
+				</div>
+				<div class="modal-body" style="align-items: center; padding: 2em">
+					<h3>More project info is coming soon...</h3>
+				</div>
+			</div>
+		</div>
 
 		<!-- Main Content -->
 		<main>
 			<!-- Section one of content -->
 			<section id="section-one">
 				<!-- h tag for headings -->
-				<h2>Basic Elements</h2>
 
 				<div class="two-column-container">
-					<figure class="fig-hover-attribution">
+					
+					<div class="fig-hover-attribution">
+						
 						<!-- img for images with src being the source alt for alternative text -->
 						<img
 							class="img-attribution"
-							src="images/template-images/example-img-1200x800.jpg"
+							src="images/Lucy.JPG"
 							alt="Ocean Waves Crashing on Shore during Sunset" />
-						<!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute-->
-						<figcaption class="attribution">
-							Ocean Waves Crashing on Shore during Sunset, Jess Loiterton,
-							sourced from
-							<a
-								href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/"
-								>Pexels</a
-							>, <a href="https://www.pexels.com/license/">cc</a>
-						</figcaption>
-					</figure>
-					<div class="pre-wrap img-text">
+					</div>
+					<div class="img-text">
+						<h2>Lucy Wilson</h2>
 						<!-- p for paragraphs-->
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-							dignissim. Consequat ac felis donec et odio pellentesque diam
-							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-							tincidunt arcu non. Quisque non tellus orci ac auctor augue
-							mauris.
+							I created this website to make travel planning easier and more personal for every kind of traveler. With so many options online, it can be overwhelming to know where to go, what to do, or where to stay. This platform brings together real recommendations, hidden gems, and curated tips from fellow travelers to help you make better choices—without spending hours researching. Whether you're planning your next big adventure or a quick weekend getaway, this site is here to guide you with trusted suggestions and honest advice, all in one place.
 						</p>
 					</div>
 				</div>
@@ -79,139 +83,152 @@
 			<!-- Section two of content -->
 			<section id="section-two">
 				<!-- Section two Title -->
-				<h2>Card Display Grid</h2>
+				<h2>PLACES </h2>
 
 				<!-- Card display -->
-				<h3>Card Example</h3>
+				
 				<div class="card-grid">
 					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-1.png" alt="Tower" />
+						<a data-modal-target="#comming-soon-modal">
+							<img src="images/Africa.jpg" alt="Tower" />
 							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
+								<h4><b>AFRICA</b></h4>
+								<div class="card-button">EXPLORE</div>
 							</div>
 						</a>
 					</div>
 					<div class="card">
 						<a href="">
-							<img src="images/template-images/card-image-3.png" alt="Ocean" />
+							<img src="images/North-America.jpg" alt="Ocean" />
 							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
+								<h4><b>NORTH AMERICA</b></h4>
+								<div class="card-button">EXPLORE</div>
 							</div>
 						</a>
 					</div>
 					<div class="card">
 						<a href="">
-							<img src="images/template-images/card-image-2.png" alt="Mountains" />
+							<img src="images/South-America .jpg" alt="Mountains" />
 							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
+								<h4><b>SOUTH AMERICA</b></h4>
+								<div class="card-button">EXPLORE</div>
 							</div>
 						</a>
 					</div>
 					<div class="card">
 						<a href="">
-							<img src="images/template-images/card-image-1.png" alt="Tower" />
+							<img src="images/South-Asia.jpg" alt="Tower" />
 							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
+								<h4><b>SOUTH ASIA</b></h4>
+								<div class="card-button">EXPLORE</div>
 							</div>
 						</a>
 					</div>
 					<div class="card">
 						<a href="">
-							<img src="images/template-images/card-image-3.png" alt="Ocean" />
+							<img src="images/Europe.jpg" alt="Ocean" />
 							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
+								<h4><b>EUROPE</b></h4>
+								<div class="card-button">EXPLORE</div>
 							</div>
 						</a>
 					</div>
 					<div class="card">
 						<a href="">
-							<img src="images/template-images/card-image-2.png" alt="Mountains" />
+							<img src="images/oceania.jpg" alt="Mountains" />
 							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
+								<h4><b>OCEANIA</b></h4>
+								<div class="card-button">EXPLORE</div>
 							</div>
 						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-1.png" alt="Tower" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-3.png" alt="Ocean" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
-					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-2.png" alt="Mountains" />
-							<div class="card-container">
-								<h4><b>Card Title</b></h4>
-								<p>Card Info</p>
-								<div class="card-button">Click Me!</div>
-							</div>
-						</a>
-					</div>
+				</div>
 				</div>
 				<hr />
 			</section>
 
 			<!-- Section three of content -->
 			<section id="section-three">
-				<!-- Section three title -->
-				<h2>Carousel</h2>
+				<!-- Section three Title -->
+				<h2>MAP</h2>
+
+	<!-- Map Container -->
+	<div class="map-container">
+		<!-- Map Marker -->
+		<div class="map-marker-one">
+			<!-- Marker Icon -->
+			<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+			<!-- Pop-up Content -->
+			<div class="map-pop-up-content">
+				<p class="map-pop-up-text">01 New York</p>            
+			</div>
+		</div>
+		<div class="map-marker-two">
+			<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+			<div class="map-pop-up-content">
+				<p class="map-pop-up-text">02 London</p>
+			</div>
+		</div>
+		<div class="map-marker-three">
+			<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+			<div class="map-pop-up-content">
+				<p class="map-pop-up-text">03 Brasilia</p>
+			</div>
+		</div>
+		<div class="map-marker-four">
+			<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+			<div class="map-pop-up-content">
+				<p class="map-pop-up-text">04 Perth</p>
+			</div>
+		</div>
+		<div class="map-marker-five">
+			<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+			<div class="map-pop-up-content">
+				<p class="map-pop-up-text">05 Johanneburg</p>
+			</div>
+		</div>
+		<div class="map-marker-six">
+			<i class="bi bi-geo-alt-fill" class="map-pop-up"></i>
+			<div class="map-pop-up-content">
+				<p class="map-pop-up-text">06 Tokyo</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+			<!-- Section four of content -->
+			<section id="section-four">
+				<!-- Section four title -->
+				<h2>GALLERY</h2>
 
 				<!-- Image carousel -->
-				<h3>Carousel Example</h3>
+			
 				<div class="slideshow-container">
 					<!-- Full-width images with number and caption text -->
 					<div class="mySlides fade">
 						<div class="numbertext">1 / 3</div>
 						<img
-							src="images/template-images/carousel-img-1-1200x800.jpg"
+							src="images/turkey.jpg"
 							alt="Hot Air Ballons"
 							style="width: 100%" />
-						<div class="text">Caption One</div>
+						<div class="text">Turkey</div>
 					</div>
 
 					<div class="mySlides fade">
 						<div class="numbertext">2 / 3</div>
 						<img
-							src="images/template-images/carousel-img-2-1200x800.jpg"
-							alt="Green Overlook"
+							src="images/portugal.jpg"
+							alt="yellow train"
 							style="width: 100%" />
-						<div class="text">Caption Two</div>
+						<div class="text">Portugal</div>
 					</div>
 
 					<div class="mySlides fade">
 						<div class="numbertext">3 / 3</div>
 						<img
-							src="images/template-images/carousel-img-3-1200x800.jpg"
-							alt="Pink Beach"
+							src="images/Paris.jpg"
+							alt="eiffel tower"
 							style="width: 100%" />
-						<div class="text">Caption Three</div>
+						<div class="text">France</div>
 					</div>
 					<!-- Next and previous buttons -->
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -226,6 +243,58 @@
 				</div>
 			</section>
 
+			<!-- Section five of content -->
+			<section id="section-five">
+				<!-- Section five title -->
+				 <h2>REVIEWS</h2>
+<!-- Card display -->
+				
+<div class="card-grid">
+	<div class="card">
+		<a href="">
+			<img src="images/Rome.jpg" alt="Tower" />
+			<div class="card-container">
+				<h4><b>ROME</b></h4>
+				<p>"Visiting Rome was like stepping into a living museum, and the Colosseum was definitely the highlight of my trip. Walking through the ancient stone arches, I could almost hear the roar of the crowds from centuries ago. The history, architecture, and sheer size of it left me in awe. I highly recommend booking a guided tour — it brought the whole experience to life and gave me a much deeper appreciation for this incredible landmark."</p>
+			</div>
+		</a>
+	</div>
+	<div class="card">
+		<a href="">
+			<img src="images/Markets.jpg" alt="Ocean" />
+			<div class="card-container">
+				<h4><b>BANGKOK</b></h4>
+				<p>"Exploring the markets in Bangkok was an unforgettable experience — a perfect mix of color, chaos, and culture. From the vibrant street food stalls at Chatuchak to the floating boats of Damnoen Saduak, every market had its own unique vibe. The smells, sounds, and energy were incredible, and I found everything from delicious local snacks to handcrafted souvenirs. It's the best way to experience authentic Thai life and meet friendly locals along the way!"</p>
+			</div>
+		</a>
+	</div>
+	<div class="card">
+		<a href="">
+			<img src="images/Snorkling.jpg" />
+			<div class="card-container">
+				<h4><b>AUSTRALIA</b></h4>
+				<p>"Snorkeling in the Great Barrier Reef was absolutely magical, especially getting to swim alongside sea turtles. The water was crystal clear, and the coral reefs were teeming with vibrant marine life. Seeing the turtles up close, gliding so gracefully through the water, was a moment I'll never forget. It felt like being in another world. If you're visiting Australia, this is a bucket-list experience you just can't miss!"</p>
+			</div>
+		</a>
+	</div>
+</div>
+			</section>
+			<section id="section-six" class="text-box">
+				<h2>FAQS</h2>
+				<ul>
+					<li>What is this website about?</li>
+					<p>Our platform is designed to help travelers find trusted recommendations for destinations, activities, accommodations, and local experiences — all in one place.</p>
+					<li>How are the travel recommendations chosen?</li>
+					<p>We combine personal experiences, user reviews, and curated travel insights to offer genuine suggestions that help you make the most of your trip.</p>
+					<li>Can I book flights or hotels through your site?</li>
+					<p>Currently, we do not offer direct bookings, but we provide links and trusted partner platforms where you can book securely.</p>
+					<li>Is this website free to use?</li>
+					<p>Yes! Accessing travel guides, tips, and recommendations is completely free. Some partner links may offer additional services for a fee.</p>
+					<li>Do you cover all destinations?</li>
+					<p>We're constantly expanding. While we cover many popular and off-the-beaten-path destinations, feel free to suggest places you'd like to see added!</p>
+				</ul>
+			</section>
+
 			
 		</main>
 
@@ -234,28 +303,31 @@
 			<div class="footer-grid">
 				<div id="footer-nav" class="footer-grid-items">
 					<h3>Page Links</h3>
-					<a href="#section-one">Basic Elements</a>
-					<a href="#section-two">Card Display</a>
-					<a href="#section-three">Carousel</a>
-					<a href="#section-four">Fancybox</a>
-					<a href="#section-five">Contact</a>
+					<a href="#section-one">ABOUT</a>
+					<a href="#section-two">PLACES</a>
+					<a href="#section-three">MAP</a>
+					<a href="#section-four">GALLERY</a>
+					<a href="#section-five">REVIEWS</a>
+					<a href="#section-six">FAQS</a>
 				</div>
 				<div id="footer-legal" class="footer-grid-items">
 					<h3>Sources</h3>
-					Legal for any attribute or other privacy statements.
+					All Images sourced from 
+					<a herf="https://creativecommons.org/licenses/by-nc-sa/4.0/">Pexels</a>
 				</div>
 				<div id="footer-socials" class="footer-grid-items">
 					<h3>Socials</h3>
-					Social icons could go here.
+					Follow us on instragram @theroaming lense
 				</div>
 			</div>
 			<small>
-				Website by Your Name, licensed under
-				<a href="">&copy;Copyright</a>
+				Website by Lucy Wilson, licensed under
+				<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
 			</small>
 		</footer>
 
 		<!-- Javascript -->
 		<script src="my-javascript.js"></script>
+		<script src="popup.js"></script>
 	</body>
 </html>

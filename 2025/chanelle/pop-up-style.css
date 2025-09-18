@@ -1,0 +1,125 @@
+/*** Imports ***/ 
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*** Root ***/ 
+/* For variables like colors and fonts*/
+    :root{
+        /* colors */
+        --paynes-grey: #364849;
+        --moonstone-blue: #6AA5AF;
+        --light-cyan: #C8E7EA;
+        /* fonts */
+        --title-font: "Instrument Serif", serif;
+        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+/*--- Overlay ---*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 3;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+/*--- Modal ---*/
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+    background-color: transparent;
+}
+
+.modal-close-bar {
+    padding: 3em 2em 0em 0em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.modal h3 {
+    font-family: var(--title-font);
+    font-size: 3em;
+    margin: 0;
+}
+
+.modal-close-bar .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 1.75em;
+    margin: 0;
+}
+
+.modal-close-bar .close-button:hover {
+    color: var(--moonstone-blue);
+}
+
+.modal-body {
+    width: 90%;
+    margin: auto;
+    padding: 2em 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    border-radius: 60px;
+    background-color: var(--paynes-grey);
+    filter: drop-shadow(#000 1em 1em 2em);
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.modal-text {
+    margin: 2em 1.5em;
+}
+
+.modal-body button {
+    padding: 0.4em 1em;
+    margin: 0 1.2em 1.2em;
+    color: var(--light-cyan);
+    border: 2pt solid var(--moonstone-blue);
+    border-radius: 50px;
+    background-color: var(--paynes-grey);
+    font-family: var(--body-font);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.modal-body button:hover {
+    border-color: transparent;
+    background-color: var(--light-cyan);
+    color: var(--paynes-grey);
+}
+
+#comming-soon-modal{
+    line-height: normal;
+    text-align: center;
+    color: #fff;
+    align-items: center; padding: 2em;
+}

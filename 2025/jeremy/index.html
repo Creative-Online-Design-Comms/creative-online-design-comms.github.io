@@ -1,218 +1,1151 @@
 <!DOCTYPE html>
 <html lang="en">
 	<!-- *****************************
-         Author: Your Name
-         Creation date: DD/09/2025
+         Author: Jeremy Lemmens
+         Creation date: 16/09/2025
          ***************************** -->
-	<head>
-		<!-- meta tags -->
+<head>
+  <!-- meta tags -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Browser tab title and favicon -->
-		<title>Template</title>
-		<link rel="icon" href="" />
+    
+	<!-- Browser tab title and favicon -->
+  <title>Otago Food Forest Planner</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="otago-forest.css">
+</head>
 
-		<!-- Links-->
-		<link href="my-style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<!-- Website title and heading -->
-		<header id="page-top">
-			<div class="two-column-container">
-				<div class="image-column">
-					<!-- img for images with src being the source alt for alternative text -->
-					<img
-						class="img-attribution"
-						src="images/template-images/example-img-1200x800.jpg"
-						alt="Ocean Waves Crashing on Shore during Sunset" />
-				</div>
-				<div class="pre-wrap img-text header-column-two">
-					<img class="header-img-two" src="images/template-images/card-image-1.png" alt="">
-					<h1>Project <span>Temp</span>late</h1>
-					<!-- p for paragraphs-->
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-						dignissim. Consequat ac felis donec et odio pellentesque diam
-						volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-						quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-						congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-						Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-						tincidunt arcu non. Quisque non tellus orci ac auctor augue
-						mauris.
-					</p>
-				</div>
-			</div>
-		</header>
+<body>
+<script src="otago-forest.js" defer></script>
 
-		<!-- Navigation Bar -->
-		<nav>
-			<a href="#section-one">Basic Elements</a>
-			<a href="#section-two">Card Display</a>
-			<a href="#section-three">Carousel</a>
-			<a href="#section-four">Fancybox</a>
-			<a href="#section-five">Contact</a>
-		</nav>
+<!-- Website title and heading -->
+  <header class="hero">
+    <h1>Otago Food Forest Planner</h1>
+    <p>Living food forest guidance for Otago’s diverse biomes</p>
+  </header>
 
-		<!-- Back to top button -->
-		<a class="back-to-top-btn" href="#page-top">Back to Top</a>
+  <!-- Navigation Bar -->
+  <a href="#maincontent" class="skip-link">Skip to content</a>
+  <nav aria-label="Primary">
+    <a href="#intro">Intro</a>
+    <a href="#funfacts">Fun Facts</a>
+    <a href="#biomes">Biomes</a>
+    <a href="#layers">Layers</a>
+    <a href="#principles">Principles</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#resources">Resources & Networking</a>
+  </nav>
 
-		<!-- Main Content -->
-		<main>
-			<!-- Section three of content -->
-			<section id="section-three">
-				<!-- Section three title -->
-				<h2>Carousel</h2>
+<main id="maincontent">
 
-				<!-- Image carousel -->
-				<h3>Carousel Example</h3>
-				<div class="slideshow-container">
-					<!-- Full-width images with number and caption text -->
-					<div class="mySlides fade">
-						<div class="numbertext">1 / 3</div>
-						<img
-							src="images/template-images/carousel-img-1-1200x800.jpg"
-							alt="Hot Air Ballons"
-							style="width: 100%" />
-						<div class="text">Caption One</div>
-					</div>
+ <section id="intro" class="two-column-container">
+  <div class="header-column-two">
+    <h2>What is a Food Forest?</h2>
+    <p>A food forest is a designed ecosystem that mimics the structure and processes
+       of a natural forest, but instead of focusing solely on wild vegetation, it is
+       planted with species that provide food, medicine, fuel, and other human uses.
+       The idea is to layer seven or more types of plants — from tall canopy trees
+       to groundcovers, vines, and root crops — so that every ecological niche is
+       filled. In Otago, where frosts can be severe, droughts frequent, and winds
+       harsh, food forests offer a resilient model for producing food while
+       strengthening local biodiversity. They capture water, improve soil fertility,
+       and buffer against climate extremes, making them a valuable strategy for both
+       urban backyards and rural landscapes.</p>
+  </div>
+  <div class="image-column">
+    <figure>
+      <a title="Rbnvrw, CC BY-SA 4.0" href="https://commons.wikimedia.org/wiki/File:Layers_in_a_food_forest.png">
+        <img width="512" alt="Image depicting the various layers in a food forest" 
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Layers_in_a_food_forest.png/512px-Layers_in_a_food_forest.png?20240629100610">
+      </a>
+    </figure>
+  </div>
+</section>
 
-					<div class="mySlides fade">
-						<div class="numbertext">2 / 3</div>
-						<img
-							src="images/template-images/carousel-img-2-1200x800.jpg"
-							alt="Green Overlook"
-							style="width: 100%" />
-						<div class="text">Caption Two</div>
-					</div>
 
-					<div class="mySlides fade">
-						<div class="numbertext">3 / 3</div>
-						<img
-							src="images/template-images/carousel-img-3-1200x800.jpg"
-							alt="Pink Beach"
-							style="width: 100%" />
-						<div class="text">Caption Three</div>
-					</div>
-					<!-- Next and previous buttons -->
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
-				<br />
-				<!-- The dots/circles -->
-				<div style="text-align: center">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-				</div>
-			</section>
-			<!-- Section one of content -->
-			<section id="section-one">
-				<!-- h tag for headings -->
-				<h2>Basic Elements</h2>
 
-				<div class="two-column-container">
-					<figure class="image-column">
-						<!-- img for images with src being the source alt for alternative text -->
-						<img
-							class="img-attribution"
-							src="images/template-images/example-img-1200x800.jpg"
-							alt="Ocean Waves Crashing on Shore during Sunset" />
-						<!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute-->
-						<figcaption class="attribution">
-							Ocean Waves Crashing on Shore during Sunset, Jess Loiterton,
-							sourced from
-							<a
-								href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/"
-								>Pexels</a
-							>, <a href="https://www.pexels.com/license/">cc</a>
-						</figcaption>
-					</figure>
-					<div class="pre-wrap img-text">
-						<!-- p for paragraphs-->
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-							dignissim. Consequat ac felis donec et odio pellentesque diam
-							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-							tincidunt arcu non. Quisque non tellus orci ac auctor augue
-							mauris.
-						</p>
-					</div>
-				</div>
-				<div class="two-column-container">
-					<div class="pre-wrap img-text">
-						<!-- p for paragraphs-->
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
-							dignissim. Consequat ac felis donec et odio pellentesque diam
-							volutpat. Nulla aliquet enim tortor at auctor. Egestas congue
-							quisque egestas diam in arcu. Amet volutpat consequat mauris nunc
-							congue nisi. Mauris rhoncus aenean vel elit scelerisque mauris.
-							Cras fermentum odio eu feugiat pretium. Laoreet id donec ultrices
-							tincidunt arcu non. Quisque non tellus orci ac auctor augue
-							mauris.
-						</p>
-					</div>
-					<figure class="image-column">
-						<!-- img for images with src being the source alt for alternative text -->
-						<img
-							class="img-attribution"
-							src="images/template-images/example-img-1200x800.jpg"
-							alt="Ocean Waves Crashing on Shore during Sunset" />
-						<!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute-->
-						<figcaption class="attribution">
-							Ocean Waves Crashing on Shore during Sunset, Jess Loiterton,
-							sourced from
-							<a
-								href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/"
-								>Pexels</a
-							>, <a href="https://www.pexels.com/license/">cc</a>
-						</figcaption>
-					</figure>
-				</div>
-			</section>
-			
+<!-- === Food Forest Layers Carousel === -->
+<!-- === Food Forest Layers Carousel (wrapped) === -->
+<section id="layers-carousel" class="feature-wrap">
+  <h2>Food Forest Layers<br>(click-cards)</h2>
 
-	
-		</main>
+  <div class="slideshow-container">
+    <div class="carousel-track">
 
-		<!-- Footer for extra links/socials and legal -->
-		<footer>
-			<div class="footer-grid">
-				<div id="footer-nav" class="footer-grid-items">
-					<h3>Page Links</h3>
-					<a href="#section-one">Basic Elements</a>
-					<a href="#section-two">Card Display</a>
-					<a href="#section-three">Carousel</a>
-					<a href="#section-four">Fancybox</a>
-					<a href="#section-five">Contact</a>
-				</div>
-				<div id="footer-legal" class="footer-grid-items">
-					<h3>Sources</h3>
-					Legal for any attribute or other privacy statements.
-				</div>
-				<div id="footer-socials" class="footer-grid-items">
-					<h3>Socials</h3>
-					Social icons could go here.
-				</div>
-			</div>
-			<small>
-				Website by Your Name, licensed under
-				<a href="">&copy;Copyright</a>
-			</small>
-		</footer>
+      <!-- Slide 1 -->
+      <div class="mySlides">
+        <div class="fact-card canopy" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🌲 Canopy</div>
+            <div class="fact-back">Otago: Walnut, Chestnut, Heritage Apples, Pears.</div>
+          </div>
+        </div>
+      </div>
 
-		<!-- Javascript -->
-		<script src="my-javascript.js"></script>
+      <!-- Slide 2 -->
+      <div class="mySlides">
+        <div class="fact-card vertical" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🍇 Vertical</div>
+            <div class="fact-back">Otago: Grapes, Kiwi, Hops, Beans.</div>
+          </div>
+        </div>
+      </div>
 
-	</body>
+      <!-- Slide 3 -->
+      <div class="mySlides">
+        <div class="fact-card understory" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🌳 Understory</div>
+            <div class="fact-back">Otago: Plum, Feijoa, Apricot, Quince.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="mySlides">
+        <div class="fact-card shrubs" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🌿 Shrubs</div>
+            <div class="fact-back">Otago: Currants, Gooseberries, Blueberries.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="mySlides">
+        <div class="fact-card herbs" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🌱 Herbaceous</div>
+            <div class="fact-back">Otago: Comfrey, Yarrow, Mint, Parsley.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="mySlides">
+        <div class="fact-card groundcover" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🍓 Groundcover</div>
+            <div class="fact-back">Otago: Strawberries, Clover, Creeping Thyme, Nasturtium.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="mySlides">
+        <div class="fact-card waterplants" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">💧 Waterplants</div>
+            <div class="fact-back">Otago: Watercress, Raupō, Native Sedges.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="mySlides">
+        <div class="fact-card rhizosphere" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🥕 Rhizosphere</div>
+            <div class="fact-back">Otago: Jerusalem Artichoke, Carrots, Garlic, Kūmara.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="mySlides">
+        <div class="fact-card fungi" aria-expanded="false">
+          <div class="fact-inner">
+            <div class="fact-front">🍄 Fungi</div>
+            <div class="fact-back">Otago: Oyster Mushrooms, Shiitake, Mycorrhizal fungi.</div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /.carousel-track -->
+
+    <!-- Nav arrows -->
+    <a class="prev" onclick="moveCarousel(-1)">&#10094;</a>
+    <a class="next" onclick="moveCarousel(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots -->
+  <div style="text-align:center; margin-top: 1rem;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+  </div>
+</section>
+<!-- === End Carousel === -->
+
+
+<!-- === Food Forest Design (normal background) === -->
+<section id="design" class="two-column-container">
+  <div class="image-column">
+    <figure>
+      <a title="SuSanA Secretariat, CC BY 2.0" 
+         href="https://commons.wikimedia.org/wiki/File:Kitchen_garden_(6346822553).jpg">
+        <img width="512" alt="Kitchen garden" 
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Kitchen_garden_%286346822553%29.jpg/512px-Kitchen_garden_%286346822553%29.jpg?20141031133632">
+      </a>
+    </figure>
+  </div>
+  <div class="header-column-two">
+    <h2>Food Forest Design</h2>
+    <p>A food forest is carefully structured to mirror the diversity of a woodland,
+       where every plant plays multiple roles. Tall trees provide shade, wind
+       protection, and nuts or fruit; smaller trees and shrubs bear berries and
+       stonefruit; vines climb upwards to harvest sunlight; and roots and herbs
+       create food and medicine while improving soil health. In Otago, the design
+       of such systems is particularly important due to variable conditions ranging
+       from coastal humidity to dry inland summers. By combining deep-rooted
+       perennials with nitrogen fixers, pollinator plants, and groundcovers, these
+       forests conserve water and maintain fertility with minimal external inputs.
+       When designed well, they become living pantries and pharmacies, sustaining
+       families while supporting wildlife and strengthening communities over
+       generations.</p>
+  </div>
+</section>
+<!-- === End Design === -->
+
+
+<!-- === Fun Facts (wrapped) === -->
+<section id="funfacts" class="feature-wrap">
+  <h2>Fun Facts<br>(click-cards)</h2>
+  <div class="facts">
+
+    <!-- Seven Layers -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌳 Seven Layers</span></div>
+        <div class="fact-back">Food forests use seven layers from canopy to roots — packing diversity into small spaces.</div>
+      </div>
+    </button>
+
+    <!-- Resilience -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌍 Resilience</span></div>
+        <div class="fact-back">Diverse guilds bounce back from frost, drought and pests faster than monocultures.</div>
+      </div>
+    </button>
+
+    <!-- Alexandra Thyme Fields -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌸 Alexandra Thyme</span></div>
+        <div class="fact-back">The thyme fields around Alexandra bloom so intensely they can be spotted from space in summer.</div>
+      </div>
+    </button>
+
+    <!-- Albatross Colony -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🪶 Albatross</span></div>
+        <div class="fact-back">Otago Peninsula hosts the world’s only mainland royal albatross colony — proof of resilient ecosystems.</div>
+      </div>
+    </button>
+
+    <!-- Heritage Apples -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🍏 Heritage Apples</span></div>
+        <div class="fact-back">Dunedin once had over 150 apple varieties — many survive in hidden orchards and backyard trees.</div>
+      </div>
+    </button>
+
+    <!-- Currants in Cold -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>❄️ Currant Tough</span></div>
+        <div class="fact-back">Blackcurrants thrive in Otago frosts down to –10°C, making them a true alpine survivor.</div>
+      </div>
+    </button>
+
+    <!-- Walnuts and Air Drainage -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌰 Walnut Wisdom</span></div>
+        <div class="fact-back">Walnuts love Otago’s valley air drainage — they need cold winters to crack dormancy.</div>
+      </div>
+    </button>
+
+    <!-- Seaweed Fertility -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌊 Seaweed Boost</span></div>
+        <div class="fact-back">Seaweed from Otago’s beaches is a free, mineral-rich compost that revives sandy soils.</div>
+      </div>
+    </button>
+
+  </div>
+</section>
+<!-- === End Fun Facts === -->
+
+  <!--Otago Biomes-->
+    <section id="biomes">
+      <h2>Otago Biomes</h2>
+
+      <!--Alpine Foothills Biome-->
+<article class="biome">
+  <h1>Alpine Foothills</h1>
+  <p>Cold nights, short summers, frost pockets, stony soils.</p>
+
+  <section id="intro" class="two-column-container">
+    <div class="header-column-two">
+      <h2>Alpine Foothills</h2>
+      <p>In the alpine foothills of Otago, food forests must adapt to challenging
+         microclimates where cold nights, late frosts, and rocky soils are common.
+         Designing here begins with mapping the way cold air drains across slopes and
+         valleys, since frost pockets can devastate tender blossoms in spring.
+         <br><br>
+         Stones and dark mulches are used as passive solar batteries, capturing heat during
+         the day and releasing it at night to protect crops. Hardy fruits such as quince, plum, and apricot are chosen for their ability to withstand
+         temperature extremes, and they are paired with frost-tolerant herbs,
+         flowers, and nitrogen-fixing groundcovers.
+         <br><br>
+         Guilds of sage, thyme, clover, and comfrey both stabilize the soil and provide insectary functions,
+         encouraging pollinators and beneficial predators. By creatively using
+         natural patterns and working with the flows of air and sun, growers can
+         transform this harsh biome into one of resilience, where abundance grows out
+         of challenge.</p>
+    </div>
+    <div class="image-column">
+      <figure>
+        <a title="AnnWoolliams, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Arrow_Junction,_Crown_Ranges,_Queenstown_District,_New_Zealand.jpg"><img width="512" alt="Arrow Junction, Crown Ranges, Queenstown District, in autumn colours,  New Zealand" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Arrow_Junction%2C_Crown_Ranges%2C_Queenstown_District%2C_New_Zealand.jpg/512px-Arrow_Junction%2C_Crown_Ranges%2C_Queenstown_District%2C_New_Zealand.jpg?20220425210803"></a>
+        <a title="Grapeman4, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Queenstown_Lakes_District.png"><img width="256" alt="Queenstown Lakes District" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Queenstown_Lakes_District.png/256px-Queenstown_Lakes_District.png?20120518100111"></a>
+      </figure>
+    </div>
+  </section>
+
+  <div class="facts">
+    <button class="fact-card"><div class="fact-inner"><div class="fact-front">🌱 Spring</div><div class="fact-back">Plant raspberries, frost cloth on blossoms.</div></div></button>
+    <button class="fact-card"><div class="fact-inner"><div class="fact-front">☀️ Summer</div><div class="fact-back">Irrigate herbs, use stones as heat sinks.</div></div></button>
+    <button class="fact-card"><div class="fact-inner"><div class="fact-front">🍂 Autumn</div><div class="fact-back">Plant plums, quince, extend hedges.</div></div></button>
+    <button class="fact-card"><div class="fact-inner"><div class="fact-front">❄️ Winter</div><div class="fact-back">Map frost drainage, prune hardy trees.</div></div></button>
+  </div>
+
+ <article class="biome">
+  <h3>Alpine Foothills</h3>
+
+  <div class="two-column-container">
+    <div class="column">
+      <details><summary>🌲 Canopy</summary>
+      <p>Quince, heritage apples (e.g., Sturmer, Monty’s Surprise, Ballarat), chestnut, hardy pear (Winter Nelis, Buerre Bosc), hazelnut on sheltered sites, black walnut (cautious planting due to allelopathy), elder (as both canopy and shelter), hardy crabapples, and service trees (Sorbus domestica).</p>
+      </details>
+
+      <details><summary>🌳 Understory</summary>
+      <p>Plum (European and Japanese), apricot (in sheltered, sunny pockets), feijoa (cold-hardy cultivars), medlar, mulberry (dwarf hardy types), peach and nectarine (best against stone or brick heat sinks), cornelian cherry, small cider pears, Siberian pea shrub (Caragana arborescens as a nitrogen-fixer and windbreak understory).</p>
+      </details>
+
+      <details><summary>🌿 Shrub</summary>
+      <p>Currants (black, red, white, pink), gooseberries, jostaberry, blueberry (if soil acidity is managed), lingonberry, chokeberry (Aronia), honeyberry (Lonicera caerulea), elderberry shrubs, hazel suckers forming shrub thickets, viburnums (edible species), and hardy rugosa rose (for hips and shelter).</p>
+      </details>
+
+      <details><summary>🌱 Herb</summary>
+      <p>Comfrey (bocking cultivars), yarrow, thyme (creeping and common), oregano, sage, calendula, borage, fennel (for pollinators, but can be invasive), anise hyssop, tansy, wormwood, chamomile, lemon balm, lovage, angelica, dill, coriander, parsley, and alpine strawberries as semi-herbaceous ground herbs.</p>
+      </details>
+    </div>
+
+    <div class="column">
+      <details><summary>🍓 Groundcover</summary>
+      <p>Strawberries (alpine and garden), white and red clover, creeping thyme, nasturtium, ajuga (bugleweed), violets, wintergreen, sweet woodruff, chickweed, miner’s lettuce, and alpine sorrel (Rumex scutatus). Groundcovers here should protect from frost-heave and stabilise thin soils.</p>
+      </details>
+
+      <details><summary>🌾 Climbers</summary>
+      <p>Hops (Humulus lupulus), hardy grapes (Concord, Isabella, American hybrids), scarlet runner bean (perennial root), climbing peas, and kiwiberry (Actinidia arguta — only in sheltered alpine valleys with reduced frost risk).</p>
+      </details>
+
+      <details><summary>🥕 Root</summary>
+      <p>Jerusalem artichoke, carrot, beetroot, parsnip, swede, turnip, daikon radish, horseradish, scorzonera, salsify, chicory root, skirret, garlic, onion, shallot, Welsh onion, perennial leeks, and kūmara (in only the warmest alpine pockets, often unsuccessful without heat sinks).</p>
+      </details>
+
+      <details><summary>🍄 Fungi</summary>
+      <p>Oyster mushroom logs, shiitake logs, wine cap mushrooms (Stropharia) in mulch, morel inoculation in woodchip beds, mycorrhizal inoculants for apple and nut trees, and native fungi associated with beech or manuka for soil health. Fungi are especially valuable here for nutrient cycling in lean stony soils.</p>
+      </details>
+    </div>
+  </div>
+
+  <h4>Guild Suggestions (x4)</h4>
+  <div class="two-column-container">
+    <div class="column">
+      <p><strong>Warm Pocket Guild:</strong> Quince + sage + creeping thyme + comfrey.  
+      Works best near rocks or walls that hold heat, balancing fruit production with hardy perennials.</p>
+
+      <p><strong>Berry Shelter Guild:</strong> Plum + gooseberry + clover + calendula.  
+      Creates a low-maintenance, pollinator-friendly guild that tolerates frosts while producing multiple food yields.</p>
+    </div>
+    <div class="column">
+      <p><strong>Pollinator Strip Guild:</strong> Apricot + yarrow + borage + honeyberry.  
+      Enhances spring pollination and soil health, making it ideal for short alpine summers with late frosts.</p>
+
+      <p><strong>Soil Builder Guild:</strong> Pear + Siberian pea shrub + alfalfa + violets.  
+      A system focused on nitrogen fixation, groundcover resilience, and long-term soil fertility improvement.</p>
+    </div>
+  </div>
+
+  <h4>Handy Tips</h4>
+  <ul>
+    <li>Use stone walls and rock piles as passive heat sinks — they radiate warmth through the night, protecting blossoms.</li>
+    <li>Plant hedges or shelterbelts across frost flows; even a 1–2 °C lift can save entire harvests.</li>
+    <li>Lay frost cloth over low shrubs in spring — this extends the fruiting season for tender plants like apricot.</li>
+    <li>Group early bloomers like quince with later bloomers like plum to stagger flowering and reduce total frost loss.</li>
+  </ul>
+
+  <p class="funfact">Fun Fact: The Lindis Pass can drop below –10 °C in winter, yet blackcurrants and gooseberries still thrive, proving their alpine toughness.</p>
+</article>
+<article class="biome">
+  <h1>Central Otago Drylands</h1>
+  <p>Hot summers, frosty winters, low rainfall, schist soils.</p>
+
+  <section id="intro" class="two-column-container">
+    <div class="header-column-two">
+      <h2>Central Otago Drylands</h2>
+      <p>Central Otago is renowned for its hot, dry summers, frosty winters, and lean
+         schist-derived soils, making it one of the toughest but also most rewarding
+         biomes for food forest design. The starting point is water — capturing every
+         drop through swales, basins, and mulched hollows to combat rainfall scarcity.
+         <br><br>
+         Species are carefully selected to endure both drought and frost, with heritage
+         apples, almonds, and stonefruit thriving when combined with deep-rooted
+         comfrey, drought-hardy thyme and lavender, and clover for nitrogen fixation.
+         Seasonal rhythms guide management: spring grafting of apple cultivars,
+         summer irrigation at depth, autumn planting of perennials, and winter
+         pruning to maintain form and airflow.
+         <br><br>
+         Thermal mass such as schist rocks or gravel mulches helps buffer the
+         extremes of heat and cold, creating stable microclimates for plants.
+         With thoughtful design, these drylands can support productive, long-lived
+         agroecosystems that embody the principles of storing energy, valuing
+         diversity, and designing for resilience in a climate of extremes.</p>
+    </div>
+    <div class="image-column">
+      <figure>
+        <a title="AnnWoolliams, CC BY-SA 4.0" 
+           href="https://commons.wikimedia.org/wiki/File:Farmlands,_Chatto_Creek,_Central_Otago,_South_Island,_New_Zealand.jpg">
+          <img width="512" alt="Farmlands, Chatto Creek, Central Otago" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Farmlands%2C_Chatto_Creek%2C_Central_Otago%2C_South_Island%2C_New_Zealand.jpg/512px-Farmlands%2C_Chatto_Creek%2C_Central_Otago%2C_South_Island%2C_New_Zealand.jpg?20220711230614">
+        </a>
+        <a title="Furius at English Wikipedia, Public domain" 
+           href="https://commons.wikimedia.org/wiki/File:Central_Otago_Territorial_Authority.png">
+          <img width="256" alt="Central Otago Territorial Authority" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Central_Otago_Territorial_Authority.png/256px-Central_Otago_Territorial_Authority.png?20080903144120">
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <div class="two-column-container">
+    <div class="column">
+      <details><summary>🌲 Canopy</summary>
+      <p>Walnut, black walnut (care with allelopathy), chestnut, heritage apples (Granny Smith, Sturmer, Cox’s Orange Pippin), cider apples, hardy pears (Winter Nelis, Nashi, Beurré Bosc), almond, hardy apricot, mulberry, service tree, and ginkgo. These thrive best on north-facing slopes with water-harvesting earthworks.</p>
+      </details>
+
+      <details><summary>🌳 Understory</summary>
+      <p>Quince, medlar, feijoa (hardy cultivars), peach and nectarine against stone walls, cornelian cherry, smaller apple cultivars, olive in warm microsites, Siberian pea shrub, and hawthorn. Understory species add fruit resilience and soil stability.</p>
+      </details>
+
+      <details><summary>🌿 Shrub</summary>
+      <p>Currants, gooseberries, jostaberry, blueberries (acid soils), elderberry, Aronia, seaberry (Hippophae), lavender, rosemary, sage shrubs, Cistus (rock rose), broom (nitrogen fixer), and rugosa rose for hips. Shrubs provide shelter and pollinator support.</p>
+      </details>
+
+      <details><summary>🌱 Herb</summary>
+      <p>Comfrey, thyme, oregano, sage, yarrow, tansy, fennel, dill, coriander, chamomile, calendula, marjoram, borage, lemon balm, wormwood, lovage, anise hyssop, hyssop, savory, sorrel, horseradish, and echinacea. Herbs conserve soil moisture and attract beneficial insects.</p>
+      </details>
+    </div>
+
+    <div class="column">
+      <details><summary>🍓 Groundcover</summary>
+      <p>Creeping thyme, clover (red, white, subterranean), nasturtium, purslane, alpine strawberry, ajuga, chickweed, creeping comfrey, mint (controlled), dandelion, miner’s lettuce, and buckwheat as cover crop. These reduce evaporation and protect soils.</p>
+      </details>
+
+      <details><summary>🌾 Climbers</summary>
+      <p>Grapes (Pinot Noir, Riesling, Isabella), beans (runner, French), climbing peas, hops (less vigorous in dryland), and kiwiberry in watered niches. Climbers add vertical yield and shade.</p>
+      </details>
+
+      <details><summary>🥕 Root</summary>
+      <p>Garlic, onion, shallot, leek, parsnip, carrot, beetroot, turnip, swede, daikon radish, scorzonera, chicory root, skirret, horseradish, Jerusalem artichoke, saffron crocus, and globe artichoke. Roots ensure long-term food storage in harsh conditions.</p>
+      </details>
+
+      <details><summary>🍄 Fungi</summary>
+      <p>Wine cap mushrooms in mulch, oyster mushrooms, shiitake logs, and mycorrhizal fungi linked to nuts and apples. Fungi are vital for water retention and soil structure in schist soils.</p>
+      </details>
+    </div>
+  </div>
+
+  <h4>Guild Suggestions (x4)</h4>
+  <div class="two-column-container">
+    <div class="column">
+      <p><strong>Apple Guild:</strong> Apple + comfrey + thyme + clover + yarrow.  
+      A resilient mix balancing fruit production, pollinator habitat, and soil fertility in drylands.</p>
+
+      <p><strong>Almond Guild:</strong> Almond + lavender + rosemary + clover.  
+      Combines a nut crop with drought-hardy aromatic herbs and nitrogen fixers, excellent for bees.</p>
+    </div>
+    <div class="column">
+      <p><strong>Stonefruit Guild:</strong> Apricot + sage + thyme + seaberry.  
+      Designed for slope planting, this guild resists wind, attracts pollinators, and improves nitrogen cycling.</p>
+
+      <p><strong>Shelter Guild:</strong> Pear + Siberian pea shrub + rugosa rose + fennel.  
+      Provides multi-layer shelter, insectary value, and edible yields, stabilising soil near swales.</p>
+    </div>
+  </div>
+
+  <h4>Handy Tips</h4>
+  <ul>
+    <li>Mulching cuts irrigation needs by half — vital in dry summers.</li>
+    <li>Use swales and basins to catch every drop of rain and snowmelt.</li>
+    <li>Plant lavender and thyme strips as living mulch that also attract bees.</li>
+    <li>Place heat-retaining stones near apricots and peaches to extend ripening seasons.</li>
+  </ul>
+
+  <p class="funfact">Fun Fact: The thyme fields near Alexandra bloom so intensely they can be seen from space in summer!</p>
+</article>
+<article class="biome">
+  <h1>Coastal Otago</h1>
+  <p>Wind, salt spray, mild winters, sandy/loamy soils.</p>
+
+  <section id="intro" class="two-column-container">
+    <div class="header-column-two">
+      <h2>Coastal Otago</h2>
+      <p>Coastal Otago presents unique challenges and opportunities for food forest
+         design, shaped by persistent winds, salt-laden air, and sandy soils.
+         Establishing effective shelter is the first priority, with living windbreaks
+         of salt-tolerant natives such as harakeke, coprosma, and pittosporum
+         creating calmer microclimates.
+         <br><br>
+         Once shelter is secured, soils are improved with composted seaweed and organic matter,
+         building fertility and water retention while recycling local resources.
+         Planting emphasises species that thrive in salt air, including feijoa,
+         citrus in warm niches, and hardy Mediterranean herbs like rosemary,
+         thyme, and oregano. Layered guilds integrate groundcovers such as nasturtium
+         and clover to reduce erosion, attract pollinators, and supply nitrogen.
+         <br><br>
+         Prunings from shelterbelts are recycled as mulch, closing the loop on waste.
+         This coastal food forest model not only yields fruit, herbs, and perennial
+         vegetables but also strengthens dunes and coastal soils, offering both
+         ecological protection and human abundance along Otago’s windswept shores.</p>
+    </div>
+    <div class="image-column">
+      <figure>
+        <a title="Bernard Spragg. NZ, Public domain" 
+           href="https://commons.wikimedia.org/wiki/File:Karitane_coast._Otago._NZ_(52144675486).jpg">
+          <img width="512" alt="Karitane coast. Otago. NZ (52144675486)" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Karitane_coast._Otago._NZ_%2852144675486%29.jpg/512px-Karitane_coast._Otago._NZ_%2852144675486%29.jpg?20231011165659">
+        </a>
+        <a title="JaumeBG, CC0" 
+           href="https://commons.wikimedia.org/wiki/File:Waitaki_District.svg">
+          <img width="256" alt="Waitaki District" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Waitaki_District.svg/256px-Waitaki_District.svg.png?20120420072250">
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <div class="two-column-container">
+    <div class="column">
+      <details><summary>🌲 Canopy</summary>
+      <p>Salt-tolerant apple cultivars, feijoa trained as small canopy trees, macrocarpa for shelterbelts,
+         pohutukawa (northern coastal ornament with nectar), Norfolk pine, and hardy pears in inland pockets.
+         Canopy species double as shelter and food producers near the coast.</p>
+      </details>
+
+      <details><summary>🌳 Understory</summary>
+      <p>Feijoa, citrus (lemon, mandarin, lime) in warm niches, loquat, guava (cherry guava/Psidium cattleianum),
+         persimmon in protected bays, elder, and hardy olives. Understory thrives with airflow pruning
+         to reduce fungal risk.</p>
+      </details>
+
+      <details><summary>🌿 Shrub</summary>
+      <p>Rosemary, coprosma (edible berries and shelter), blueberry (acidic sand pockets), Chilean guava,
+         hydrangea as shelter, lavender, saltbush (Atriplex spp.), and rugosa rose for hips. Shrubs here
+         stabilise dunes and resist salt spray.</p>
+      </details>
+
+      <details><summary>🌱 Herb</summary>
+      <p>Thyme, oregano, parsley, fennel, dill, borage, mint (controlled patches), calendula, chamomile,
+         yarrow, comfrey, and nasturtium. Herbs are resilient to salt winds, attract pollinators, and
+         provide culinary and medicinal harvests.</p>
+      </details>
+    </div>
+
+    <div class="column">
+      <details><summary>🍓 Groundcover</summary>
+      <p>Clover, nasturtium, creeping thyme, New Zealand spinach (Tetragonia tetragonioides), violets,
+         purslane, miner’s lettuce, and strawberries. Groundcovers prevent erosion, fix nitrogen,
+         and provide soil cover against wind and salt stress.</p>
+      </details>
+
+      <details><summary>🌾 Climbers</summary>
+      <p>Grapes (sheltered coastal hillsides), hardy kiwiberry, beans, peas, and passionfruit (in the
+         warmest microsites). Climbers make use of wind-protected niches while adding vertical productivity.</p>
+      </details>
+
+      <details><summary>🥕 Root</summary>
+      <p>Carrot, beetroot, parsnip, radish, turnip, kūmara (in sandy soils with warmth), yacon, Jerusalem artichoke,
+         garlic, and onion. Root crops adapt well to sandy coastal soils with organic matter addition.</p>
+      </details>
+
+      <details><summary>🍄 Fungi</summary>
+      <p>Wine cap mushrooms in seaweed-rich mulch, oyster mushrooms on logs, shiitake in shaded pockets,
+         and beneficial mycorrhizal fungi tied to coastal natives like harakeke and pohutukawa. Fungi cycle
+         nutrients and improve sandy soil structure.</p>
+      </details>
+    </div>
+  </div>
+
+  <h4>Guild Suggestions (x4)</h4>
+  <div class="two-column-container">
+    <div class="column">
+      <p><strong>Feijoa Guild:</strong> Feijoa + rosemary + nasturtium + clover.  
+      A resilient coastal guild that stabilises soil, supports pollinators, and yields fruit and herbs.</p>
+
+      <p><strong>Citrus Guild:</strong> Lemon + thyme + parsley + calendula.  
+      A warm-niche guild combining citrus with herbs that deter pests and provide culinary harvests.</p>
+    </div>
+    <div class="column">
+      <p><strong>Salt-Edge Guild:</strong> Olive + lavender + oregano + New Zealand spinach.  
+      A guild for sandy, exposed edges, blending drought-hardy herbs with productive crops.</p>
+
+      <p><strong>Shelter Guild:</strong> Coprosma + rugosa rose + clover + fennel.  
+      Functions as a living shelterbelt, while providing hips, berries, nitrogen, and insect habitat.</p>
+    </div>
+  </div>
+
+  <h4>Handy Tips</h4>
+  <ul>
+    <li>Salt spray is filtered more effectively by porous, living shelterbelts than by solid walls.</li>
+    <li>Apply seaweed mulch regularly to restore minerals and improve sandy soils.</li>
+    <li>Use drip irrigation to reduce evaporation losses in coastal winds.</li>
+    <li>Prune citrus to improve airflow and reduce fungal issues in humid pockets.</li>
+  </ul>
+
+  <p class="funfact">Fun Fact: The Otago Peninsula is home to New Zealand’s only mainland royal albatross colony, thriving in the same winds that shape coastal gardens.</p>
+</article>
+ <!--River Valleys Biome-->
+<article class="biome">
+  <h1>River Valleys</h1>
+  <p>Fertile alluvial soils, risk of waterlogging, broad flats.</p>
+
+  <section id="intro" class="two-column-container">
+    <div class="header-column-two">
+      <h2>River Valleys</h2>
+      <p>Otago’s river valleys are rich in alluvial soils deposited over centuries,
+         providing some of the most fertile growing conditions in the region.
+         However, these low-lying flats are vulnerable to waterlogging during floods
+         or heavy rain, so careful hydrological design is key.
+         <br><br>
+         Food forests in this biome often begin with berms or raised beds to lift sensitive roots above
+         saturated ground, while swales and riparian plantings help manage water flow
+         and prevent erosion. The fertility of these soils makes them ideal for nut
+         trees such as walnuts and hazelnuts, which in turn create dappled shade for
+         berries like currants, gooseberries, and raspberries.
+         <br><br>
+         Companion planting with nitrogen fixers, insect-attracting herbs, and low groundcovers
+         maintains soil structure and fertility while supporting biodiversity. Guided
+         by principles of small and slow solutions and integration, these river
+         valley forests can become resilient, multi-layered systems that combine high
+         productivity with flood resilience and ecological stewardship.</p>
+    </div>
+    <div class="image-column">
+      <figure>
+        <a title="Benchill, CC BY-SA 3.0" 
+           href="https://commons.wikimedia.org/wiki/File:Beaumont,_New_Zealand_aerial_photo_2006.jpg">
+          <img width="512" alt="Beaumont, New Zealand aerial photo 2006" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Beaumont%2C_New_Zealand_aerial_photo_2006.jpg/512px-Beaumont%2C_New_Zealand_aerial_photo_2006.jpg?20090731101622">
+        </a>
+        <a title="JaumeBG, CC0" 
+           href="https://commons.wikimedia.org/wiki/File:Clutha_District.svg">
+          <img width="256" alt="Clutha District" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clutha_District.svg/256px-Clutha_District.svg.png?20120420065425">
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <div class="two-column-container">
+    <div class="column">
+      <details><summary>🌲 Canopy</summary>
+      <p>Walnuts, hazelnuts, alder (nitrogen-fixer), poplar (for timber and windbreak), and tall pears. These thrive in fertile alluvial soils with good drainage design.</p>
+      </details>
+
+      <details><summary>🌳 Understory</summary>
+      <p>Pears, plums, apples, feijoa, and quince planted on berms. They make full use of rich soils while avoiding root waterlogging.</p>
+      </details>
+
+      <details><summary>🌿 Shrub</summary>
+      <p>Currants, gooseberries, raspberries, elderberry, Aronia, and rugosa rose. Shrubs thrive in dapple shade beneath nut canopies.</p>
+      </details>
+
+      <details><summary>🌱 Herb</summary>
+      <p>Chives, comfrey, yarrow, mint, parsley, calendula, and dill. Herbs recycle nutrients, repel pests, and support pollinators.</p>
+      </details>
+    </div>
+
+    <div class="column">
+      <details><summary>🍓 Groundcover</summary>
+      <p>Strawberries, clover, violets, ajuga, miner’s lettuce, and sweet woodruff. These stabilise moist soils and suppress weeds.</p>
+      </details>
+
+      <details><summary>🌾 Climbers</summary>
+      <p>Beans, peas, grapes, and hops. Climbers use canopy support and benefit from fertile conditions.</p>
+      </details>
+
+      <details><summary>🥕 Root</summary>
+      <p>Garlic, leek, onion, kūmara (on mounds), carrot, beetroot, parsnip, and daikon radish. Raised beds improve drainage for these crops.</p>
+      </details>
+
+      <details><summary>🍄 Fungi</summary>
+      <p>Oyster mushrooms, shiitake logs, and wine caps in mulch. Beneficial fungi enhance fertility and flood resilience.</p>
+      </details>
+    </div>
+  </div>
+
+  <h4>Guild Suggestions (x4)</h4>
+  <div class="two-column-container">
+    <div class="column">
+      <p><strong>Nut Guild:</strong> Walnut + blackcurrants + chives + clover + violets.  
+      Shade-tolerant guild that thrives beneath large canopy trees while improving soil fertility.</p>
+
+      <p><strong>Berry Guild:</strong> Hazelnut + raspberries + comfrey + yarrow.  
+      Combines nuts with berry yields and beneficial insect attractors in fertile soils.</p>
+    </div>
+    <div class="column">
+      <p><strong>Riparian Guild:</strong> Alder + elderberry + mint + clover.  
+      A flood-resilient planting along waterways that stabilises banks and cycles nutrients.</p>
+
+      <p><strong>Fruit Guild:</strong> Pear + gooseberries + calendula + strawberries.  
+      A productive guild blending tree, shrub, herb, and groundcover layers in rich flats.</p>
+    </div>
+  </div>
+
+  <h4>Handy Tips</h4>
+  <ul>
+    <li>Always raise root crops above flood level using berms or raised beds.</li>
+    <li>Riparian strips of native plants filter runoff and reduce erosion.</li>
+    <li>Dappled shade under nuts reduces stress on shallow-rooted berries.</li>
+    <li>Comfrey and clover are excellent for soil structure in wet conditions.</li>
+  </ul>
+
+  <p class="funfact">Fun Fact: The Clutha River carries enough silt each year to build new islands.</p>
+</article>
+
+<!--Dunedin Lowlands Biome-->
+<article class="biome">
+  <h1>Dunedin Lowlands</h1>
+  <p>Sheltered bays, rich soils, moderate frosts, humid at times.</p>
+
+  <section id="intro" class="two-column-container">
+    <div class="header-column-two">
+      <h2>Dunedin Lowlands</h2>
+      <p>The lowland areas around Dunedin are among the most favourable environments
+         for food forest establishment, offering deep soils, shelter from extreme
+         weather, and moderate frosts. However, their high humidity requires careful
+         attention to airflow and fungal control.
+         <br><br>
+         This is addressed through thoughtful pruning, layered planting for ventilation, and guilds that
+         include aromatic herbs with antifungal properties. Apples remain a
+         cornerstone crop, thriving in the temperate conditions, and are often paired
+         with strawberries and currants beneath them to make full use of space and
+         create weed-suppressing groundcovers.
+         <br><br>
+         Comfrey, clover, and chives strengthen soil fertility while attracting pollinators. Hedges and shelterbelts, often
+         incorporating native species, not only provide wind protection but also act
+         as corridors for birds and beneficial insects. Designed with self-regulation
+         and yield in mind, Dunedin’s lowland food forests offer a balanced system
+         that supports families, builds biodiversity, and reconnects communities with
+         their rich horticultural heritage.</p>
+    </div>
+    <div class="image-column">
+      <figure>
+        <a title="Alistair Paterson, CC BY 2.0" 
+           href="https://commons.wikimedia.org/wiki/File:Sawyers_Bay_from_Old_Mt_Cargill_Rd_Dunedin_New_Zealand.jpg">
+          <img width="512" alt="Sawyers Bay from Old Mt Cargill Rd Dunedin New Zealand" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sawyers_Bay_from_Old_Mt_Cargill_Rd_Dunedin_New_Zealand.jpg/512px-Sawyers_Bay_from_Old_Mt_Cargill_Rd_Dunedin_New_Zealand.jpg?20160408175555">
+        </a>
+        <a title="JaumeBG, CC0" 
+           href="https://commons.wikimedia.org/wiki/File:Dunedin_City.png">
+          <img width="256" alt="Dunedin City" 
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Dunedin_City.png/256px-Dunedin_City.png?20130111125624">
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <div class="two-column-container">
+    <div class="column">
+      <details><summary>🌲 Canopy</summary>
+      <p>Apples, pears, feijoa trained as standards, chestnut in larger lowlands, and elder. These thrive in deep soils with shelter from wind.</p>
+      </details>
+
+      <details><summary>🌳 Understory</summary>
+      <p>Plums, feijoa, elder, medlar, peach, and nectarine in sheltered pockets. Understory trees fill gaps beneath canopy orchards.</p>
+      </details>
+
+      <details><summary>🌿 Shrub</summary>
+      <p>Currants, gooseberries, blueberries, raspberries, and Chilean guava. Shrubs add resilience and diversity under humid conditions.</p>
+      </details>
+
+      <details><summary>🌱 Herb</summary>
+      <p>Comfrey, parsley, chives, mint, oregano, sage, coriander, calendula, and yarrow. Aromatic herbs help suppress fungal issues.</p>
+      </details>
+    </div>
+
+    <div class="column">
+      <details><summary>🍓 Groundcover</summary>
+      <p>Strawberries, clover, violets, creeping thyme, ajuga, and nasturtium. These knit soils, reduce weeds, and create multi-yield layers.</p>
+      </details>
+
+      <details><summary>🌾 Climbers</summary>
+      <p>Beans, peas, hops, and hardy kiwiberry. Climbers add vertical yield in sheltered niches.</p>
+      </details>
+
+      <details><summary>🥕 Root</summary>
+      <p>Carrots, beetroot, parsnip, kūmara in warm soils, onions, garlic, and perennial leeks. Root crops benefit from mulch against humidity swings.</p>
+      </details>
+
+      <details><summary>🍄 Fungi</summary>
+      <p>Wine caps, oyster mushrooms, shiitake logs, and mycorrhizal fungi supporting orchard health. Fungi recycle organic matter and suppress soil-borne disease.</p>
+      </details>
+    </div>
+  </div>
+
+  <h4>Guild Suggestions (x4)</h4>
+  <div class="two-column-container">
+    <div class="column">
+      <p><strong>Apple Guild:</strong> Apple + strawberries + comfrey + chives + clover.  
+      A classic lowland guild that supports yield, fertility, and fungal resistance.</p>
+
+      <p><strong>Berry Guild:</strong> Elder + raspberries + mint + calendula.  
+      Combines shrub fruit with aromatic herbs that manage humidity and attract insects.</p>
+    </div>
+    <div class="column">
+      <p><strong>Nut Guild:</strong> Chestnut + currants + oregano + clover.  
+      Creates a productive food and forage guild with both fruit and nut yields.</p>
+
+      <p><strong>Pollinator Guild:</strong> Feijoa + gooseberries + yarrow + nasturtium.  
+      A pollinator-rich guild balancing soil cover, insect habitat, and food yields.</p>
+    </div>
+  </div>
+
+  <h4>Handy Tips</h4>
+  <ul>
+    <li>Prune for airflow to reduce fungal risk in humid conditions.</li>
+    <li>Mulch strawberries beneath apples to reduce weeds and retain soil moisture.</li>
+    <li>Use hedgerows with native species as wind buffers and wildlife corridors.</li>
+    <li>Choose heritage apple varieties for disease resistance and local adaptation.</li>
+  </ul>
+
+  <p class="funfact">Fun Fact: Dunedin once hosted orchards with over 150 unique apple varieties, many still found in backyards today.</p>
+</article>
+
+
+
+        <!-- Principles -->
+<section id="principles" class="section">
+  <h2>Applied Permaculture Principles<br>(click-cards)</h2>
+  <div class="facts">
+
+    <!-- 1. Observe & Interact -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🔍 Observe & Interact</span></div>
+        <div class="fact-back">Map frost lines, wind channels, and sun arcs before planting. In Otago valleys, cold air flows like water.</div>
+      </div>
+    </button>
+
+    <!-- 2. Catch & Store Energy -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>💧 Catch & Store Energy</span></div>
+        <div class="fact-back">Rain tanks, swales, shelterbelts, and compost buffer Otago’s frosts and droughts.</div>
+      </div>
+    </button>
+
+    <!-- 3. Obtain a Yield -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🍓 Obtain a Yield</span></div>
+        <div class="fact-back">Strawberries thrive under apples, producing two layers of harvest in one space.</div>
+      </div>
+    </button>
+
+    <!-- 4. Apply Self-Regulation -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>⚖️ Self-Regulation</span></div>
+        <div class="fact-back">Thin crowded trees and adapt species if frosts kill blossoms — resilience is learning.</div>
+      </div>
+    </button>
+
+    <!-- 5. Use & Value Renewable Resources -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌿 Renewable Resources</span></div>
+        <div class="fact-back">Coastal gardeners mulch with seaweed, while valley dwellers plant willow stakes for living fences.</div>
+      </div>
+    </button>
+
+    <!-- 6. Produce No Waste -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>♻️ Produce No Waste</span></div>
+        <div class="fact-back">Prunings become mulch, weeds become compost, food scraps feed worms.</div>
+      </div>
+    </button>
+
+    <!-- 7. Patterns to Details -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌀 Patterns to Details</span></div>
+        <div class="fact-back">Design shelterbelts and water first, then build guilds around them — start broad, then refine.</div>
+      </div>
+    </button>
+
+    <!-- 8. Integrate Rather than Segregate -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🤝 Integrate</span></div>
+        <div class="fact-back">Mix insectary flowers with vegetables; hedgerows double as wildlife corridors and windbreaks.</div>
+      </div>
+    </button>
+
+    <!-- 9. Small & Slow Solutions -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🐢 Small & Slow</span></div>
+        <div class="fact-back">Trial hardy berry bushes before planting entire orchards. Berms on flats protect roots from wet soil.</div>
+      </div>
+    </button>
+
+    <!-- 10. Value Diversity -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌈 Value Diversity</span></div>
+        <div class="fact-back">Mix plums, quince, herbs, and berries — a patchwork of resilience for Otago gardens.</div>
+      </div>
+    </button>
+
+    <!-- 11. Use Edges -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🏞️ Use Edges</span></div>
+        <div class="fact-back">Riparian strips along rivers filter runoff, attract pollinators, and extend your forest’s reach.</div>
+      </div>
+    </button>
+
+    <!-- 12. Respond to Change -->
+    <button class="fact-card" aria-expanded="false">
+      <div class="fact-inner">
+        <div class="fact-front"><span>🌍 Respond to Change</span></div>
+        <div class="fact-back">As Dunedin warms, figs and citrus are becoming viable — plant for the climate of tomorrow.</div>
+      </div>
+    </button>
+
+  </div>
+</section>
+
+    <section id="calendar">
+      <h2>Seasonal Calendar</h2>
+      <div class="calendar">
+        <div><h3>🌱 Spring</h3>
+          <p>Spring in Otago is a time of rapid growth and careful timing, when frosts can still strike unexpectedly even as warmth returns.
+            <br><br>
+            This is the best season to plant berry canes such as raspberries and gooseberries, graft apples and pears onto hardy rootstocks, and sow fast-growing greens to fill early gaps.
+            <br><br>
+            Protecting vulnerable blossoms with frost cloth or by planting in sheltered niches is critical for success.
+            <br><br>
+            Nitrogen-fixing legumes like peas and clover are sown to enrich the soil, while herbs and insect-attracting flowers are introduced to support pollinators.
+            <br><br>
+            Mulching basins around young trees retains moisture and buffers temperature swings, helping seedlings establish strong roots.
+            <br><br>
+            Spring sets the tone for the year ahead, requiring observation, patience, and resilience as plants awaken and ecosystems re-balance after winter’s dormancy.</p></div>
+        <div><h3>☀️ Summer</h3><p>Summer in Otago brings long daylight hours, heat, and in inland areas, intense dryness that tests both plants and growers.  
+<br><br>
+This is the season of abundant harvests, with strawberries, currants, and stonefruit ripening, providing the reward for careful planning.  
+<br><br>
+Irrigation becomes a central task, best applied deeply and infrequently to encourage strong root systems rather than shallow surface growth.  
+<br><br>
+Mulching is vital, keeping soils cool and moist, while also suppressing weeds that compete for limited resources.  
+<br><br>
+Herbs such as basil, thyme, and rosemary thrive in the warmth, adding both flavour and biodiversity to guilds.  
+<br><br>
+Summer is also the time for pruning vigorous growth, guiding airflow to reduce fungal risks, and shaping trees for balanced form.  
+<br><br>
+With careful stewardship, the season’s abundance can be captured and stored, feeding households long after the summer sun has set.</p>
+</div>
+        <div><h3>🍂 Autumn</h3><p>Autumn is the season of grounding and preparation, when the land cools but retains enough warmth to encourage deep root establishment.  
+<br><br>
+This is the best time to plant long-lived fruit and nut trees, ensuring they settle into soil before winter dormancy.  
+<br><br>
+Cover crops such as clover and rye are sown to knit bare ground, fixing nitrogen while preventing erosion from seasonal rains.  
+<br><br>
+Fallen leaves and garden prunings are gathered into compost, closing nutrient loops and building organic matter for future growth.  
+<br><br>
+Autumn is also the season of preserving — apples, plums, and berries are harvested, stored, and transformed into preserves, ensuring food security through the winter.  
+<br><br>
+Planning hedges, windbreaks, and shelter belts at this time helps strengthen the site’s resilience before storms arrive.  
+<br><br>
+Guided by the principle of catching and storing energy, autumn work lays the foundation for enduring fertility and abundance.</p>
+</div>
+        <div><h3>❄️ Winter</h3><p>Winter in Otago is both a time of rest and strategic activity, when the landscape slows under frost, snow, and cold rain.  
+<br><br>
+Trees and shrubs retreat into dormancy, offering the perfect opportunity for pruning to shape structure, improve airflow, and remove diseased branches.  
+<br><br>
+Adding compost and organic matter at this stage allows soil organisms to break it down in time for spring planting.  
+<br><br>
+Roots are protected with mulch, straw, or even living groundcovers that insulate against freezing temperatures.  
+<br><br>
+Winter is also the season for planning — mapping frost lines, observing drainage patterns, and redesigning guilds based on the year’s successes and failures.  
+<br><br>
+In sheltered pockets, hardy greens like kale and winter brassicas continue to provide a steady yield, showing how resilience carries through even the harshest conditions.  
+<br><br>
+By working slowly and deliberately, winter becomes a season of renewal, setting the stage for the burst of life that follows in spring.</p>
+</div>
+      </div>
+    </section>
+
+<section id="resources">
+  <h2>Resources & Networking</h2>
+  <p>
+    This directory pulls together the most comprehensive set of resources for food forest design,
+    permaculture, agroecology, and community networking in Aotearoa New Zealand. It includes
+    nurseries, seed banks, education providers, community groups, Māori-led initiatives,
+    government research, and regional contacts.
+  </p>
+
+  <div class="resources-grid">
+    <div class="resource-card">
+      <h3>🌱 Seeds, Plants & Nurseries</h3>
+      <ul>
+        <li><a href="https://koanga.org.nz" target="_blank">Koanga Institute</a> – Heirloom seeds, heritage fruit trees, NZ seed library.</li>
+        <li><a href="https://www.kingsseeds.co.nz" target="_blank">Kings Seeds</a> – Extensive annuals, perennials, herbs, cover crops.</li>
+        <li><a href="https://ediblegarden.nz" target="_blank">Edible Garden</a> – Heritage fruit and nut trees suited to NZ.</li>
+        <li><a href="https://www.ecoseeds.co.nz" target="_blank">EcoSeeds</a> – Organic, open-pollinated seed varieties.</li>
+        <li><a href="https://www.bountybeyondbelief.co.nz" target="_blank">Bounty Beyond Belief</a> – NZ-bred vegetables and pollinator mixes.</li>
+        <li><a href="https://www.blueskinnurseries.co.nz" target="_blank">Blueskin Nurseries</a> (Otago) – Trees, shrubs, natives, edibles.</li>
+        <li><a href="https://southernwoods.co.nz" target="_blank">Southern Woods Nursery</a> (Canterbury) – Fruit, shelterbelt, forestry trees.</li>
+        <li><a href="https://www.subtropicals.co.nz" target="_blank">Subtropicals NZ</a> (Northland) – Citrus, feijoa, bananas, warm-climate fruit.</li>
+        <li><a href="https://www.nzseedsavers.org.nz" target="_blank">NZ Seed Savers Network</a> – Community seed saving and exchanges.</li>
+        <li>Specialist nurseries: Incredible Edibles, Framar Orchards, Totally Tomatoes.</li>
+      </ul>
+    </div>
+
+    <div class="resource-card">
+      <h3>📚 Permaculture & Food Forest Training</h3>
+      <ul>
+        <li><a href="https://permaculture.org.nz" target="_blank">Permaculture in New Zealand (PINZ)</a> – National body, events, education.</li>
+        <li><a href="https://earthcare-education.org" target="_blank">Earthcare Education Aotearoa</a> – Applied permaculture, food forest design.</li>
+        <li><a href="https://www.treecrops.org.nz" target="_blank">NZ Tree Crops Association</a> – Fruit, nut tree expertise, field days.</li>
+        <li><a href="https://riverton.org.nz" target="_blank">Riverton Organic Food Forest</a> (Southland) – Oldest public food forest.</li>
+        <li><a href="https://www.greenbridge.co.nz" target="_blank">GreenBridge Permaculture</a> (Taranaki) – Design consultancy, workshops.</li>
+        <li><a href="https://ediblebackyard.co.nz" target="_blank">Edible Backyard</a> – Kath Irvine’s workshops and guides.</li>
+      </ul>
+    </div>
+
+    <div class="resource-card">
+      <h3>🌿 Māori-led Initiatives</h3>
+      <ul>
+        <li><a href="https://www.koanga.org.nz" target="_blank">Koanga’s Hua Parakore</a> – Māori organics, heritage kai preservation.</li>
+        <li>Kai Rotorua – Food sovereignty, māra kai projects, community kai systems.</li>
+        <li>Te Waka Kai Ora – Māori Organics Aotearoa, certification, support.</li>
+        <li>Whenua-based initiatives: marae gardens, rongoā (medicinal), taiao ecology projects.</li>
+      </ul>
+    </div>
+
+    <div class="resource-card">
+      <h3>🧪 Government, Science & Data</h3>
+      <ul>
+        <li><a href="https://www.mpi.govt.nz" target="_blank">Ministry for Primary Industries</a> – Soil guides, climate adaptation reports.</li>
+        <li><a href="https://www.doc.govt.nz" target="_blank">DOC</a> – Native planting, riparian guides, biodiversity management.</li>
+        <li><a href="https://www.landcareresearch.co.nz" target="_blank">Manaaki Whenua Landcare</a> – Soil science, ecology, carbon farming.</li>
+        <li><a href="https://www.niwa.co.nz" target="_blank">NIWA</a> – Hydrology, flood maps, climate data for water design.</li>
+        <li><a href="https://cliflo.niwa.co.nz" target="_blank">NIWA CliFlo</a> – Free climate station data.</li>
+        <li><a href="https://s-map.landcareresearch.co.nz" target="_blank">S-map Online</a> – NZ soil database, mapping tool.</li>
+        <li>Regional councils – Land, soil, riparian planting plans.</li>
+      </ul>
+    </div>
+
+    <div class="resource-card">
+      <h3>🤝 Community Groups & Networking</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/groups/nzpermaculture" target="_blank">NZ Permaculture Network</a> – Discussion, seed swaps, events.</li>
+        <li><a href="https://www.dunedinfoodforest.org" target="_blank">Dunedin Food Forest</a> – Community hub and workshops.</li>
+        <li>Ōtākaro Orchard (Christchurch) – Urban food forest, community commons.</li>
+        <li>Urban Kai & Valley Project (Dunedin) – Education, neighbourhood engagement.</li>
+        <li>Community compost: Dunedin Compost, Wellington Compost Collective.</li>
+      </ul>
+    </div>
+
+    <div class="resource-card">
+      <h3>📖 Books & Learning</h3>
+      <ul>
+        <li>“Design Your Own Food Forest” – Koanga Institute (NZ guide).</li>
+        <li>“Edible Forest Gardens” – Dave Jacke & Eric Toensmeier.</li>
+        <li>“Creating a Forest Garden” – Martin Crawford.</li>
+        <li>“Tree Crops: A Permanent Agriculture” – J. Russell Smith.</li>
+        <li>“Te Mahi Māra Hua Parakore” – Māori organic growing guide.</li>
+        <li>“The Permaculture Handbook” – Peter Bane.</li>
+      </ul>
+    </div>
+
+    <div class="resource-card">
+      <h3>🖥 Digital Tools & Mapping</h3>
+      <ul>
+        <li><a href="https://qgis.org" target="_blank">QGIS</a> – Open-source mapping for contour, watershed planning.</li>
+        <li><a href="https://sketchup.com" target="_blank">SketchUp</a> – 3D visualisation for layouts.</li>
+        <li><a href="https://permacultureprinciples.com/resources/free-downloads/" target="_blank">Permaculture Toolkit</a> – Worksheets, posters, cards.</li>
+        <li>Climate & soil overlays: NIWA CliFlo + Landcare S-map combined.</li>
+      </ul>
+    </div>
+
+    <div class="resource-card">
+      <h3>📍 By Region</h3>
+      <ul>
+        <li><strong>Otago:</strong> Dunedin Food Forest, Blueskin Nurseries, Valley Project Garden, ORC riparian programmes.</li>
+        <li><strong>Southland:</strong> Riverton Food Forest, South Alive Gardens.</li>
+        <li><strong>Canterbury:</strong> Ōtākaro Orchard, Southern Woods Nursery, Lincoln University agroecology.</li>
+        <li><strong>Nelson/Tasman:</strong> Riverside EcoVillage, Golden Bay community gardens.</li>
+        <li><strong>Northland:</strong> Koanga Institute, Subtropicals NZ, food sovereignty networks.</li>
+        <li><strong>Wellington:</strong> Innermost Gardens, Permaculture Guild, Compost Collective.</li>
+        <li><strong>Auckland:</strong> Kelmarna Gardens, For The Love of Bees project.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer for extra links/socials and legal -->
+<footer>
+  <div class="footer-grid">
+
+    <div id="footer-nav" class="footer-grid-items">
+      <h3>Page Links</h3>
+      <a href="#maincontent" class="skip-link">Skip to content</a>
+      <nav aria-label="Primary">
+        <a href="#intro">Intro</a>
+        <a href="#funfacts">Fun Facts</a>
+        <a href="#biomes">Biomes</a>
+        <a href="#layers">Layers</a>
+        <a href="#principles">Principles</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#resources">Resources & Networking</a>
+      </nav>
+    </div>
+
+    <div id="footer-legal" class="footer-grid-items">
+      <small>2025 Otago Food Forest Planning by Jeremy Lemmens</small>
+      <small>Images sourced from Wikimedia Commons (Creative Commons licensing).</small>
+    </div>
+
+  </div>
+</footer>
+
+</body>
 </html>

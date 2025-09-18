@@ -1,0 +1,295 @@
+/*** Imports ***/ 
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*** Root ***/ 
+/* For variables like colors and fonts*/
+    :root{
+        /* colors */
+        --maroon: #701524;
+        --Cream: #E2D4BD;
+        --gold: #A27C28;
+        --darkcream: #ecc99e;
+        /* fonts */
+        --title-font: "Castoro", serif;
+        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+/*** General Style ***/ 
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        background-color: var(--Cream);
+        color: var(--maroon);
+        font-family: var(--body-font);
+        font-weight: 400;
+        overflow-x: hidden;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--title-font);
+        font-weight: 500;
+        text-align: center;
+        margin: 1em;
+    }
+
+/* Adjusts all of your anchor tags */
+    a{
+        color: var(--cream);
+    }
+
+/* Link hover */
+    a:hover {
+        color: var(--maroon);
+    }
+
+
+
+/*** Nav ***/    
+    /* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        text-align: center;
+        background-color: #e2d4bdc7;
+        font-size: 1.2em;
+        font-weight: 500;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+    /* Nav link adjustments*/
+    nav a {
+        margin: 0.4em;
+        text-decoration: none;
+        color: #A27C28;
+        padding: 0.4em 1em;
+        border-radius: 3em;
+    }
+    nav a:hover {
+        color: var(--light-cyan);
+        /* This transition adds smoothness to the hover effect */
+        transition: color 0.2s ease;
+        transition: background-color 0.2s ease;
+    }
+
+/*** Header ***/  
+    /* Page title area */
+    header {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #e2d4bd5d;
+        background-image: url(images/arch4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: lighten;
+    }
+    /* Page title words */
+    header h1 {
+        padding: 1rem;
+        width: 70%;
+        margin: auto;
+        color: #ECC99E;
+        font-size: 6em;
+        text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.801);
+    }
+    header h1 span{
+        color: var(--gold);
+    }
+
+
+/*** Back to top Button ***/
+.back-to-top-btn {
+    padding: 1em;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;  
+    background-color:  #e2d4bd9d;
+    text-decoration: none;
+    color: #701524;
+    font-size: 18pt;
+    font-weight: 600;
+    border-radius: 2em;
+    padding: 1em 1.2em;
+    z-index: 2;
+}
+.back-to-top-btn:hover{
+    color: var(--maroon);
+    background-color: var(--Cream);
+}
+
+
+/*** Applies to each section ***/
+    section {
+        width: 80%;
+        padding: 2em; 
+        margin: auto;
+    }
+    hr {
+        margin: 6em 0px 0px;
+    }
+
+    /* Section title heading size */
+    section h2 {
+        font-size: 4em;
+        margin: 0;
+    }
+    section h3 {
+        font-size: 2em;
+    }
+
+/*** Basic element css ***/ 
+    /*Simple 2 column grid with the image attribute displaed on hover */
+    .two-column-container {
+        display: inline-grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        text-align: left;
+        margin: 1em 0;
+    }
+    .two-column-container img{
+        border-radius: 1em;
+    }
+    .img-text {
+        display: flex;
+        align-items: center;
+    }
+    .img-attribution {
+        width: auto;
+        max-height: 60vh;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    .attribution {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .fig-hover-attribution:hover .attribution {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+/*** Card display Section ***/
+.card-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+.card {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    border-radius: 1em;
+} 
+.card h4{
+    font-size: 1.6em;
+    font-weight: 300;
+    color: var(--maroon);
+    margin: 1em 0 0;
+}
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+.card:hover {
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+}  
+.card img {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+.card-container {
+    padding: 0.1em 1em 1.6em;
+    text-align: center;
+}
+.card-button {
+    background-color: white; 
+    color: black; 
+    border: 0.2em solid var(--light-cyan);
+    border-radius: 2em;
+    padding: 1em 2em;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0.2em 0.1em;
+    transition-duration: 0.2s;
+}
+.card-button:hover {
+    background-color: var(--moonstone-blue);
+    border-color: var(--moonstone-blue);
+    color: white;
+}
+
+
+/*** Gellery Section ***/    
+    /* Gallery Thumnail style */
+    .thumbnail-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-content: center;
+        justify-content: center;
+        max-width: 1300px;
+        margin:0 auto;
+        padding:0px;
+    }
+    .thumbnail-container img {
+        padding: 0px 2px;
+        width: 200px;
+    }
+
+
+/*** Footer ***/  
+    /* Applies to footer */
+    footer {
+        padding: 2em;
+        background-color: var(--Cream);
+        text-align: right;
+        font-weight: 600;
+    }
+    footer h3{
+        text-align: left;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    /* Footer anchor tag changes */
+    footer a {
+        color: var(--gold);
+    }
+    footer a:hover{
+        color: var(--maroon);
+    }
+    /* Simple grid to hold footer links and navigation*/
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2em;
+        text-align: left;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }

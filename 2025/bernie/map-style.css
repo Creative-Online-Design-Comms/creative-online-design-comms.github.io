@@ -1,0 +1,151 @@
+/*** Imports ***/ 
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+/*** Root ***/ 
+/* For variables like colors and fonts*/
+    :root{
+        /* colors */
+        --midnightgreen: #272f23;
+        --moonstone-blue: #6AA5AF;
+        --light-cyan: #C8E7EA;
+        --sandyclay: #8D745A;
+        --light-clay: #caae8f;
+        --forest-green: #639355;
+        /* fonts */
+        --title-font: "Arbutus", serif;
+        --body-font: "Noto Sans Mono", monospace;
+    }    
+
+    /* General section styling */
+    #section-six{
+        margin-bottom: 4em;
+    }
+    #section-six h2{
+        margin-bottom: 0.5em;
+    }
+
+    /* Container with image */
+    .map-container{
+        width: 750px;
+        height: 450px;
+        margin: auto;
+        background-image: url(images/Port\ Chalmers\ Map.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1%;
+    }
+    /* Basic Icon Styling */
+    .map-container i{
+        color: var(--light-clay);
+        font-size: 2em;
+        filter: drop-shadow(#00000080 0.2em 0.2em 0.2em);
+    }
+    .map-container i:hover{
+        color: var(--sandyclay);
+        cursor: pointer;
+    }
+    /* Specific Icon Placement */
+    .map-marker-one{
+        position: relative;
+        top: 10px;
+        left: 25px;
+        
+    }
+    .map-marker-two{
+        position: relative;
+        top: 130px;
+        left: 50px;
+    }
+    .map-marker-three{
+        position: relative;
+        top: 140px;
+        left: 175px;
+    }
+    .map-marker-four{
+        position: relative;
+        top: 55px;
+        left: 90px;
+    }
+    .map-marker-five{
+        position: relative;
+        top: 90px;
+        left: 465px;
+    }
+   
+
+    /* Pop-up on hover Basic */
+    .map-pop-up-content {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: -143px;
+        top: 55px;
+        transform: translate(0, 10px);
+        background-color: var(--forest-green);
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        width: auto;
+    }
+    .map-pop-up-text {
+        text-align: center;
+    }
+    /*This is just the pointy bit of the popo-up box*/
+    .map-pop-up-content:before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        right: calc(50% - 10px);
+        top: -8px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent var(--forest-green) transparent;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+
+    /* Pop-ups for each marker*/
+    .map-marker-one:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-two:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-three:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-four:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-five:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    .map-marker-six:hover .map-pop-up-content {
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, -4px);
+        transition: all 0.2s ease-in-out;
+    }
+    

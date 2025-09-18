@@ -1,34 +1,48 @@
-/*** Imports ***/ 
-/* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+@font-face {
+  font-family: 'TanMeringue';
+  src: url('fonts/Tan-Meringue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EDLavonia';
+  src: url('fonts/EDLavonia-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TenorSans';
+  src: url('fonts/TenorSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /*** Root ***/ 
-/* For variables like colors and fonts*/
     :root{
-        /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
-        /* fonts */
-        --title-font: "Instrument Serif", serif;
-        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+        --light-green: #dfead7;
+        --black: #000000;
+        --yellow: #F1F2C0;
+        --title-font: "TanMeringue", serif;
+        --body-font: "TenorSans", sans-serif;
     }
 
 /*** General Style ***/ 
-/* Universal tag used to give the border box style here */
     * {box-sizing:border-box}
 
 /* Applies to all the body */
     body {
         width: 100vw;
         margin: auto;
-        color: var(--paynes-grey);
-        font-family: var(--body-font);
+        background-color: var(--light-green);
+        font-family: 'TenorSans';
         font-weight: 400;
         overflow-x: hidden;
     }
 
-/* Applies to whole main and stops content from getting too wide */
+
     main{
         display: flex;
         flex-direction: column;
@@ -38,13 +52,23 @@
         margin: auto;
     }
 
-/* Adjusts all of your headings */
-    h1, h2, h3, h4, h5, h6 {
-        font-family: var(--title-font);
-        font-weight: 500;
-        text-align: center;
-        margin: 1em;
-    }
+
+    h1 {
+  font-family: 'EDLavonia', serif;
+} 
+    
+    h2 {
+  font-family: 'TanMeringue', serif;
+  font-weight: normal; 
+  text-align: center;
+  margin: 1em;
+}
+
+h3 {
+  font-family: 'TanMeringue', serif;
+  font-weight: normal; 
+  margin: 1em;
+}
 
 /* Adjusts all of your anchor tags */
     a{
@@ -53,100 +77,251 @@
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--paynes);
     }
 
     /*** Nav ***/    
-    /* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
     nav {
         display: flex;
-        justify-content: center;
-        width: 100vw;
-        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        padding: 1em 2em;
         position: sticky;
-        position: -webkit-sticky; /* Safari */
+        position: -webkit-sticky; 
         top: 0;
-        text-align: center;
-        background-color: var(--moonstone-blue);
-        font-size: 1.6em;
-        font-weight: 500;
-        /* z-index brings items forward or backward in relation to other content */
-        z-index: 2;
-    }
-    /* Nav link adjustments*/
-    nav a {
-        margin: 0.4em;
-        text-decoration: none;
-        color: #fff;
-        padding: 0.4em 1em;
-        border-radius: 3em;
-    }
-    nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
-        /* This transition adds smoothness to the hover effect */
-        transition: color 0.2s ease;
-        transition: background-color 0.2s ease;
+        background-color: var(--light-green);
+        z-index: 1000;
+        border-bottom: 1px solid #19570F;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-/*** Header ***/  
-    /* Page title area */
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        margin: 0;
-        background-color: var(--paynes-grey);
+    .logo {
+        font-family: 'EDLavonia';
+        font-size: 2rem;
+        text-decoration: none;
+        color:#000;
     }
-    header img{
-        width: 100vw;
+
+    .nav-right a {
+        margin-left: 1.5em;
+        text-decoration: none;
+        font-family: 'TenorSans';
+        color: #000000;
+        font-size: 130%;
     }
-    /* Page title words */
-    header h1 {
-        padding: 1rem;
-        width: 50%;
-        margin: auto;
-        color: #fff;
-        font-size: 6em;
+
+    .nav-right a:hover {
+        text-decoration: underline;
     }
-    header h1 span{
-        color: var(--light-cyan);
-    }
+
+
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 120vh; 
+  overflow: hidden;
+  background: var(--light-green); 
+}
+
+#hero img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  
+}
+
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-green);
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+}
+#main-header {
+  background: var(--light-green);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+}
+header {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px; 
+}
+
+
+/* Background image */
+header img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 2.5s ease, opacity 2.5s ease; 
+  z-index: 1;
+}
+
+.overlay-fade {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-green);
+  opacity: 0;
+  transition: opacity 2s ease; 
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Header text */
+.header-text {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent; 
+  color: #000;
+}
+
+/* Scroll effects */
+header.scrolled img {
+  transform: scale(1.3);
+  opacity: 0;
+}
+
+header.scrolled .overlay-fade {
+  opacity: 1;
+}
+
+header.scrolled .header-text {
+  opacity: 1;
+}
+
+/* Title style */
+header h1 {
+  font-family: 'EDLavonia';
+  font-size: 6rem;
+  margin: 0;
+  font-weight: 80;
+}
+.divider {
+  width: 80px;          
+  height: 2px;          
+  background: black;    
+  margin: 2rem auto;    
+}
+
+
+
+.book-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.book {
+  font-family: 'TenorSans';
+  font-size: 130%;
+  letter-spacing: 2px;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  #hero { height: 140vh; } 
+  #main-header { padding: 3rem 1rem; }
+}
+
 
 
 
 /*** Back to top Button ***/
-    .back-to-top-btn {
-        padding: 1em;
-        position: fixed;
-        right: 1em;
-        bottom: 1em;  
-        background-color: var(--moonstone-blue);
-        text-decoration: none;
-        color: #fff;
-        font-size: 18pt;
-        font-weight: 600;
-        border-radius: 2em;
-        padding: 1em 1.2em;
-        z-index: 2;
-    }
-    .back-to-top-btn:hover{
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
-    }
+    .cta-btn.primary {
+  display: inline-block;
+  margin: 1em 0;
+  padding: 1em 1em;
+  background-color: var(--yellow);
+  color: black;
+  border-radius: 50%;
+  font-family: 'TenorSans';
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
 
-/*** Applies to each section ***/
+.cta-btn:hover {
+  background-color: white;
+  transform: translateY(-2px);
+}
+
+learn-more-section {
+  text-align: center;     
+  margin-top: 0em;
+  padding-top 0;
+}
+
+.cta-btn.secondary {
+   display: inline-block;
+  padding: 0.6em 3em;          
+  border: 2px solid black;
+  border-radius: 8px;       
+  font-family: 'TenorSans';
+  font-size: 1.1rem;         
+  text-decoration: none;
+  color: black;
+  background: transparent;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.3);  
+  transition: all 0.3s ease-in-out;
+  margin-top: 5%;
+}
+
+
+/* --- INTRO TEXT --- */
+.intro-text {
+  margin-top: 2.5em;
+}
+
+.intro-text h2 {
+  font-family: 'TanMeringue';
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.intro-text p {
+  font-family: 'TenorSans';
+  line-height: 1.6;
+  max-width: 600px;
+  margin: auto;
+}
+
+
     section {
         width: 80%;
-        padding: 2em; 
+        padding: 1em 0; 
         margin: auto;
     }
     hr {
-        margin: 6em 0px 0px;
+        margin: 2em 0px 0px;
     }
 
-    /* Section title heading size */
+    
     section h2 {
         font-size: 4em;
         margin: 0;
@@ -155,189 +330,434 @@
         font-size: 2em;
     }
 
-/*** Basic element css ***/ 
-    /*Simple 2 column grid with the image attribute displaed on hover */
-    .two-column-container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 1em;
-        width: 100%;
-        margin: auto;
-        text-align: left;
-        margin: 1em 0;
-    }
-    .two-column-container img{
-        border-radius: 1em;
-    }
-    .img-text {
-        display: flex;
-        align-items: center;
-    }
-    .img-attribution {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        width: auto;
-        margin: auto;
-        max-height: 60vh;
-        opacity: 1;
-        transition: opacity 0.5s ease;
-    }
-    .attribution {
-        text-wrap: wrap;
-        position: relative;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-    .fig-hover-attribution:hover .attribution {
-        opacity: 1;
-        transition: opacity 0.5s ease;
-    }
+   .thumbnail-container {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr); 
+       grid-template-rows: repeat(2, 250px);  
+       gap: 0;
+       width: 100%;
+       max-width: 1200px;    
+       margin: 2rem auto;
+       border: 3px solid black;
+       margin-top: rem;
+      }
 
-   
-/*** Card display Section ***/
-.card-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    column-gap: 2em;
-    row-gap: 2em;
-    height: 60vh;
+    .thumbnail-container > * {
+      border: 2px solid black;
+      overflow: hidden; 
+     }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+     }
+
+  .review {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;  
+  background: #f6f6d8;    
+  border: 2px solid #000;
+  color: #000;
+  text-align: left;     
 }
-    
-.card1 { 
-    grid-area: 1 / 1 / 3 / 3; 
-    background-image: url(images/card-image-1.png) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.review h3 {
+  font-family: 'TenorSans', serif;
+  font-size: 1.5rem;
+  text-align: left;
 }
-.card2 { grid-area: 1 / 3 / 4 / 4;
-    background-image: url(images/card-image-2.png) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.review p {
+  font-family: 'TenorSans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 90%;  
+  text-align: left;
 }
-.card3 { grid-area: 3 / 2 / 6 / 3; 
-    background-image: url(images/card-image-3.png) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+.review:nth-child(1) { background: #F1F2C0; } 
+.review:nth-child(3) { background: #FFFFFF; } 
+.review:nth-child(6) { background: #FFFFFF; } 
+.review:nth-child(8) { background: #F1F2C0; } 
+
+
+.membership-section {
+  text-align: center;
+  margin: 2em auto;
+  max-width: 1300px;
 }
-.card4 { grid-area: 3 / 1 / 6 / 2; 
-    background-image: url(images/card-image-1.png) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.membership-section h2 {
+  font-size: 2.4em;
+  margin-bottom: 1.5em;
+  font-family: "TanMeringue";
+  margin-top: 5%;
 }
-.card5 { grid-area: 4 / 3 / 6 / 4; 
-    background-image: url(images/card-image-2.png) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: 325px 338px 589px; 
+  grid-template-rows: 314px 484px 272px;   
+  gap: 20px;
+  justify-content: center;
+  grid-template-areas:
+    "family family adult"
+    "trainer teen adult"
+    "children children adult"; 
+}
+.children {
+  grid-area: children;
+  width: 673px;   
+  height: 272px;
 }
 
 .card {
-    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
-    transition: 0.2s;
-    border-radius: 1em;
-} 
-.card h4{
-    font-size: 1.6em;
-    font-weight: 300;
-    color: var(--paynes-grey);
-    margin: 1em 0 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;            
+  transition: transform 0.25s, box-shadow 0.25s; 
 }
-.card a {
-    text-decoration: none;
-    color: #000;
+
+
+.card-text {
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  font-family: "TenorSans";
+  letter-spacing: 0.1rem;
+}
+.adult {
+  grid-area: adult;
+  width: 589px;
+  height: 525px;
+  margin-left: 2%;
+}
+
+.children {
+  grid-area: children;
+  width: 582px;
+  height: 264px;
+  margin-top: -41.8%;
+  margin-left: 105%;
 }
 .card:hover {
-    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
-}  
-
-.card-container {
-    padding: 0.1em 1em 1.6em;
-    text-align: center;
+  transform: scale(1.03);      
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); 
 }
-.card-button {
-    background-color: white; 
-    color: black; 
-    border: 0.2em solid var(--light-cyan);
-    border-radius: 2em;
-    padding: 1em 2em;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    margin: 0.2em 0.1em;
-    transition-duration: 0.2s;
+.card-text.top { top: 10px; left: 15px; }
+.card-text.bottom-left { bottom: 10px; left: 15px; }
+.card-text.bottom-right { bottom: 10px; right: 15px; }
+
+
+.family   { grid-area: family;   width: 686px; height: 314px; }
+.adult    { grid-area: adult;    width: 589px; height: 525px; }
+.trainer  { grid-area: trainer;  width: 325px; height: 484px; }
+.teen     { grid-area: teen;     width: 338px; height: 484px; }
+.children { grid-area: children; width: 582px; height: 264px; }
+
+
+
+.family   { background-image: url("images/card-family.jpg"); }
+.adult    { background-image: url("images/card-adult.jpg"); }
+.trainer  { background-image: url("images/card-trainer.jpg"); }
+.teen     { background-image: url("images/card-teen.jpg"); }
+.children { background-image: url("images/grid-five.jpg"); }
+
+.description {
+  margin:auto;
+  text-align: center;      
+  max-width: 700px;    
+  margin-top: -13%;    
 }
-.card-button:hover {
-    background-color: var(--moonstone-blue);
-    border-color: var(--moonstone-blue);
-    color: white;
+.description p {
+  font-family: 'TenorSans';
+  line-height: 1.6;
+  text-align: center;
 }
 
 
+/*competitions*/
 
-/*** Gellery Section ***/    
-    /* Gallery Thumnail style */
-    .thumbnail-container {
-        display:flex;
-        flex-wrap:wrap;
-        align-content: center;
-        justify-content: center;
-        max-width: 1300px;
-        margin:0 auto;
-        padding:0px;
-    }
-    .thumbnail-container img {
-        padding: 0px 2px;
-    }
-    .review{
-        width: 300px;
-        height: 300px;
-        background-color: var(--paynes-grey);
-        color: #fff;
-        text-align: center;
-        padding: 1em;
-    }
+html {
+  scroll-behavior: smooth;
+}
+
+.competitions {
+  text-align: center;
+  margin: 4em auto;
+  max-width: 1200px;
+}
+
+.competitions h2 {
+  font-family: 'TanMeringue', serif;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+
+.competition {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4em;
+}
 
 
-/*** Footer ***/  
-    /* Applies to footer */
-    footer {
-        padding: 2em;
-        background-color: var(--light-cyan);
-        text-align: right;
-        font-weight: 600;
-        width: 100vw;
-    }
-    footer h3{
-        text-align: left;
-        font-size: 2em;
-        margin-bottom: 0;
-    }
-    /* Footer anchor tag changes */
-    footer a {
-        color: var(--paynes-grey);
-    }
-    footer a:hover{
-        color: var(--moonstone-blue);
-    }
-    /* Simple grid to hold footer links and navigation*/
-    .footer-grid {
-        width: 60%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2em;
-        text-align: left;
-    }
-    .footer-grid-items{
-        display: flex;
-        flex-direction: column;
-    }
+.competition.reverse {
+  flex-direction: row-reverse;
+}
+
+.competition img {
+  width: 45%;
+  border: 2px solid black;
+}
+
+.comp-text {
+  flex: 1;
+  text-align: left;
+}
+
+.comp-text-reverse {
+  flex: 1;
+  text-align: right;
+}
+.comp-text-reverse h3 {
+  font-family: 'TanMerigue';
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-right: auto;
+}
+
+.comp-text h3 {
+  font-family: 'TanMerigue';
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+}
+
+
+.comp-text p {
+  font-family: 'TenorSans', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.signup-btn {
+  font-family: 'TenorSans';
+  font-size: 1.2em;
+  padding: 0.6em 2em;
+  border: 2px solid black;
+  background: var(--yellow);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease
+}
+
+.signup-btn:hover {
+  background: #ffffff;
+}
+
+/* --- Popup modal --- */
+.popup {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 2em 3em;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+}
+
+.popup-content p {
+  font-family: 'TenorSans';
+  font-size: 1.2em;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+
+/* BOOK A COURT SECTION */
+html {
+  scroll-behavior: smooth;
+}
+
+#book-court {
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: #dfead7;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#book-court h2 {
+  font-family: "TanMeringue", serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+#book-court p {
+  font-family: 'TenorSans', sans-serif;
+  line-height: 1.7;
+  font-size: 1.1em;
+  margin-bottom: 1.2em;
+  width: ;
+}
+
+.booking-container {
+  display: flex;
+  justify-content: center;
+}
+
+#bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 300px;
+}
+
+#bookingForm label {
+  font-weight: bold;
+  font-family: "TenorSans";
+}
+
+#bookingForm select,
+#bookingForm input,
+#bookingForm button {
+  padding: 0.6em;
+  font-family: "TenorSans";
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#bookingForm button {
+  background: #f1f2c0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#bookingForm button:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+#confirmation {
+  font-family: "TenorSans";
+  font-weight: bold;
+  color: #19570f;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.about {
+  max-width: 900px;
+  margin: 5em auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'TanMeringue', serif;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.about p {
+  font-family: 'TenorSans', sans-serif;
+  line-height: 1.7;
+  font-size: 1.1em;
+  margin-bottom: 1.2em;
+}
+
+
+footer {
+  padding: 1.2em;
+  background-color: #f1f2c0; 
+  text-align: left;
+  width: 100%;
+  margin-top:2em;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.footer-grid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+.footer-grid h3 {
+  font-family: "TanMeringue", serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: left;
+  margin-left: 0%;
+}
+
+.footer-grid a {
+  display: block;
+  font-family: "TenorSans", sans-serif;
+  margin: 0.3em 0;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.footer-bottom p {
+  font-family: "TenorSans", sans-serif;
+  font-size: 0.9em;
+  margin: 0;
+  text-align: right;
+}
+
+/* fixed h2 size */
+.book-section h2,
+.about h2,
+.competitions h2,
+.membership-section h2 {
+  font-size: 2.5rem;
+}
