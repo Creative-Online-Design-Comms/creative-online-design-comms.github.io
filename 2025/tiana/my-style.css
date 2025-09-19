@@ -1,0 +1,305 @@
+/*** Imports ***/ 
+/* Add your fontkit here */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*** Root ***/ 
+/* For variables like colors and fonts*/
+    :root{
+        /* colors */
+        --paynes-grey: #364849;
+        --moonstone-blue: #6AA5AF;
+        --light-cyan: #C8E7EA;
+        /* fonts */
+        --title-font: "Instrument Serif", serif;
+        --body-font: "Atkinson Hyperlegible Next", sans-serif;
+    }
+
+/*** General Style ***/ 
+/* Universal tag used to give the border box style here */
+    * {box-sizing:border-box}
+
+/* Applies to all the body */
+    body {
+        margin: auto;
+        color: var(--paynes-grey);
+        font-family: var(--body-font);
+        font-weight: 400;
+        overflow-x: hidden;
+    }
+
+/* Applies to whole main and stops content from getting too wide */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+/* Adjusts all of your headings */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--title-font);
+        font-weight: 500;
+        text-align: center;
+        margin: 1em;
+    }
+
+/* Adjusts all of your anchor tags */
+    a{
+        color: var(--moonstone-blue);
+    }
+
+/* Link hover */
+    a:hover {
+        color: var(--paynes-grey);
+    }
+
+/*** Header ***/  
+    /* Page title area */
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 60vh;
+        background-attachment: fixed;
+        background-image: url(images/header-background.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Page title words */
+    header h1 {
+        padding: 1rem;
+        width: 50%;
+        margin: auto;
+        color: var(--paynes-grey);
+        font-size: 6em;
+    }
+    header h1 span{
+        color: #fff;
+    }
+
+/*** Nav ***/    
+    /* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
+    nav {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 0;
+        text-align: center;
+        background-color: var(--moonstone-blue);
+        font-size: 1.6em;
+        font-weight: 500;
+        /* z-index brings items forward or backward in relation to other content */
+        z-index: 2;
+    }
+    /* Nav link adjustments*/
+    nav a {
+        margin: 0.4em;
+        text-decoration: none;
+        color: #fff;
+        padding: 0.4em 1em;
+        border-radius: 3em;
+    }
+    nav a:hover {
+        color: var(--light-cyan);
+        background-color: var(--paynes-grey);
+        /* This transition adds smoothness to the hover effect */
+        transition: color 0.2s ease;
+        transition: background-color 0.2s ease;
+    }
+
+/*** Back to top Button ***/
+    .back-to-top-btn {
+        padding: 1em;
+        position: fixed;
+        right: 1em;
+        bottom: 1em;  
+        background-color: var(--moonstone-blue);
+        text-decoration: none;
+        color: #fff;
+        font-size: 18pt;
+        font-weight: 600;
+        border-radius: 2em;
+        padding: 1em 1.2em;
+        z-index: 2;
+    }
+    .back-to-top-btn:hover{
+        color: var(--light-cyan);
+        background-color: var(--paynes-grey);
+    }
+
+/*** Applies to each section ***/
+    section {
+        width: 80%;
+        padding: 2em; 
+        margin: auto;
+    }
+    hr {
+        margin: 6em 0px 0px;
+    }
+
+    /* Section title heading size */
+    section h2 {
+        font-size: 4em;
+        margin: 0;
+    }
+    section h3 {
+        font-size: 2em;
+    }
+
+/*** Img and text 2 columns ***/ 
+    .two-column-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2em;
+        width: 100%;
+        text-align: left;
+        margin: 1em 0;
+    }
+    .two-column-container img{
+        border-radius: 1em;
+    }
+    .img-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 1em;
+    }
+    .img-text h3{
+        display: flex;
+        margin: 0;
+        text-align: left;
+        font-size: 3em;
+    }
+    .img-text p{
+        display: flex;
+        margin: 0;
+    }
+    .img-column img{
+        width: auto;
+        max-height: 60vh;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    .attribution {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .img-column:hover .attribution {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+    .reverse{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .reverse .img-text{
+        align-items: end;
+        text-align: right;
+    }
+
+/*** Fun Facts ***/
+    .fun-facts img{
+        width: 200px;
+        border-radius: 100%;
+    }
+    .fun-facts .fact{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+        column-gap: 2em;
+        margin: 1em 0;
+    }
+    .fact-text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .fact-text h4{
+        margin: 0;
+        font-size: 2em;
+    }
+    .fact-text p{
+        margin-top: 0;
+    }
+    .fun-facts .img-right{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        text-align: right;
+        align-items: end;
+    }
+
+    .img-right h4{
+        width: 100%;
+        text-align: right;
+    }
+
+/*** Gellery***/    
+    /* Gallery Thumnail style */
+    .thumbnail-container {
+        display:flex;
+        flex-wrap:wrap;
+        align-content: center;
+        justify-content: center;
+        max-width: 1300px;
+        margin:0 auto;
+        padding:0px;
+    }
+    .thumbnail-container img {
+        padding: 0px 2px;
+    }
+
+/*** Two column text section ***/
+    #section-four h2, #section-four h3{
+        text-align: left;
+        margin: 0;
+    }
+    .two-text-columns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        justify-content: start;
+        column-gap: 2em;
+    }
+
+/*** Footer ***/  
+    /* Applies to footer */
+    footer {
+        padding: 2em;
+        background-color: var(--light-cyan);
+        text-align: right;
+        font-weight: 600;
+    }
+    footer h3{
+        text-align: left;
+        font-size: 2em;
+        margin: 0;
+    }
+    /* Footer anchor tag changes */
+    footer a {
+        color: var(--paynes-grey);
+    }
+    footer a:hover{
+        color: var(--moonstone-blue);
+    }
+    /* Simple grid to hold footer links and navigation*/
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2em;
+        text-align: left;
+        align-items: start;
+        justify-content: start;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }
