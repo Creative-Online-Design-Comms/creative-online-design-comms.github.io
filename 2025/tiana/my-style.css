@@ -1,16 +1,20 @@
 /*** Imports ***/ 
 /* Add your fontkit here */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cantata+One&display=swap');
 
 /*** Root ***/ 
 /* For variables like colors and fonts*/
     :root{
         /* colors */
-        --paynes-grey: #364849;
-        --moonstone-blue: #6AA5AF;
-        --light-cyan: #C8E7EA;
+        --beige: #DFD8D2;
+        --dark-blue: #132058;
+        --bold-blue: #2D52C3;
+        --bold-blue-80: #2d53c3cc;
+        --desaturated-blue: #4F77AC;
+        --light-blue: #3D92CB;
+        --light-blue-80: #3D92CBcc;
         /* fonts */
-        --title-font: "Instrument Serif", serif;
+        --title-font: "Cantata One", serif;
         --body-font: "Atkinson Hyperlegible Next", sans-serif;
     }
 
@@ -21,10 +25,11 @@
 /* Applies to all the body */
     body {
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--dark-blue);
         font-family: var(--body-font);
         font-weight: 400;
         overflow-x: hidden;
+        background-color: var(--beige);
     }
 
 /* Applies to whole main and stops content from getting too wide */
@@ -33,7 +38,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 1300px;
+        max-width: 1500px;
         margin: auto;
     }
 
@@ -47,12 +52,12 @@
 
 /* Adjusts all of your anchor tags */
     a{
-        color: var(--moonstone-blue);
+        color: #fff;
     }
 
 /* Link hover */
     a:hover {
-        color: var(--paynes-grey);
+        color: var(--beige);
     }
 
 /*** Header ***/  
@@ -62,9 +67,9 @@
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 60vh;
+        height: 80vh;
         background-attachment: fixed;
-        background-image: url(images/header-background.jpg);
+        background-image: url(images/HIYHGVAQ7ZCQSLUHR3SAOP7PYE.avif);
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
@@ -72,14 +77,14 @@
     /* Page title words */
     header h1 {
         padding: 1rem;
-        width: 50%;
+        width: 70%;
         margin: auto;
-        color: var(--paynes-grey);
+        color: var(--beige);
         font-size: 6em;
+        background-color: var(--light-blue-80);
+        border-radius: 0.1em;
     }
-    header h1 span{
-        color: #fff;
-    }
+   
 
 /*** Nav ***/    
     /* Navigation bar as a grid for even spacing and sticky to stick to the top of the screen*/
@@ -90,7 +95,7 @@
         position: -webkit-sticky; /* Safari */
         top: 0;
         text-align: center;
-        background-color: var(--moonstone-blue);
+        background-color: var(--desaturated-blue);
         font-size: 1.6em;
         font-weight: 500;
         /* z-index brings items forward or backward in relation to other content */
@@ -100,13 +105,13 @@
     nav a {
         margin: 0.4em;
         text-decoration: none;
-        color: #fff;
+        color: var(--beige);
         padding: 0.4em 1em;
         border-radius: 3em;
     }
     nav a:hover {
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
+        color: var(--light-blue);
+        background-color: var(--dark-blue);
         /* This transition adds smoothness to the hover effect */
         transition: color 0.2s ease;
         transition: background-color 0.2s ease;
@@ -118,7 +123,7 @@
         position: fixed;
         right: 1em;
         bottom: 1em;  
-        background-color: var(--moonstone-blue);
+        background-color: var(--desaturated-blue);
         text-decoration: none;
         color: #fff;
         font-size: 18pt;
@@ -128,8 +133,8 @@
         z-index: 2;
     }
     .back-to-top-btn:hover{
-        color: var(--light-cyan);
-        background-color: var(--paynes-grey);
+        color: var(--light-blue);
+        background-color: var(--dark-blue);
     }
 
 /*** Applies to each section ***/
@@ -152,17 +157,25 @@
     }
 
 /*** Img and text 2 columns ***/ 
+    #section-one{
+        color: var(--beige);
+    }
+    .intro-container {
+        background-color: var(--desaturated-blue);
+        border: var(--dark-blue) 2px solid;
+        border-radius: 1.5em;
+        padding: 1em;
+    }
     .two-column-container {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        align-items: center;
         column-gap: 2em;
         width: 100%;
         text-align: left;
         margin: 1em 0;
     }
-    .two-column-container img{
-        border-radius: 1em;
-    }
+
     .img-text {
         display: flex;
         flex-direction: column;
@@ -178,13 +191,14 @@
     }
     .img-text p{
         display: flex;
-        margin: 0;
+        margin: 0 2em 1em 0;
     }
     .img-column img{
-        width: auto;
+        width: 100%;
         max-height: 60vh;
         opacity: 1;
         transition: opacity 0.5s ease;
+        border-radius: 1em;
     }
     .attribution {
         position: relative;
@@ -203,8 +217,15 @@
         align-items: end;
         text-align: right;
     }
+    .reverse p{
+        margin: 0 0 0 2em;
+    }
 
 /*** Fun Facts ***/
+    .fun-facts{
+        color: var(--beige);
+        margin-top: 10vh;
+    }
     .fun-facts img{
         width: 200px;
         border-radius: 100%;
@@ -214,7 +235,12 @@
         grid-template-columns: 1fr 4fr;
         align-items: center;
         column-gap: 2em;
-        margin: 1em 0;
+        width: 80%;
+        margin: 5vh 0;
+        background-color: var(--light-blue);
+        border: var(--dark-blue) 2px solid;
+        border-radius: 4em;
+        padding: 2em 2em;
     }
     .fact-text{
         display: flex;
@@ -226,18 +252,45 @@
         font-size: 2em;
     }
     .fact-text p{
-        margin-top: 0;
+        margin: 0 2em 0 0;
     }
     .fun-facts .img-right{
         display: grid;
         grid-template-columns: 4fr 1fr;
         text-align: right;
-        align-items: end;
+        align-items: center;
+        background-color: var(--bold-blue);
+        justify-self: end;
+    }
+
+    .fun-facts .img-right p{
+        margin: 0 0 0 2em;
+    }
+
+    .fun-facts .last-fact{
+        background-color: var(--desaturated-blue);
     }
 
     .img-right h4{
         width: 100%;
         text-align: right;
+    }
+
+/*** Section Two ***/
+    .section-two-container{
+        background-color: var(--bold-blue-80);
+        border: var(--dark-blue) 2px solid;
+        border-radius: 1.5em;
+        padding: 2em;
+        color: var(--beige);
+        margin-top: 1em;
+    }
+
+    #section-two hr{
+        height: 6px;
+        border: none;
+        background-color: var(--dark-blue);
+        margin-bottom: 10vh;
     }
 
 /*** Gellery***/    
@@ -248,7 +301,7 @@
         align-content: center;
         justify-content: center;
         max-width: 1300px;
-        margin:0 auto;
+        margin: 0 auto 1em;
         padding:0px;
     }
     .thumbnail-container img {
@@ -256,7 +309,7 @@
     }
 
 /*** Two column text section ***/
-    #section-four h2, #section-four h3{
+    #section-three h2, #section-three h3{
         text-align: left;
         margin: 0;
     }
@@ -266,15 +319,36 @@
         align-items: start;
         justify-content: start;
         column-gap: 2em;
+        background-color: var(--light-blue);
+        border: var(--dark-blue) 2px solid;
+        border-radius: 1.5em;
+        padding: 1em 2em;
+        color: var(--beige);
+        margin: 0.5em auto 1em;
     }
+
+/*** Sources ***/
+    #sources{
+        margin: 10vh auto;
+    }
+
+    #sources a{
+        color: var(--dark-blue);
+        display: block;
+        margin: 0.5em auto;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
 
 /*** Footer ***/  
     /* Applies to footer */
     footer {
         padding: 2em;
-        background-color: var(--light-cyan);
+        background-color: var(--light-blue);
         text-align: right;
         font-weight: 600;
+        color: var(--beige);
     }
     footer h3{
         text-align: left;
@@ -283,10 +357,10 @@
     }
     /* Footer anchor tag changes */
     footer a {
-        color: var(--paynes-grey);
+        color: var(--beige);
     }
     footer a:hover{
-        color: var(--moonstone-blue);
+        color: #fff;
     }
     /* Simple grid to hold footer links and navigation*/
     .footer-grid {
@@ -302,4 +376,9 @@
     .footer-grid-items{
         display: flex;
         flex-direction: column;
+    }
+    footer .sources{
+        width: 60%;
+        margin: auto;
+        text-align: center;
     }

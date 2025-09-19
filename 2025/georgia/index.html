@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<!-- *****************************
-         Author: Your Name
-         Creation date: DD/09/2025
+         Author: Georgia Divers
+         Creation date: 14/09/2025
          ***************************** -->
 	<head>
 		<!-- meta tags -->
@@ -10,8 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Browser tab title and favicon -->
-		<title>Template</title>
-		<link rel="icon" href="" />
+		<title>Daily Deal</title>
+		<link rel="icon" href="images/favicon.ico" />
 
 		<!-- Links-->
 		<link href="my-style.css" rel="stylesheet" />
@@ -19,17 +19,15 @@
 	<body>
 		<!-- Navigation Bar -->
 		<nav>
+			<div class="nav-left">
+				<a href="#section-one">ABOUT</a>
+				<a href="#section-two">MENU </a>
+			</div>
 			<div class="nav-middle">
 				<a class="logo">DAILY DEAL</a>
-			   </div>
-
-			<div class="nav-left">
-			<a href="#section-one">ABOUT</a>
-			<a href="#section-two">MENU </a>
-            </div>
-
+			</div>			
 			<div class="nav-right">
-			<a href="#section-three">GIFT VOUCHERS</a>
+				<a href="#section-three">GIFT VOUCHERS</a>
 		    </div>
 
 			
@@ -37,15 +35,15 @@
 
 		<!-- Website title and heading -->
 		<header id="page-top">
-			<h1>Project <span>Temp</span>late</h1>
+			<img src="images/logo.png" alt="Daily Deal Logo">
 		</header>
 
 		
 		<!-- Main Content -->
 		<main>
-		    <section id="section-zero" class="introductions">
-				<div class="introduction">
-					<img src="images/template-images/card-image-1.png" alt="coffee-machine">
+		    <section class="introduction">
+				<div class="introduction-columns">
+					<img src="images/coffee-machine.png" alt="coffee-machine">
 					<div class="intro-text">
 						<h2> YOUR LOCAL <BR> daily <br> IN MIAMI</h2>
 						<p> Offering a refreshing place to sip, shuffle, and share. <br> 
@@ -53,7 +51,6 @@
 							specialties to enjoy over a deck.</p>
 					</div>
 				</div>
-
 			</section>
 				
 			
@@ -67,151 +64,178 @@
 				<h2>DAILY DEAL IS A <br> neighborhood <br> COFFEE SHOP <br> LOCATED IN
 					 <br> MIAMI, QUEENSLAND </h2>
 
-
-				<!-- Card display -->
-				
-				<div class="card-grid"> 
+				<!-- Image display -->
+				<div class="three-img-row">
+					<img src="images/window.png" alt="Window" />
+					<img src="images/door.png" alt="Door" />
+					<img src="images/window.png" alt="Window" />
+				</div>
+			</section>
+			<!-- Section two of content -->
+			<section id="section-two" class="sip">
+				<!-- h tag for headings -->
+				<h2> SIP, SHUFFLE, AND SHARE <br> A COFFEE SPOT WHERE CARDS <br> TURN STRANGERS INTO MATES</h2>
+				<!-- p for paragraphs-->
+				<p>
+					Daily Deal is a neighborhood coffeehouse where expertly brewed meets the joy of connection.
+					With cards on every table, its a warm and inviting spot for friends, families 
+					or strangers to gather, play, and share conversations, all in the vibrant heart of Miami. 
+				</p>
+				<div class="card-grid">
 					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-1.png" alt="Tower" />
-							<div class="card-container">
-							</div>
-						</a>
+						<h4>ADDRESS</h4>
+						<p>6/28 CHAIRLIFT AVE <br>MIAMI, QUEENSLAND </p>
 					</div>
 					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-3.png" alt="Ocean" />
-							<div class="card-container">
-							</div>
-						</a>
+						<h4>HOURS</h4>
+						<p>MON-SAT 5:45am - 12pm</p>
 					</div>
 					<div class="card">
-						<a href="">
-							<img src="images/template-images/card-image-2.png" alt="Mountains" />
-							<div class="card-container">
-							</div>
-						</a>
+						<h4>CONTACT</h4>
+						<p>hello@dailydealmiami.co.au<br> 0451444444</p>
 					</div>
-					</section>
-								<!-- Section two of content -->
-								<section id="section-two" class="sip"
-									<!-- h tag for headings -->
-									<h2> SIP, SHUFFLE, AND SHARE A COFFEE SPOT WHERE CARDS TURN STRANGERS INTO MATES
-										 </h2>
-								<!-- p for paragraphs-->
-								<p>
-									Daily Deal is a neighborhood coffeehouse where expertly brewed meets the joy of connection.
-									With cards on every table, its a warm and inviting spot for friends, families 
-									or strangers to gather, play, and share conversations, all in the vibrant heart of Miami. 
-								</p>
-							</div>
-						</div>
-						<div class="card-grid">
-							<div class="card">
-								<a href="">
-									<img src="images/template-images/card-image-1.png" alt="Tower" />
-									<div class="card-container">
-									</div>
-								</a>
-							</div>
-							<div class="card">
-								<a href="">
-									<img src="images/template-images/card-image-3.png" alt="Ocean" />
-									<div class="card-container">
-									</div>
-								</a>
-							</div>
-							<div class="card">
-								<a href="">
-									<img src="images/template-images/card-image-2.png" alt="Mountains" />
-									<div class="card-container">
-									</div>
-								</a>
-							</div>
-							</section>
-								<!-- Section three of content -->
-								<section id="section-three">
-									<!-- h tag for headings -->
-									<h2> MENU
-										 </h2>
+				</section>
+				<!-- Section three of content -->
+				<section id="section-three">
+					<!-- h tag for headings -->
+					<h2> MENU</h2>
 				<!-- p for paragraphs-->
 				<p>
 					Serving a fresh take on a modern coffeehouse. Our Menu blends classic brews with inventive speacialties.
 				</p>
-					<!-- p for paragraphs-->
-					<p>
-						BREWED + SPECILITY 
+				<table>
+					<tr>
+						<th colspan="3">BREWED + SPECILITY </th>
+					</tr>
+					<tr>
+						<td>White</td>
+						<td>5</td>
+						<td>Wild Card</td>
+						<td>9</td>
+						<td>Iced Matcha</td>
+						<td>7.5</td>
+					</tr>
+					<tr>
+						<td colspan="2">+oat./ +almond./ +soy./ +coconut.</td>
+						<td colspan="2">Cold brew, coconut cream, toasted almond </td>
+						<td rowspan="3">+strawberry
+							<br>+caramel
+							<br>+vanilla
+							<br>+hazelnut
+						</td>
+						<td rowspan="3">
+							1
+							<br>1
+							<br>1
+							<br>1
+						</td>
+					</tr>
+					<tr>
+						<td>Black</td>
+						<td>5</td>
+						<td>Double Down</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Ice Latte</td>
+						<td>6</td>
+						<td colspan="2">Iced americano,maple,smoked sea salt </td>
+					</tr>
+					<tr>
+						<td>Ice americano</td>
+						<td>5</td>
+						<td>Spade & Tonic</td>
+						<td>8.5</td>
+						
+					</tr>
+					<tr>
+						<td>Hot chocolate</td>
+						<td>5</td>
+						<td colspan="2">Espresso,tonic water, grapefruit slice </td>
+					</tr>
+					<tr>
+						<td>Iced chocolote</td>
+						<td>7.5</td>
+						<td>Shuffle & Sip</td>
+						<td>9</td>
+						<td>Teas by Jack</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Matcha Latte </td>
+						<td>5</td>
+						<td colspan="2">Espresso,white chocolate, pistachio  </td>
+						<td rowspan="3">+English breakfast 
+							<br>+Earl grey
+							<br>+Chamomile
+							<br>+Peppermint
+						</td>
+						<td rowspan="3">
+							6
+							<br>6
+							<br>6
+							<br>6
+						</td>
+					</tr>
+					<tr>
+						<td>Chai latte</td>
+						<td>6.5</td>
+						<td>All in</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Chilli hot chocolate</td>
+						<td>8</td>
+						<td colspan="2">Dirty chai with cinnamon foam</td>
+					</tr>
+					<tr>
+						<td>Iced Mocha </td>
+						<td>7.5</td>
+						<td>Blackjack Brew</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+						<td colspan="2">Espresso, dark chocolate, mint cream </td>
+					</tr>
 
-White                                     5                               Wild card                               9                                                          Iced Matcha                           7.5
-+oat./ +almond./ +soy./ +coconut.            Cold brew, coconut cream, toasted almond                    +strawberry. 1
-                                                                                                                                                                                                  +caramel. 1
-Black                                     5                                Double Down                     9                                                          +vanilla. 1
-                                                                                   Iced americano, maple, smoked sea salt                          +hazelnut. 1
-Iced latte                             6                                                           
-                                                                                   Spade & Tonic                     8.5                                                     Tea’s by jack 
-Iced americano                5                                Espresso, tonic water, grapefruit slice                                English breakfast                 6
-                                                                                                                                                                                                  Earl grey                                  6
-Hot chocolate                  5                                Shuffle & Sip                       9                                                           Chamomile                           6
-                                                                                   Espresso, white chocolate, pistachio                                  Peppermint                           6
-Iced chocolate              7.5                                                                                                                                              Lemongrass Ginger           6 
-                                                                                   All In                                       9
-Matcha latte                   7.5                               Dirty chai with cinnamon foam
-                             
-Chai latte                         6.5                               Blackjack Brew                 9
-                                                                                    Espresso, dark chocolate, mint cream
-Chilli hot chocolate      8 
 
-Iced Mocha                      7.5 
+					
+					
+				</table>
+	
+			<!-- Section four of content -->
+			<section id="section-four" class="introduction">
 
-					</p>
-				<!-- Section four of content -->
-				<section id="section-four">
-					<!-- h tag for headings -->
-					<h2> GIFT VOUCHERS 
-						 </h2>
-						 <figure class="fig-hover-attribution">
-							<!-- img for images with src being the source alt for alternative text -->
-							<img
-								class="img-attribution"
-								src="images/template-images/example-img-1200x800.jpg"
-								alt="Ocean Waves Crashing on Shore during Sunset" />
-							<!-- figcaption for captions under an image, this a a good place for attributions. Here is an example of an attribute-->
-							
-								<a
-									href="https://www.pexels.com/photo/ocean-waves-crashing-on-shore-during-sunset-4321164/"
-									>Pexels</a
-								>, <a href="https://www.pexels.com/license/">cc</a>
-							<!-- Section four of content -->
-				<section id="section-four">
-					<!-- h tag for headings -->
-					<h2> EASY. CONVENIENT. AND AS BIG OR SMALL AS YOUR WALLET ALLOWS
-						 </h2>
-				<!-- p for paragraphs-->
-				<p>
-					Nothing says "thanks", "your appreciated", "sorry I completely forgot", and "you need to get yourself a treat", as efficiently as a Daily Deal gift voucher. 
-				</p>
+				<div class="introduction-columns">
+					<img src="images/open-sign.png" alt="open sign">
+					<div class="intro-text center-column">
+						<h2>GIFT VOUCHERS</h2>
+						<h3> EASY. CONVENIENT. AND AS BIG OR SMALL AS YOUR WALLET ALLOWS</h3>
+						<p>
+							Nothing says "thanks", "your appreciated", "sorry I completely forgot", and "you need to get yourself a treat", as efficiently as a Daily Deal gift voucher. 
+						</p>
+						<a href="#">PURCHASE HERE</a>
+					</div>
+			</section>
+					
 		</main>
 
 		<!-- Footer for extra links/socials and legal -->
 		<footer>
 			<div class="footer-grid">
-						<!-- Website title and heading -->
-		<header id="page-top">
-			<h1>Project <span>Temp</span>late</h1>
-				<div id="footer-nav" class="footer-grid-items">
-					<section id="section-five">
-						<!-- h tag for headings -->
-						<h2> 6/28 CHAIRLIFT AVE MIAMI, QLD
-							 </h2>
+				<img src="images/logo.png" alt="Daily Deal Logo" class="footer-grid-items">
+				<h3 class="footer-grid-items"> 6/28 CHAIRLIFT AVE MIAMI, QLD</h3>
 				<!-- p for paragraphs-->
-				<p>
+				<p class="footer-grid-items">
 					hello@dailydealmiami.co.au
 					0451444444
 				</p>
-			<small>
-				Website by GEORGIA DIVERS, licensed under
-				<a href="">&copy;Copyright</a>
-			</small>
+				<small class="footer-grid-items">
+					Website by GEORGIA DIVERS, licensed under
+					<a href="">&copy;Copyright</a>
+				</small>
+			</div>
 		</footer>
 	</body>
 </html>
