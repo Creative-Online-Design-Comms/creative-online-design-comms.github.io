@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+:root {
+  --jet-black: #364849;
+  --chili-red: #B84B41;
+  --amber-yellow: #FFC23D;
+  --jade-green: #0EAD69;
+  --honolulu-blue: #0077C1;
+  --snow-white: #FFF9F5;
+  --main-font: "Zen Kaku Gothic New", sans-serif;
+}
+
+/* Reset */
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
+
+h2 {
+    text-align: center; /* Centers the text horizontally */
+}
+
+
+/* BACKGROUND */
+body {
+    font-family: var(--main-font), sans-serif;
+    background-image: url("photos/grid.png"); 
+    background-repeat: repeat;      /* ensures the image tiles */
+    background-size: 300px;          /* uses the original image size */
+    background-attachment: scroll;  /* scrolls naturally with content */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* NAVIGATION */
+
+#navbar {
+  margin-left: auto; /* pushes the whole link container to the right */
+}
+
+nav {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+  width:100%;
+  padding:10px 20px;
+  background-color: var(--chili-red);
+  /* z-index brings items forward or backward in relation to other content, THIS ONE FOR LAYERING */
+  z-index: 2; 
+}
+
+
+/* TOP RIGHT LOGO */
+.logo { 
+    height:30px;
+    cursor:pointer; 
+    margin-right:auto; 
+}
+
+/* CLICKABLE NAV LINKS */
+.nav_links { 
+    list-style:none; 
+    display:flex; 
+    gap:20px; 
+   
+}
+
+.nav_links li a {
+    font-weight:900; 
+    font-size:16px; 
+    color:var(--snow-white); 
+    text-decoration:none; 
+    transition:0.3s; 
+}
+
+.nav_links li a:hover { 
+    color: var(--amber-yellow);
+ }
+
+/* ABOUT BUTTON */
+.cta button {
+  border:none; 
+  border-radius:50px; 
+  cursor:pointer; 
+  margin-left:20px;
+  padding:8px 25px; 
+  background-color: var(--snow-white); color: var(--jet-black);
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight:900; 
+  font-size:16px; 
+  transition:0.3s;
+
+}
+.cta button:hover { 
+    background-color: rgba(255,249,245,0.8); 
+}
+
+/* TITLE CARD */
+.center {
+  flex:1; 
+  display:flex; 
+  flex-direction:column;
+  justify-content:center; 
+  align-items:center; 
+  text-align:center; 
+  padding:146px 20px;
+  margin-bottom: 140px;
+}
+
+/* DRAWING PLACEMENT */
+.big-box { 
+    width:640px; 
+    height:430px; 
+    border:3px 
+    solid var(--jet-black); 
+    margin-bottom:20px; 
+    display:flex; 
+    justify-content:center;
+    align-items:center; 
+}
+
+/* DRAWING */
+.big-box img { 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+}
+
+.logo-row { 
+    display:flex; 
+    align-items:center; 
+    gap:15px; 
+}
+
+/* ANQURII */
+.title-text { 
+    font-family: var(--main-font);
+    font-size:40px; 
+    font-weight:900px; 
+    color:var(--jet-black);
+}
+
+.small-box { 
+    width:100px; 
+    height:40px; 
+    border:2px 
+    solid var(--jet-black); 
+    border-radius: 5px;
+    background-color: var(--snow-white);
+}
+
+/*** Applies to each section ***/
+    section {
+        width: 80%;
+        padding: 2em; 
+        margin: auto;
+    }
+
+    hr {
+        margin: 7em 0px 0px;
+    }
+
+    /* Section title heading size */
+    section h2 {
+        font-size: 3em;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+    section h3 {
+        font-size: 2em;
+    }
+
+/* SECTION TWO - ABOUT ME */
+
+
+.two-column-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    max-width: 900px; /* keeps it from stretching too wide */
+    width: 100%;
+    margin: 0 auto;    /* center horizontally */
+    text-align: justify;
+    margin-bottom: 150px;
+    background-color: rgba(250, 250, 250, 1);
+    padding: 2em;          /* adds space around content */
+    box-sizing: border-box; /* ensures padding doesn’t break width */
+    border-radius: 0.4em;     /* optional, for rounded edges */
+} 
+
+.two-column-container img {
+  border-radius: 1em;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+}
+
+.img-attribution {
+  width: 100%;
+  max-width: 400px;
+  max-height: 60vh;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.attribution {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fig-hover-attribution:hover .attribution {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+
+/* SECTION THREE - ILLUSTRATIONS */
+
+
+.thumbnail-container {
+    display:flex;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin:0 auto;
+    margin-bottom: 150px;
+    padding:0px;
+}
+
+.thumbnail-container img {
+    padding: 0px 2px;
+}
+
+
+/*** SECTION FOUR - OTHER ***/
+.card-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2em;
+    row-gap: 2em;
+    margin-bottom: 300px;
+}
+.card {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    background-color: #fafafa;
+    transition: 0.2s;
+    border-radius: 0.1em;
+    max-height: 800px; /* adjust to taste */
+    overflow: hidden;  /* hides anything that overflows */
+} 
+
+.card h4{
+    font-size: 1.6em;
+    font-weight: 300;
+    color: var(--paynes-grey);
+    margin: 1em 0 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card:hover {
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+}  
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* adjust this value */
+    object-fit: cover; /* crop/scale to fill space neatly */
+    border-radius: 0.1em 0.1em 0 0;
+}
+
+.card-container {
+    padding: 0.1em 1em 1.6em;
+    text-align: center;
+}
+
+.card-button {
+    background-color: var(--chili-red); 
+    color: #fafafa; 
+    border: 0.2em solid var(--light-cyan);
+    border-radius: 2em;
+    padding: 1em 2em;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0.2em 0.1em;
+    transition-duration: 0.2s;
+}
+
+.card-button:hover {
+    background-color: var(--amber-yellow);
+    border-color: var(--jet-black);
+    color: white;
+}
+
+
+
+/*** Footer ***/  
+    /* Applies to footer */
+    footer {
+        padding: 2em;
+        background-color: var(--chili-red);
+        text-align: justify;
+        font-weight: 600;
+    }
+    footer h3{
+        text-align: left;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    /* Footer anchor tag changes */
+    footer a {
+        color: var(--paynes-grey);
+    }
+    footer a:hover{
+        color: var(--moonstone-blue);
+    }
+    /* Simple grid to hold footer links and navigation*/
+    .footer-grid {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3em;
+        text-align: justify;
+    }
+    .footer-grid-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        text-align: center;
+    }
