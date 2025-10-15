@@ -1,9 +1,9 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arbutus&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bevan:ital@0;1&family=Cantata+One&family=Castoro:ital@0;1&family=Cherry+Bomb+One&family=Domine:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Mystery+Quest&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arbutus&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bevan:ital@0;1&family=Cantata+One&family=Castoro:ital@0;1&family=Cherry+Bomb+One&family=Domine:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Instrument+Serif:ital@0;1&family=Mystery+Quest&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Elite&family=Zen+Kaku+Gothic+New&display=swap');
 @import url("https://use.typekit.net/tbi0myl.css");
 @font-face {
   font-family: 'EDLavonia';
-  src: url('fonts/EDLavonia-Regular.ttf') format('truetype');
+  src: url('/2025/ellery/fonts/EDLavonia-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-  background: linear-gradient(315deg, #a3c8e2, #182a44)
+  background: linear-gradient(315deg, #FFF9F5, #bb3b2f)
 }
 
 /* Amelia */
@@ -135,7 +135,7 @@
 
 /* Card Fonts */
 .adrienne{
-  font-family: monospace;
+  font-family: "Zen Kaku Gothic New", monospace;
 }
 
 .amelia{
