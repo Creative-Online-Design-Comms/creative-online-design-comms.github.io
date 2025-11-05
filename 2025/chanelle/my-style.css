@@ -104,7 +104,7 @@ nav{
     /* background: linear-gradient(to top, var(--light-blue) 0%, #ffffff), 100%; */
     background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     font-size: 12pt;
-    font-weight: 00;
+    font-weight: 400;
 }
 nav h2{
     font-size: 2.5em;
@@ -211,7 +211,7 @@ header h1{
     section {
         width: 80%;
         padding: 50px 20px; 
-        margin: au;
+        margin: auto;
     }
     hr {
         margin: 100px 0px 0px;
@@ -353,7 +353,7 @@ header h1{
     list-style: none;
     padding: 0;
 }
-.list a{
+.list li{
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -471,7 +471,7 @@ header h1{
         align-items: center;
         justify-content: center;
         border-radius: 50px;
-        border:5px, #fff;
+        border:5px #fff;
     }
 
   
@@ -484,7 +484,7 @@ header h1{
         border: 1px solid var(--light-blue);
         border-radius: 50px;
         text-align: center;
-        font-family: Var(Domine);
+        font-family: Var(--Domine);
         background-color: Var(--white);
     }
     input[name=message]{
@@ -499,7 +499,7 @@ header h1{
         background-color: var(--light-pink);
         border: var(--dark-blue);
         font-weight: 600;
-        margin: right;
+        
     }
   
     input[type=submit]:hover {
@@ -525,7 +525,7 @@ header h1{
         top: -5rem;
     }
     .splide:not(.is-overflow) .splide__pagination{
-        display: show;
+        display: inherit;
     }
     /* Play pause button */
     .splide__toggle{
@@ -574,7 +574,7 @@ header h1{
         color: var(--dark-blue);
     }
     footer a:hover{
-        color: var(#ADD9F5);
+        color: #ADD9F5;
     }
     .footer-grid {
         width: 60%;

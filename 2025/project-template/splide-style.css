@@ -47,7 +47,7 @@
         top: -5.8rem;
     }
     .splide:not(.is-overflow) .splide__pagination{
-        display: show;
+        display: inherit;
     }
     /* Play pause button */
     .splide__toggle{

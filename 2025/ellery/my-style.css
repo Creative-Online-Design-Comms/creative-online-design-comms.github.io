@@ -274,7 +274,7 @@ header h1 {
 learn-more-section {
   text-align: center;     
   margin-top: 0em;
-  padding-top 0;
+  padding-top: 0;
 }
 
 .cta-btn.secondary {
@@ -339,7 +339,7 @@ learn-more-section {
        max-width: 1200px;    
        margin: 2rem auto;
        border: 3px solid black;
-       margin-top: rem;
+       
       }
 
     .thumbnail-container > * {
@@ -630,7 +630,7 @@ html {
   line-height: 1.7;
   font-size: 1.1em;
   margin-bottom: 1.2em;
-  width: ;
+ 
 }
 
 .booking-container {

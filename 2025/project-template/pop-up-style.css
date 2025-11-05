@@ -36,7 +36,7 @@
     border-radius: 2em;
     background-color: var(--light-cyan);
     color: var(--paynes-grey);
-    filter: drop-shadow(#00000080 0.2em 0.2em 0.2em);
+    filter: drop-shadow( 0.2em 0.2em 0.2em #00000080);
     cursor: pointer;
 }
 
@@ -113,7 +113,7 @@
     justify-content: center;
     border-radius: 60px;
     background-color: var(--paynes-grey);
-    filter: drop-shadow(#000 1em 1em 2em);
+    filter: drop-shadow(1em 1em 2em #000 );
 }
 
 .modal-body img {

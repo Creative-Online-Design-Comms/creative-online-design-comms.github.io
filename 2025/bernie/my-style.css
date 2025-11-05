@@ -34,7 +34,7 @@
     main{
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: start;
         width: 80%;
         margin: auto;
        
@@ -106,7 +106,7 @@
     position: fixed;
     right: 1em;
     bottom: 1em;  
-    background-color: var(#1f382f);
+    background-color: #1f382f;
     text-decoration: none;
     color: var(--forest-green);
     font-size: 18pt;
@@ -203,7 +203,7 @@ section h3 {
     top: 35.8rem;
 }
 .splide:not(.is-overflow) .splide__pagination{
-    display: show;
+    display:inherit;
 }
 .side-scrolling-nav-gallery .splide__pagination{
     top: 20.5rem;

@@ -141,7 +141,7 @@ nav {
 .title-text { 
     font-family: var(--main-font);
     font-size:40px; 
-    font-weight:900px; 
+    font-weight:900; 
     color:var(--jet-black);
 }
 

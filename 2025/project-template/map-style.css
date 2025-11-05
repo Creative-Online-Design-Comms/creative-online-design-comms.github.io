@@ -37,7 +37,7 @@
     .map-container i{
         color: rgb(224, 224, 224);
         font-size: 2em;
-        filter: drop-shadow(#00000080 0.2em 0.2em 0.2em);
+        filter: drop-shadow(0.2em 0.2em 0.2em #00000080 );
     }
     .map-container i:hover{
         color: rgb(221, 69, 23);

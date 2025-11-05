@@ -112,7 +112,7 @@
     .WATER{
         color: #fff;
         font-family: var(--body-font);
-        font-weight: 200%;
+        font-weight: 800;
     }
 
     .surf{
@@ -136,7 +136,7 @@
     .HOME{
         color: white;
         font-family: var(--body-font);
-        font-weight: 200%;
+        font-weight: 800;
     }
 
     .slipnslide{
@@ -160,7 +160,7 @@
     .ADVENTUROUS{
         color: white;
         font-family: var(--body-font);
-        font-weight: 200%;
+        font-weight: 800;
         
     }
 

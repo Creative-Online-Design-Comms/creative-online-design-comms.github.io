@@ -1,392 +1,568 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    
-    <!-- *****************************
+	<!-- *****************************
          Author: Chanelle 
          Creation date: 15/09/2024 14/09/2025
          ***************************** -->
-    
-    <head>
-        <!-- Browser tab info -->
-        <title>Rise Wellness</title>
 
-        <!-- meta tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!--Splide style-->
+	<head>
+		<!-- Browser tab info -->
+		<title>Rise Wellness</title>
+
+		<!-- meta tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--Splide style-->
 		<link
-        href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
-        rel="stylesheet" />
-        <!--Bootstrap Icons-->
+			href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+			rel="stylesheet" />
+		<!--Bootstrap Icons-->
 		<link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-        <!--Pop-up style-->
-         <link rel="stylesheet" href="pop-up-style.css" />
-        <!-- Fancybox css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-        <!-- Links-->
-        <link href="my-style.css" rel="stylesheet">
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+		<!--Pop-up style-->
+		<link rel="stylesheet" href="pop-up-style.css" />
+		<!-- Fancybox css -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<!-- Links-->
+		<link href="my-style.css" rel="stylesheet" />
+	</head>
 
-    </head>   
-    
-    <!-- Front-end content -->
-    <body>
-        <!-- Navigation Bar Changed to my content -->
-            <nav>
-                <a href="#home-section" class="cloud-s"><h2>RISE</h2></a>
-                <div>
-                    <a href="#home-section" class="cloud-xs">Home</a>
-                    <a href="#about-section" class="cloud-xs">About Us</a>
-                    <a href="#toolbox-section" class="cloud-xs">Tool Box</a>
-                    <a href="#blog-section" class="cloud-xs">Blog</a>
-                    <a href="#services-section" class="cloud-xs">Services</a>
-                    <a href="#products-section" class="cloud-xs">Products</a>
-                </div>
-            </nav>
+	<!-- Front-end content -->
+	<body>
+		<!-- Navigation Bar Changed to my content -->
+		<nav>
+			<a href="#home-section" class="cloud-s"><h2>RISE</h2></a>
+			<div>
+				<a href="#home-section" class="cloud-xs">Home</a>
+				<a href="#about-section" class="cloud-xs">About Us</a>
+				<a href="#toolbox-section" class="cloud-xs">Tool Box</a>
+				<a href="#blog-section" class="cloud-xs">Blog</a>
+				<a href="#services-section" class="cloud-xs">Services</a>
+				<a href="#products-section" class="cloud-xs">Products</a>
+			</div>
+		</nav>
 
-        <!-- Website title and heading -->  
-        <header id="home-section">
-            <div class="hero">
-                <div class="hero-cloud-1 cloud-l">
-					<h1>Welcome to <br><span class="rise-font">RISE</span> <br>Wellness</h1>
+		<!-- Website title and heading -->
+		<header id="home-section">
+			<div class="hero">
+				<div class="hero-cloud-1 cloud-l">
+					<h1>
+						Welcome to <br /><span class="rise-font">RISE</span> <br />Wellness
+					</h1>
 				</div>
 				<div class="hero-cloud-2 cloud-l">
-			           <p>Our service is dedicated to <br> supporting you to learn about<br>
-                        well being and access practical <br> tools you can implement <br>
-                        today. 
-                        </p>
+					<p>
+						Our service is dedicated to <br />
+						supporting you to learn about<br />
+						well being and access practical <br />
+						tools you can implement <br />
+						today.
+					</p>
 				</div>
-                <div class="hero-cloud-3 cloud-l"></div>
-            </div>    
-        </header>
+				<div class="hero-cloud-3 cloud-l"></div>
+			</div>
+		</header>
 
-        <!-- Back to top button -->
-        <a class="back-to-top-btn" href="#home-section">Back to Top</a>
-      
+		<!-- Back to top button -->
+		<a class="back-to-top-btn" href="#home-section">Back to Top</a>
 
-        <!--Overlay for modals-->
-        <div id="overlay"></div>
+		<!--Overlay for modals-->
+		<div id="overlay"></div>
 
-        <!--Comming soon modal-->
-        <div>
-            <div class="modal" id="comming-soon-modal">
-                <div class="modal-close-bar">
-                    <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body" >
-                    <h3>More project info is coming soon...</h3>
-                </div>
-            </div>
-        </div>
-        <!-- Main Content -->
-        <main>
-            
-            <!-- Section One Cloud Icons-->
-            <section id="intro-section">
+		<!--Comming soon modal-->
+		<div>
+			<div class="modal" id="comming-soon-modal">
+				<div class="modal-close-bar">
+					<button data-close-button class="close-button">&times;</button>
+				</div>
+				<div class="modal-body">
+					<h3>More project info is coming soon...</h3>
+				</div>
+			</div>
+		</div>
+		<!-- Main Content -->
+		<main>
+			<!-- Section One Cloud Icons-->
+			<section id="intro-section">
 				<div class="intro-grid">
 					<div class="intro-cloud-1 cloud-ml">
-							<h3 data-modal-target="#comming-soon-modal">Learn about Well Being</h3>
+						<h3 data-modal-target="#comming-soon-modal">
+							Learn about Well Being
+						</h3>
 					</div>
 					<div class="intro-cloud-2 cloud-ml">
 						<h3 data-modal-target="#comming-soon-modal">Services we Offer</h3>
 					</div>
 					<div class="intro-cloud-3 cloud-ml">
-						<h3 data-modal-target="#comming-soon-modal">Free Well Being + Hobby Guides</h3>
+						<h3 data-modal-target="#comming-soon-modal">
+							Free Well Being + Hobby Guides
+						</h3>
 					</div>
 				</div>
 			</section>
 
-            <!-- Section two of content -->
-            <section id="section-two">
-                <!-- Section two Title -->
-                <div class="section-two-title"> 
-                    <h2><u>Practical Tools to get you Started</u></h2>
-                    <p>Welcome to your easy access well-being enhancing tool box. 
-                        Each tile contains a well-being tool aimed to manage stress 
-                        and ground your body and mind in the present moment. 
-                        Click on a tile to access step by step instructions.</p>
-                     </div>
-                <!-- Card display -->
-                <div class="card-grid">
-                    <div class="card">
-                        <img src="images/image 9 (1).png" alt="meditation illustration">
-                            <div class="card-container">
-                            Image by <a href="https://pixabay.com/users/roszie-6000120/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7528400">
-                                Rosy / Bad Homburg / Germany</a> 
-                                from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7528400">
-                                    Pixabay</a>
-                                <h4>Box Breathing</h4> 
-                                <p> Box breathing is just one of many deep techniques that
-                                    involves slowly breathing in and out to help you feel calmer 
-                                    and ground you in the present moment. </p>
-                                    <button class="card-button" data-modal-target="#comming-soon-modal">Learn more</button> 
-                                </div>
-                        
-                    </div>
-                    <div class="card">
-                            <img src="images/image 12.png" alt="Illustration of park bench">
-                            <div class="card-container">
-                                Illustration by <a href="https://pixabay.com/users/nnnhi-28517726/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7386978">
-                                    Nhi NNhi</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7386978">
-                                    Pixabay</a>
-                                <h4>Mindful Watching</h4> 
-                                <p>In this active mindfulness technique you can use in any environment. 
-                                    You will be guided to calmly notice colours in your surroundings. </p>
-                                    <button class="card-button" data-modal-target="#comming-soon-modal">Learn more</button> 
-                                </div>
-                        
-                    </div>
-                    <div class="card">
-                            <img src="images/image 13.png" alt="illustration of Women smiling hugging self">
-                            <div class="card-container">
-                                Illustration by <a href="https://pixabay.com/users/haninabz-24628630/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439000">
-                                    Hanin Abouzeid</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439000">
-                                        Pixabay</a>
-                                <h4>Noticing Sensations</h4> 
-                                <p>You will be guided to identify sensations in your body. 
-                                    This skills can be applied in stressful times 
-                                    or as a regular mindfulness practice.</p>
-                                <button class="card-button" data-modal-target="#comming-soon-modal">Learn more</button> 
-                            </div>
-                        
-                    </div>
-                <div class="card">
-                        <img src="images/image 11.png" alt="illustration of Women smiling holding coffee">
-                        <div class="card-container">
-                            Illustration by <a href="https://pixabay.com/users/haninabz-24628630/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439003">
-                                Hanin Abouzeid</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439003">Pixabay</a>
-                            <h4>Gratitude Practice</h4> 
-                            <p>This exercise will guide on how to add more gratitude into your daily life. 
-                                Gratitude is associated with enhanced well being and fosters resilience.  </p>
-                                <button class="card-button" data-modal-target="#comming-soon-modal">Learn more</button> 
-                        </div>
-                    
-                </div>
-            <div class="card">
-                    <img src="images/image 10.png" alt="illustration of women reading">
-                    <div class="card-container">
-                        Illustration by <a href="https://pixabay.com/users/katsampang-41042276/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8427201">
-                            Kat Sampang</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8427201">
-                            Pixabay</a>
-                        <h4>Re-framing Thoughts</h4> 
-                        <p>This tool can help to identify unhelpful thought patterns. 
-                            Learning this skill can improve your well-being over time and decrease symptoms of anxiety.</p>
-                            <button class="card-button" data-modal-target="#comming-soon-modal">Learn more</button> 
-                        </div>
-                
-            </div>
-        </div>
-                <hr>   
-            </section>
+			<!-- Section two of content -->
+			<section id="section-two">
+				<!-- Section two Title -->
+				<div class="section-two-title">
+					<h2><u>Practical Tools to get you Started</u></h2>
+					<p>
+						Welcome to your easy access well-being enhancing tool box. Each tile
+						contains a well-being tool aimed to manage stress and ground your
+						body and mind in the present moment. Click on a tile to access step
+						by step instructions.
+					</p>
+				</div>
+				<!-- Card display -->
+				<div class="card-grid">
+					<div class="card">
+						<img src="images/image-9-(1).png" alt="meditation illustration" />
+						<div class="card-container">
+							Image by
+							<a
+								href="https://pixabay.com/users/roszie-6000120/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7528400">
+								Rosy / Bad Homburg / Germany</a
+							>
+							from
+							<a
+								href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7528400">
+								Pixabay</a
+							>
+							<h4>Box Breathing</h4>
+							<p>
+								Box breathing is just one of many deep techniques that involves
+								slowly breathing in and out to help you feel calmer and ground
+								you in the present moment.
+							</p>
+							<button
+								class="card-button"
+								data-modal-target="#comming-soon-modal">
+								Learn more
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<img src="images/image-12.png" alt="Illustration of park bench" />
+						<div class="card-container">
+							Illustration by
+							<a
+								href="https://pixabay.com/users/nnnhi-28517726/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7386978">
+								Nhi NNhi</a
+							>
+							from
+							<a
+								href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7386978">
+								Pixabay</a
+							>
+							<h4>Mindful Watching</h4>
+							<p>
+								In this active mindfulness technique you can use in any
+								environment. You will be guided to calmly notice colours in your
+								surroundings.
+							</p>
+							<button
+								class="card-button"
+								data-modal-target="#comming-soon-modal">
+								Learn more
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="images/image-13.png"
+							alt="illustration of Women smiling hugging self" />
+						<div class="card-container">
+							Illustration by
+							<a
+								href="https://pixabay.com/users/haninabz-24628630/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439000">
+								Hanin Abouzeid</a
+							>
+							from
+							<a
+								href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439000">
+								Pixabay</a
+							>
+							<h4>Noticing Sensations</h4>
+							<p>
+								You will be guided to identify sensations in your body. This
+								skills can be applied in stressful times or as a regular
+								mindfulness practice.
+							</p>
+							<button
+								class="card-button"
+								data-modal-target="#comming-soon-modal">
+								Learn more
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="images/image-11.png"
+							alt="illustration of Women smiling holding coffee" />
+						<div class="card-container">
+							Illustration by
+							<a
+								href="https://pixabay.com/users/haninabz-24628630/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439003">
+								Hanin Abouzeid</a
+							>
+							from
+							<a
+								href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8439003"
+								>Pixabay</a
+							>
+							<h4>Gratitude Practice</h4>
+							<p>
+								This exercise will guide on how to add more gratitude into your
+								daily life. Gratitude is associated with enhanced well being and
+								fosters resilience.
+							</p>
+							<button
+								class="card-button"
+								data-modal-target="#comming-soon-modal">
+								Learn more
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="images/image-10.png"
+							alt="illustration of women reading" />
+						<div class="card-container">
+							Illustration by
+							<a
+								href="https://pixabay.com/users/katsampang-41042276/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8427201">
+								Kat Sampang</a
+							>
+							from
+							<a
+								href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8427201">
+								Pixabay</a
+							>
+							<h4>Re-framing Thoughts</h4>
+							<p>
+								This tool can help to identify unhelpful thought patterns.
+								Learning this skill can improve your well-being over time and
+								decrease symptoms of anxiety.
+							</p>
+							<button
+								class="card-button"
+								data-modal-target="#comming-soon-modal">
+								Learn more
+							</button>
+						</div>
+					</div>
+				</div>
+				<hr />
+			</section>
 
-            <!-- Section three of content Our Services/Discover More List Items -->
-        <section id="services-section">
-            <div class="list services-column">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>
-                        <a href="#"
-                            ><p>Well Being Coaching</p>
-                            <p><button class="list-circle-button" data-modal-target="#comming-soon-modal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                              </svg></button></p></a>   
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><p>Personal Training </p>
-                            <p><button class="list-circle-button" data-modal-target="#comming-soon-modal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                              </svg></button></p></a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><p>Bundles</p>
-                            <p><button class="list-circle-button" data-modal-target="#comming-soon-modal" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                              </svg></button></p></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="list list-2">
-                <div class="about-column">
-                    <h3 class="cloud-m" data-modal-target="#comming-soon-modal">Book Now</h3>
-                    <img src="images/aboutme.png" alt="picture of a person" />
-                     <h2 data-modal-target="#comming-soon-modal"> About Me</h2>
-                </div>
-                <div class="links-column">
-                    <h3>Discover More</h3>
-                    <ul>
-                        <li>
-                            <a href="#" data-modal-target="#comming-soon-modal"
-                                ><p data-modal-target="#comming-soon-modal">Articles</p>
-                                <p><button class="list-circle-button-two" data-modal-target="#comming-soon-modal"><i class="bi bi-arrow-right"></i></button></p></a
-                            >
-                        </li>
-                        <li>
-                            <a href="#" data-modal-target="#comming-soon-modal"
-                                ><p data-modal-target="#comming-soon-modal">Guides</p>
-                                <p><button class="list-circle-button-two" data-modal-target="#comming-soon-modal"><i class="bi bi-arrow-right"></i></button></p></a
-                            >
-                        </li>
-                        <li>
-                            <a href="#" data-modal-target="#comming-soon-modal"
-                            data-modal-target="#comming-soon-modal"><p data-modal-target="#comming-soon-modal">Tool Box</p>
-                                <p><button class="list-circle-button-two" data-modal-target="#comming-soon-modal"><i class="bi bi-arrow-right"></i></button></p></a>
-                        </li>
-                        <li>
-                            <a href="#" data-modal-target="#comming-soon-modal"
-                                ><p data-modal-target="#comming-soon-modal">Products</p>
-                                <p><button class="list-circle-button-two" data-modal-target="#comming-soon-modal"><i class="bi bi-arrow-right"></i></button></p></a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+			<!-- Section three of content Our Services/Discover More List Items -->
+			<section id="services-section">
+				<div class="list services-column">
+					<h2>Our Services</h2>
+					<ul>
+						<li>
+							<p>Well Being Coaching</p>
+							<p>
+								<button
+									class="list-circle-button"
+									data-modal-target="#comming-soon-modal">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-arrow-right"
+										viewBox="0 0 16 16">
+										<path
+											fill-rule="evenodd"
+											d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+									</svg>
+								</button>
+							</p>
+						</li>
+						<li>
+							<p>Personal Training</p>
+							<p>
+								<button
+									class="list-circle-button"
+									data-modal-target="#comming-soon-modal">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-arrow-right"
+										viewBox="0 0 16 16">
+										<path
+											fill-rule="evenodd"
+											d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+									</svg>
+								</button>
+							</p>
+						</li>
+						<li>
+							<p>Bundles</p>
+							<p>
+								<button
+									class="list-circle-button"
+									data-modal-target="#comming-soon-modal">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-arrow-right"
+										viewBox="0 0 16 16">
+										<path
+											fill-rule="evenodd"
+											d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+									</svg>
+								</button>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="list list-2">
+					<div class="about-column">
+						<h3 class="cloud-m" data-modal-target="#comming-soon-modal">
+							Book Now
+						</h3>
+						<img src="images/aboutme.png" alt="picture of a person" />
+						<h2 data-modal-target="#comming-soon-modal">About Me</h2>
+					</div>
+					<div class="links-column">
+						<h3>Discover More</h3>
+						<ul>
+							<li>
+								<p data-modal-target="#comming-soon-modal">Articles</p>
+								<p>
+									<button
+										class="list-circle-button-two"
+										data-modal-target="#comming-soon-modal">
+										<i class="bi bi-arrow-right"></i>
+									</button>
+								</p>
+							</li>
+							<li>
+								<p data-modal-target="#comming-soon-modal">Guides</p>
+								<p>
+									<button
+										class="list-circle-button-two"
+										data-modal-target="#comming-soon-modal">
+										<i class="bi bi-arrow-right"></i>
+									</button>
+								</p>
+							</li>
+							<li>
+								<p data-modal-target="#comming-soon-modal">Tool Box</p>
+								<p>
+									<button
+										class="list-circle-button-two"
+										data-modal-target="#comming-soon-modal">
+										<i class="bi bi-arrow-right"></i>
+									</button>
+								</p>
+							</li>
+							<li>
+								<p data-modal-target="#comming-soon-modal">Products</p>
+								<p>
+									<button
+										class="list-circle-button-two"
+										data-modal-target="#comming-soon-modal">
+										<i class="bi bi-arrow-right"></i>
+									</button>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
+			<!-- Section five content -->
+			<section id="section-five">
+				<!-- Contact form template, currenlt no .php attached so it will not work
+             but can be a good place holder to start with -->
+				<form action="action_page.php">
+					<div class="contact-container">
+						<div>
+							<h2>Begin your journey.</h2>
+							<p>
+								To learn more about how we can support your well being contact
+								us today.
+							</p>
+						</div>
 
-           <!-- Section five content -->    
-           <section id="section-five">
+						<div>
+							<input
+								type="text"
+								placeholder="First Name"
+								name="first name"
+								required />
+							<input
+								type="text"
+								placeholder="Last Name"
+								name="last name"
+								required />
+							<input
+								type="text"
+								placeholder="Email address"
+								name="mail"
+								required />
+							<input
+								type="text"
+								placeholder="Enquiry"
+								name="message"
+								required />
+							<br />
+							<input type="submit" value="Submit" />
+						</div>
+					</div>
+				</form>
+				<hr />
+			</section>
 
-    
-            <!-- Contact form template, currenlt no .php attached so it will not work
-             but can be a good place holder to start with -->   
-            <form action="action_page.php">
-                <div class="contact-container">
-                  <div><h2>Begin your journey.</h2>
-                  <p>To learn more about how we can 
-                    support your well being 
-                    contact us today.</p> </div>
-              
-                  <div><input type="text" placeholder="First Name" name="first name" required>
-                  <input type="text" placeholder="Last Name" name="last name" required>
-                  <input type="text" placeholder="Email address" name="mail" required>
-                  <input type="text" placeholder="Enquiry" name="message" required> <br>
-                  <input type="submit" value="Submit"> </div>
-                </div>
-            </form> 
-            <hr>
-        </section>
+			<!-- Section three of content example -->
+			<section>
+				<!-- Splide Example -->
+				<div
+					id="autoplay_slider2"
+					class="splide splide_autoplay"
+					role="group"
+					aria-label="Splide Basic HTML Example">
+					<h2>Products</h2>
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<img src="images/image-journal.jpg" alt="photo of journal" />
+								Photo by
+								<a
+									href="https://www.pexels.com/photo/pink-planner-over-pink-laptop-7394376/">
+									Ivan Samkov
+								</a>
+								from <a href="https://www.pexels.com/license/"> Pexels</a>
+							</li>
+							<li class="splide__slide">
+								<img
+									src="images/image-habittracker.jpg"
+									alt="photo of habit tracker" />
+								Photo by
+								<a
+									href="https://www.pexels.com/photo/white-blank-notebook-733857/ ">
+									Tirachard Kumtanom
+								</a>
+								from <a href="https://www.pexels.com/license/"> Pexels</a>
+							</li>
+							<li class="splide__slide">
+								<img src="images/image-yogamat.jpg" alt="photo of yoga mat" />
+								Photo by
+								<a
+									href="https://www.pexels.com/photo/blue-and-white-paper-towel-on-white-table-5412249/">
+									Nataliya Vaitkevich
+								</a>
+								from <a href="https://www.pexels.com/license/"> Pexels</a>
+							</li>
+							<li class="splide__slide">
+								<img src="images/image-journal.jpg" alt="photo of journal" />
+								Photo by
+								<a
+									href="https://www.pexels.com/photo/pink-planner-over-pink-laptop-7394376/">
+									Ivan Samkov
+								</a>
+								from <a href="https://www.pexels.com/license/"> Pexels</a>
+							</li>
+							<li class="splide__slide">
+								<img
+									src="images/image-habittracker.jpg"
+									alt="photo of habit tracker" />
+								Photo by
+								<a
+									href="https://www.pexels.com/photo/white-blank-notebook-733857/ ">
+									Tirachard Kumtanom
+								</a>
+								from <a href="https://www.pexels.com/license/"> Pexels</a>
+							</li>
+							<li class="splide__slide">
+								<img src="images/image-yogamat.jpg" alt="photo of yoga mat" />
+								Photo by
+								<a
+									href="https://www.pexels.com/photo/blue-and-white-paper-towel-on-white-table-5412249/">
+									Nataliya Vaitkevich
+								</a>
+								from <a href="https://www.pexels.com/license/"> Pexels</a>
+							</li>
+						</ul>
+					</div>
+					<button class="splide__toggle" type="button">
+						<span class="splide__toggle__play"
+							><i class="bi bi-play-circle-fill"></i
+						></span>
+						<span class="splide__toggle__pause"
+							><i class="bi bi-pause-circle-fill"></i
+						></span>
+					</button>
+					<div class="splide__progress">
+						<div class="splide__progress__bar"></div>
+					</div>
+				</div>
+			</section>
 
-            <!-- Section three of content example -->
-            <section>
+			<!-- illustration pre footer -->
+			<section>
+				<img
+					class="footer-illustration"
+					src="images/footer-illustration.png"
+					alt="cloud illustration" />
+			</section>
+		</main>
 
-            <!-- Splide Example -->
-		<div
-        id="autoplay_slider2"
-        class="splide splide_autoplay"
-        role="group"
-        aria-label="Splide Basic HTML Example">
-        <h2> Products </h2>
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="images/image-journal.jpg" alt="photo of journal" />
-                    Photo by <a href= "https://www.pexels.com/photo/pink-planner-over-pink-laptop-7394376/">
-                        Ivan Samkov </a> from <a href="https://www.pexels.com/license/">
-                        Pexels</a>
-                </li>
-                <li class="splide__slide">
-                    <img src="images/image-habittracker.jpg" alt="photo of habit tracker" />
-                    Photo by <a href= "https://www.pexels.com/photo/white-blank-notebook-733857/ ">
-                        Tirachard Kumtanom </a> from <a href="https://www.pexels.com/license/">
-                        Pexels</a>
-                </li>
-                <li class="splide__slide">
-                    <img src="images/image-yogamat.jpg" alt="photo of yoga mat" />
-                    Photo by <a href= "https://www.pexels.com/photo/blue-and-white-paper-towel-on-white-table-5412249/">
-                        Nataliya Vaitkevich </a> from <a href="https://www.pexels.com/license/">
-                        Pexels</a>
-                </li>
-                <li class="splide__slide">
-                    <img src="images/image-journal.jpg" alt="photo of journal" />
-                    Photo by <a href= "https://www.pexels.com/photo/pink-planner-over-pink-laptop-7394376/">
-                        Ivan Samkov </a> from <a href="https://www.pexels.com/license/">
-                        Pexels</a>
-                </li>
-                <li class="splide__slide">
-                    <img src="images/image-habittracker.jpg" alt="photo of habit tracker" />
-                    Photo by <a href= "https://www.pexels.com/photo/white-blank-notebook-733857/ ">
-                        Tirachard Kumtanom </a> from <a href="https://www.pexels.com/license/">
-                        Pexels</a>
-                </li>
-                <li class="splide__slide">
-                    <img src="images/image-yogamat.jpg" alt="photo of yoga mat" />
-                    Photo by <a href= "https://www.pexels.com/photo/blue-and-white-paper-towel-on-white-table-5412249/">
-                        Nataliya Vaitkevich </a> from <a href="https://www.pexels.com/license/">
-                        Pexels</a>
-                </li>
-            </ul>
-        </div>
-        <button class="splide__toggle" type="button">
-            <span class="splide__toggle__play"
-                ><i class="bi bi-play-circle-fill"></i
-            ></span>
-            <span class="splide__toggle__pause"
-                ><i class="bi bi-pause-circle-fill"></i
-            ></span>
-        </button>
-        <div class="splide__progress">
-            <div class="splide__progress__bar"></div>
-        </div>
-    </div>
-    
+		<!-- Footer for extra links/socials and legal -->
+		<footer>
+			<div class="footer-grid">
+				<div id="footer-socials" class="footer-grid-items">
+					Social icons coming soon
+				</div>
+				<div id="footer-nav" class="footer-grid-items">
+					<a href="home-section">Home</a>
+					<a href="#about-section">About Us</a>
+					<a href="#toolbox-section">Tool Box</a>
+					<a href="#blog-section">Blog</a>
+					<a href="#services-section">Services</a>
+				</div>
+				<div id="footer-legal" class="footer-grid-items">
+					Legal for any attribute or other privacy statements.
+				</div>
+			</div>
+			<small>&copy;Copyright Chanelle</small>
+		</footer>
 
-               <!-- illustration pre footer -->
-            <section>
-                <img class="footer-illustration" src="images/footer-illustration.png" alt="cloud illustration">
-            </section>
+		<!-- Javascript -->
+		<script src="my-javascript.js"></script>
 
-        </main>
+		<script src="popup.js"></script>
 
-        <!-- Footer for extra links/socials and legal -->
-        <footer>
-            <div class="footer-grid">
-                <div id="footer-socials" class="footer-grid-items">
-                    Social icons coming soon
-                </div>
-                <div id="footer-nav" class="footer-grid-items">
-                    <a href="home-section">Home</a>   
-                    <a href="#about-section">About Us</a>
-                    <a href="#toolbox-section">Tool Box</a>
-                    <a href="#blog-section">Blog</a>
-                    <a href="#services-section">Services</a>
-                </div>
-                <div id="footer-legal" class="footer-grid-items">
-                    Legal for any attribute or other privacy statements.
-                </div>
-            </div>
-            <small>&copy;Copyright Chanelle</small>
-        </footer>
+		<!-- FancyBox Javascript -->
+		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-        <!-- Javascript -->
-        <script src="my-javascript.js"></script> 
-   
-        <script src="popup.js"></script>
-
-        <!-- FancyBox Javascript -->
-        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-        <!-- Splide Javascript -->
-    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var splide = new Splide("#autoplay_slider2", {
-                type: "loop",
-                perPage: 3,
-                autoplay: "play",
-                pauseOnHover: false,
-                resetProgress: false,
-                speed: 800,
-                width: "65rem",
-                height: "16.5rem",
-            }).mount();
-        });
-    </script>
-
-    </body>
+		<!-- Splide Javascript -->
+		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var splide = new Splide("#autoplay_slider2", {
+					type: "loop",
+					perPage: 3,
+					autoplay: "play",
+					pauseOnHover: false,
+					resetProgress: false,
+					speed: 800,
+					width: "65rem",
+					height: "16.5rem",
+				}).mount();
+			});
+		</script>
+	</body>
 </html>
