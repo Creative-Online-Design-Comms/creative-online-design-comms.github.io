@@ -15,8 +15,8 @@
 }
 
 /* Adrienne */
-.container .box:nth-child(12):before,
-.container .box:nth-child(12):after
+.container .box:nth-child(13):before,
+.container .box:nth-child(13):after
 {
   background: linear-gradient(315deg, #FFF9F5, #bb3b2f)
 }
@@ -29,8 +29,8 @@
 }
 
 /* Bernie */
-.container .box:nth-child(11):before,
-.container .box:nth-child(11):after
+.container .box:nth-child(12):before,
+.container .box:nth-child(12):after
 {
   background: linear-gradient(315deg, #639355, #272f23)
 }
@@ -85,8 +85,8 @@
 }
 
 /* Lucy */
-.container .box:nth-child(13):before,
-.container .box:nth-child(13):after
+.container .box:nth-child(11):before,
+.container .box:nth-child(11):after
 {
   background: linear-gradient(315deg, #f3c83b, #0f0f85)
 }
